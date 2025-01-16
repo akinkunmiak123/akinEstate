@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slideshow 20s infinite;
+  z-index: -2;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Gray overlay with transparency */
+  z-index: -1; /* Position overlay behind the text but in front of the background */
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url("../../../../public/images/banner.png");
+  }
+  25% {
+    background-image: url("../../../../public/images/banner1.jpg");
+  }
+  50% {
+    background-image: url("../../../../public/images/banner2.jpg");
+  }
+  75% {
+    background-image: url("../../../../public/images/banner3.jpg");
+  }
+  100% {
+    background-image: url("../../../../public/images/banner4.jpg");
+  }
+}
+
+.hero .container {
+  text-align: center;
+  padding: 15%;
+  padding-top: 5%;
+  position: relative; /* Ensure text is above the overlay */
+  z-index: 1; /* Position text above the overlay */
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0D3920;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    height: auto;
+  }
+  .hero .container {
+    padding: 10%;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
