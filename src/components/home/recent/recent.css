@@ -28,7 +28,7 @@
 .filter-container {
   margin-bottom: 20px;
   text-align: left;
-  width: 100%; /* Ensure the filter spans full width */
+  width: 20%; /* Ensure the filter spans full width */
 }
 
 .filter-container select {
@@ -69,6 +69,7 @@
 .content.grid3 .box:hover {
   transform: translateY(-5px);
 }
+
 
 /* Mobile View */
 @media screen and (max-width: 900px) {
