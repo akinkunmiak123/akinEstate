@@ -151,10 +151,14 @@ img {
   font-size: 40px;
   font-weight: 500;
 }
-.mb {
-  margin-bottom: 80px;
+.back span {
+  font-size: 32px;
+  color: #27ae60;
 }
-@media screen and (max-width: 800px) {
+.mb {
+  margin-bottom: 80px; 
+}
+@media screen and (max-width: 900px) {
   .grid4,
   .grid3,
   .grid5 {
@@ -171,4 +175,10 @@ img {
   .back {
     height: 30vh;
   }
+  .back h1 {
+  font-size: 29px;
+}
+.back span {
+  font-size: 20px;
+}
 }
