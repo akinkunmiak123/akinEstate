@@ -1,9 +1,19 @@
-import React from "react";
-import { footer } from "../../data/Data";
-import { Link } from "react-router-dom";
-import "./footer.css";
+import React from 'react'
+import { footer } from '../../data/Data'
+import { Link } from 'react-router-dom'
+import './footer.css'
 
 const Footer = () => {
+  // Function to handle WhatsApp link
+  const handleWhatsAppClick = () => {
+    const phone = '09068457292'
+    const message = 'Hi, I need assistance.'
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
+      message
+    )}`
+    window.open(whatsappUrl, '_blank')
+  }
+
   return (
     <>
       <section className="footerContact">
@@ -13,7 +23,9 @@ const Footer = () => {
               <h1>Do You Have Questions?</h1>
               <p>We'll help you to grow your career and growth.</p>
             </div>
-            <button className="btn5">Contact Us Today</button>
+            <button className="btn5" onClick={handleWhatsAppClick}>
+              Contact Us Today
+            </button>
           </div>
         </div>
       </section>
@@ -29,8 +41,8 @@ const Footer = () => {
                 to your inbox every month.
               </p>
 
-              <div className="input flex">
-                <button>Contact Us</button>
+              <div className="input">
+                <button onClick={handleWhatsAppClick}>Contact Us</button>
               </div>
             </div>
           </div>
@@ -50,13 +62,13 @@ const Footer = () => {
         </div>
       </footer>
       <div className="legal">
-        <span>
+        {/* <span>
           © 2025 FindVille. Designed By{' '}
           <span className="green">Akk Technology.</span>
-        </span>
+        </span> */}
       </div>
     </>
   )
-};
+}
 
-export default Footer;
+export default Footer

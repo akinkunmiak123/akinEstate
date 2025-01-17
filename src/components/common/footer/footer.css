@@ -1,6 +1,6 @@
 /* Footer Contact Section */
 .footerContact {
-  background-color: #27ae60;
+  background-color: #84f600;
   padding: 40px 20px;
   color: #fff;
   text-align: center; /* Align text for mobile */
@@ -15,7 +15,7 @@
 }
 .footerContact .btn5 {
   background-color: #fff;
-  color: #27ae60;
+  color: #84f600;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -70,7 +70,7 @@ footer ul li a {
   transition: color 0.3s ease;
 }
 footer ul li a:hover {
-  color: #27ae60;
+  color: #84f600;
 }
 
 /* Legal Section */
@@ -82,7 +82,7 @@ footer ul li a:hover {
   font-size: 14px;
 }
 .legal .green {
-  color: #27ae60;
+  color: #84f600;
 }
 
 /* Responsive Design */

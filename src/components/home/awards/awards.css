@@ -2,21 +2,39 @@
   background-color: #122947;
   color: #fff;
   text-align: center;
+  padding: 40px 0;
 }
+
 .awards .heading {
   display: flex;
   flex-direction: column-reverse;
 }
+
 .awards .heading p {
-  color: #27ae60;
-   font-size: 30px;
+  color: #84f600;
+  font-size: 30px;
   font-weight: 500;
 }
+
 .awards .heading h1 {
   color: #fff;
   font-size: 20px;
   font-weight: 200;
 }
+
+.awards .content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  flex-wrap: wrap;        /* Allow items to wrap to the next row */
+  gap: 20px;              /* Add spacing between items */
+}
+
+.awards .box {
+  text-align: center;
+  padding: 20px;
+}
+
 .awards .icon {
   width: 100px;
   height: 100px;
@@ -28,9 +46,11 @@
   font-size: 32px;
   color: #ffffff;
 }
+
 .awards h1 {
   font-size: 50px;
 }
+
 .awards p {
   color: grey;
 }

@@ -64,20 +64,22 @@
 }
 
 .hero h1 {
-  color: #fff;
-  font-size: 50px;
+  color: #84f600;
+  font-size:60px;
   margin-bottom: 15px;
 }
 
 .hero p {
   color: #fff;
+  font-weight: 500;
   opacity: 0.9;
-  font-size: 18px;
+  font-size: 30px;
   margin-bottom: 25px;
+
 }
 
 .cta-button {
-  background-color: #27ae60;
+  background-color: #84f600;
   color: #fff;
   padding: 12px 25px;
   border: none;
@@ -107,6 +109,7 @@
   .hero h1 {
     font-size: 40px;
     margin-bottom: 10px; /* Reduce margin */
+    
   }
 
   .hero p {
@@ -121,3 +124,19 @@
     box-sizing: border-box; /* Prevent overflow */
   }
 }
+
+
+
+.typing-animation {
+  display: inline-block;
+  border-right: 3px solid #84f600;
+  animation: blink 3s steps(2, start) infinite;
+  color: #84f600;
+}
+
+@keyframes blink {
+  to {
+    border-color: transparent;
+  }
+}
+

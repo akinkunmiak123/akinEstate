@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { list } from '../../data/Data'
+import { useHistory } from 'react-router-dom'
 
 const RecentCard = () => {
   const [selectedType, setSelectedType] = useState('All')
+  const history = useHistory()
 
   // Handle type filter change
   const handleFilterChange = (e) => {
@@ -14,6 +16,21 @@ const RecentCard = () => {
     selectedType === 'All'
       ? list
       : list.filter((item) => item.type === selectedType)
+
+  // Handle "Read More" click
+  const handleReadMore = (item) => {
+    history.push(`/details/${item.id}`, { item })
+  }
+
+  // Handle "Chat to Purchase" click
+  const handleChatToPurchase = (name) => {
+    const phone = '09068457292'
+    const message = `Hello, I am interested in purchasing ${name}.`
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
+      message
+    )}`
+    window.open(whatsappUrl, '_blank')
+  }
 
   return (
     <>
@@ -32,11 +49,11 @@ const RecentCard = () => {
       {/* Property cards */}
       <div className="content grid3 mtop">
         {filteredList.map((val, index) => {
-          const { cover, category, location, name, price, type } = val
+          const { id, cover, category, location, name, type } = val
           return (
-            <div className="box shadow" key={index}>
+            <div className="box shadow" key={id}>
               <div className="img">
-                <img src={cover} alt="" />
+                <img src={cover} alt={name} />
               </div>
               <div className="text">
                 <div className="category flex">
@@ -55,12 +72,23 @@ const RecentCard = () => {
                 <p>
                   <i className="fa fa-location-dot"></i> {location}
                 </p>
+                <p>
+                  <strong>Type:</strong> {type}
+                </p>
               </div>
               <div className="button flex">
-                <div>
-                  <button className="btn2">{price}</button>{' '}
-                  <label htmlFor="">{type}</label>
-                </div>
+                <button
+                  className="btn2 small-btn"
+                  onClick={() => handleChatToPurchase(name)}
+                >
+                  Chat to Purchase
+                </button>
+                <button
+                  className="btn2 small-btn"
+                  onClick={() => handleReadMore(val)}
+                >
+                  Read More
+                </button>
               </div>
             </div>
           )

@@ -114,3 +114,35 @@
     text-align: center;
   }
 }
+/* Flex container for buttons */
+.button {
+  display: flex;
+  gap: 8px; /* Space between buttons */
+  justify-content: flex-start; /* Align buttons to the left */
+  margin-top: 10px;
+}
+
+/* Button styling */
+.btn2 {
+  padding: 8px 12px; /* Smaller padding for a compact look */
+  font-size: 14px; /* Adjust font size */
+  border: none;
+  border-radius: 20px; /* Fully curved edges */
+  background-color: #84f600; /* Button background color */
+  color: white; /* Text color */
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+.btn2:hover {
+  background-color: #84f600; /* Slightly darker green on hover */
+}
+
+/* Class for small buttons */
+.small-btn {
+  padding: 6px 10px; /* Slightly smaller padding */
+  font-size: 12px; /* Smaller font size */
+  border-radius: 15px; /* Adjusted curve for smaller buttons */
+}

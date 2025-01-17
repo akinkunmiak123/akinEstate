@@ -1,0 +1,75 @@
+/* Details Page Container */
+.details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Image Styling */
+.details-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.details-container h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Paragraph Styling */
+.details-container p {
+  font-size: 16px;
+  color: #72809d;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Bold Labels */
+.details-container strong {
+  color: #25b579;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .details-container {
+    padding: 20px;
+  }
+
+  .details-container h2 {
+    font-size: 24px;
+  }
+
+  .details-container p {
+    font-size: 14px;
+  }
+}
+
+/* Back to Home Button Styling */
+.back-btn {
+  background-color: #25b579; /* Button color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Font size */
+  border: none;
+  border-radius: 20px; /* Curved button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+/* Button Hover Effect */
+.back-btn:hover {
+  background-color: #1e954e; /* Darker green on hover */
+}
