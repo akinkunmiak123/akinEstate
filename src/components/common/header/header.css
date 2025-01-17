@@ -7,6 +7,9 @@ header {
   top: 0;
   z-index: 99999;
 }
+.hide{
+  visibility: hidden;
+}
 header img {
   width: 120px;
   height: 110px;
@@ -35,12 +38,12 @@ header h4 {
 header .toggle {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   header {
     padding: 0;
   }
   header img {
-    margin-top: 30px;
+    margin-top: 0;
   }
   header .button {
     display: none;
@@ -50,7 +53,7 @@ header .toggle {
   }
   header .toggle {
     display: block;
-    margin-top: 20px;
+    margin-top: 0;
   }
   header .small {
     position: absolute;

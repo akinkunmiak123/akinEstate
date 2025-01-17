@@ -1,27 +1,23 @@
 export const nav = [
   {
-    text: "home",
-    path: "/",
+    text: 'home',
+    path: '/',
   },
   {
-    text: "about",
-    path: "/about",
+    text: 'about',
+    path: '/about',
   },
   {
-    text: "services",
-    path: "/services",
+    text: 'services',
+    path: '/services',
   },
   {
-    text: "blog",
-    path: "/blog",
+    text: 'Properties',
+    path: '/properties',
   },
   {
-    text: "pricing",
-    path: "/pricing",
-  },
-  {
-    text: "contact",
-    path: "/contact",
+    text: 'contact',
+    path: '/contact',
   },
 ]
 export const featured = [
@@ -298,15 +294,23 @@ export const price = [
 ]
 export const footer = [
   {
-    title: "LAYOUTS",
-    text: [{ list: "Home Page" }, { list: "About Page" }, { list: "Service Page" }, { list: "Property Page" }, { list: "Contact Page" }, { list: "Single Blog" }],
+    title: 'FindVille',
+    text: [
+      { list: 'Home', path: '/' },
+      { list: 'Service', path: '/service' },
+    ],
   },
   {
-    title: "ALL SECTIONS",
-    text: [{ list: "Headers" }, { list: "Features" }, { list: "Attractive" }, { list: "Testimonials" }, { list: "Videos" }, { list: "Footers" }],
+    title: 'Contact Us',
+    text: [
+      { list: 'Contact', path: '/contact' },
+    ],
   },
   {
-    title: "COMPANY",
-    text: [{ list: "About" }, { list: "Blog" }, { list: "Pricing" }, { list: "Affiliate" }, { list: "Login" }, { list: "Changelog" }],
+    title: 'Learn More',
+    text: [
+      { list: 'About', path: '/about' },
+      { list: 'Property', path: '/property' },
+    ],
   },
 ]
