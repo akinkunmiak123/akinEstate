@@ -1,6 +1,7 @@
+/* Hero Section */
 .hero {
   position: relative;
-  height: 90vh;
+  height: 90vh; /* Height adjustment for larger screens */
   width: 100%;
   display: flex;
   align-items: center;
@@ -51,12 +52,15 @@
   }
 }
 
+/* Container Section */
 .hero .container {
   text-align: center;
   padding: 15%;
   padding-top: 5%;
-  position: relative; /* Ensure text is above the overlay */
-  z-index: 1; /* Position text above the overlay */
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
 }
 
 .hero h1 {
@@ -88,20 +92,32 @@
   transform: scale(1.05);
 }
 
+/* Mobile View */
 @media screen and (max-width: 900px) {
   .hero {
-    height: auto;
+    height: auto; /* Set to auto for mobile to avoid overflow */
+    padding: 0; /* Remove padding from the hero container */
   }
   .hero .container {
-    padding: 10%;
+    padding: 10%; /* Adjust container padding for mobile */
+    width: 100%; /* Ensure container width is 100% to prevent overflow */
+    box-sizing: border-box; /* Prevent overflow */
   }
 
   .hero h1 {
     font-size: 40px;
+    margin-bottom: 10px; /* Reduce margin */
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 
   .cta-button {
     font-size: 14px;
     padding: 10px 20px;
+    width: 100%; /* Ensure button doesn't overflow */
+    box-sizing: border-box; /* Prevent overflow */
   }
 }
