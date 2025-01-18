@@ -1,88 +1,35 @@
-/* Footer Contact Section */
-.footerContact {
-  background-color: #84f600;
-  padding: 40px 20px;
-  color: #fff;
-  text-align: center; /* Center text for mobile */
-}
-.footerContact h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-.footerContact p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.footerContact .btn5 {
-  background-color: #fff;
-  color: #84f600;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.footerContact .btn5:hover {
-  background-color: #ffffff;
-  color: #84f600;
-}
-
 /* Footer Section */
 footer {
-  background-color: #ffffff;
-  padding: 40px 20px;
-  color: #84f600;
-}
-footer .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-  gap: 20px;
-}
-footer .box {
-  text-align: center; /* Center align all sections for mobile */
-}
-footer .logo img {
-  width: 120px;
-  margin: 0 auto;
-  display: block;
-}
-footer h2 {
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-}
-footer p {
-  color: #a9a9a9;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-footer ul li {
-  margin-bottom: 10px;
-}
-footer ul li a {
-  color: #84f600;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-footer ul li a:hover {
-  color: #84f600;
+  background-color: #fff; /* White background for the footer */
+  padding: 20px 0;
 }
 
-/* Legal Section */
-.legal {
-  text-align: center;
-  padding: 15px;
-  background: #1d2636;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
+footer .container {
+  display: flex;
+  justify-content: center; /* Center the links horizontally */
+  align-items: center; /* Align items vertically */
 }
-.legal .green {
-  color: #84f600;
+
+footer .box {
+  display: flex;
+  flex-direction: row; /* Links in a row */
+  width: 50%; /* Adjust the width as needed */
+  gap: 20px; /* Space between the links */
+  justify-content: flex-start; /* Align links to the left */
+  flex-wrap: wrap; /* Ensure links wrap on smaller screens */
+}
+
+/* Footer links */
+footer .box a {
+  color: #84f600; /* Green text color */
+  text-decoration: none; /* Remove underlines */
+  font-size: 16px; /* Font size */
+  padding: 0 20px; /* Space between the links */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer .box a:hover {
+  color: #a9a9a9; /* Change to gray when hovered */
 }
 
 /* Responsive Design */
@@ -105,11 +52,12 @@ footer ul li a:hover {
     text-align: center;
   }
 
-  /* Footer links layout adjustments for mobile */
+  /* Adjust the footer .box to be a row on mobile */
   footer .box {
     display: flex;
-    justify-content: center; /* Center the links horizontally */
-    gap: 20px; /* Space between the links */
+    justify-content: flex-start; /* Align to the left */
+    flex-direction: column; /* Ensure horizontal row for links */
+    gap: 10px; /* Adjust spacing for mobile */
     width: 100%;
   }
 
@@ -121,34 +69,4 @@ footer ul li a:hover {
   .footerContact {
     padding: 30px 15px; /* Adjust padding for mobile */
   }
-}
-
-/* Footer Section */
-footer {
-  background-color: #fff; /* White background for the footer */
-  padding: 20px 0;
-}
-
-footer .container {
-  display: flex;
-  justify-content: center; /* Center the links horizontally */
-  align-items: center; /* Align items vertically */
-}
-
-footer .box {
-  display: flex;
-  justify-content: space-between; /* Space links evenly */
-  width: 50%; /* Adjust the width as needed */
-}
-
-footer .box a {
-  color: #84f600; /* Green text color */
-  text-decoration: none; /* Remove underlines */
-  font-size: 16px; /* Font size */
-  padding: 0 20px; /* Space between the links */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-footer .box a:hover {
-  color: #a9a9a9; /* Change to gray when hovered */
 }

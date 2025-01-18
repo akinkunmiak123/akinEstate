@@ -54,3 +54,63 @@
 .see-property-btn:hover {
   background-color: #0D3920; /* Darker color on hover */
 }
+
+/* Grid layout for content */
+.content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Display 5 items per row on larger screens */
+  gap: 20px; /* Add space between the items */
+  margin-top: 20px;
+}
+
+/* Each box card */
+.box {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.box h4 {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.box label {
+  font-size: 14px;
+  color: #555;
+}
+
+.see-property-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #84f600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.see-property-btn:hover {
+  background-color: #75e100;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .content {
+    overflow: hidden !important;
+    width: 80%;
+    grid-template-columns: 1fr; /* Show 1 item per row on mobile */
+    gap: 20px; /* Add space between the items */
+  }
+
+  .box {
+    margin-bottom: 20px; /* Add some space below each card */
+  }
+}
