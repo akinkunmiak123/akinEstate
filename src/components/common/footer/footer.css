@@ -3,7 +3,7 @@
   background-color: #84f600;
   padding: 40px 20px;
   color: #fff;
-  text-align: center; /* Align text for mobile */
+  text-align: center; /* Center text for mobile */
 }
 .footerContact h1 {
   font-size: 32px;
@@ -89,16 +89,37 @@ footer ul li a:hover {
 @media screen and (max-width: 768px) {
   footer .container {
     grid-template-columns: 1fr; /* Stack sections vertically */
+    gap: 20px; /* Add space between sections */
   }
+
   .footerContact h1 {
     font-size: 28px;
   }
+
   footer p,
   footer h2 {
     text-align: center;
   }
+
   footer ul {
     text-align: center;
+  }
+
+  /* Footer links layout adjustments for mobile */
+  footer .box {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    gap: 20px; /* Space between the links */
+    width: 100%;
+  }
+
+  footer .box a {
+    font-size: 14px; /* Smaller text size */
+    padding: 0 10px; /* Adjust spacing for mobile */
+  }
+
+  .footerContact {
+    padding: 30px 15px; /* Adjust padding for mobile */
   }
 }
 
@@ -121,7 +142,7 @@ footer .box {
 }
 
 footer .box a {
-  color: #84f600; /* Red text color */
+  color: #84f600; /* Green text color */
   text-decoration: none; /* Remove underlines */
   font-size: 16px; /* Font size */
   padding: 0 20px; /* Space between the links */
@@ -129,5 +150,5 @@ footer .box a {
 }
 
 footer .box a:hover {
-  color: #a9a9a9; /* Change to black when hovered */
+  color: #a9a9a9; /* Change to gray when hovered */
 }
