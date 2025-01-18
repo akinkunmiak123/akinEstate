@@ -38,6 +38,10 @@ footer .box a:hover {
     grid-template-columns: 1fr; /* Stack sections vertically */
     gap: 20px; /* Add space between sections */
   }
+  .send {
+    display: flex;
+    flex-direction: column;
+  }
 
   .footerContact h1 {
     font-size: 28px;
