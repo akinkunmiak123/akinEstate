@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import Heading from '../../common/Heading'
 import './hero.css'
+import { FaWhatsapp } from 'react-icons/fa' // Importing WhatsApp logo
 
 const Hero = () => {
   const words = useMemo(() => ['properties', 'lands', 'apartments'], []) // Memoize words array
@@ -42,17 +42,16 @@ const Hero = () => {
     <section className="hero">
       <div className="overlay"></div>
       <div className="container">
-        <Heading
-          title="Search Your Next Home"
-          subtitle="Find new & featured property located Across Nigeria."
-        />
         <p>
-          Discover a wide range of{' '}
-          <span className="typing-animation">{currentWord}</span> tailored to
-          your needs. Let's help you find the perfect place to call home.
+          We Have <span className="typing-animation">{currentWord}</span>{' '}
+          Available Across Nigeria
         </p>
         <button className="cta-button" onClick={handleWhatsAppClick}>
-          Interested? Chat Now
+          <div className="fleChange">
+           Message us
+            <span className="arrow">→</span>
+          </div>
+          <FaWhatsapp className="whatsapp-logo" />
         </button>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { featured } from '../../data/Data'
+import { Link } from 'react-router-dom' // Import Link for navigation
 
 const FeaturedCard = () => {
   return (
@@ -10,7 +11,11 @@ const FeaturedCard = () => {
             <img src={item.cover} alt={item.name} />
             <h4>{item.name}</h4>
             <label>{item.total}</label>
-            <p>{item.desc}</p> {/* Description in light gray and smaller */}
+            <div>
+              <Link to="/services" className="see-property-btn">
+                See Property
+              </Link>
+            </div>
           </div>
         ))}
       </div>

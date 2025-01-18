@@ -12,7 +12,45 @@
 }
 
 .box p {
-  color: #636363;  /* Light gray color */
+  color: #84f600;  /* Light gray color */
   font-size: 14px;    /* Smaller font size */
   margin-top: 10px;   /* Space between the label and description */
+}
+
+.container h1{
+  color: #84f600;
+}
+.container p {
+  color: #84f600;
+}
+
+.content img {
+  width: 200px;
+  height: 200px;
+}
+
+.content h4{
+  color: #84f600;
+  font-weight: 700;
+}
+.content label{
+  color: #84f600;
+}
+
+/* Style for the See Property Button */
+.see-property-btn {
+  display: inline-block;
+  background-color: #84f600;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.see-property-btn:hover {
+  background-color: #0D3920; /* Darker color on hover */
 }

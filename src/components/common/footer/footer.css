@@ -23,15 +23,15 @@
   transition: background-color 0.3s ease;
 }
 .footerContact .btn5:hover {
-  background-color: #1d2636;
-  color: #fff;
+  background-color: #ffffff;
+  color: #84f600;
 }
 
 /* Footer Section */
 footer {
-  background-color: #1d2636;
+  background-color: #ffffff;
   padding: 40px 20px;
-  color: #fff;
+  color: #84f600;
 }
 footer .container {
   display: grid;
@@ -65,7 +65,7 @@ footer ul li {
   margin-bottom: 10px;
 }
 footer ul li a {
-  color: #ffffff;
+  color: #84f600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -100,4 +100,34 @@ footer ul li a:hover {
   footer ul {
     text-align: center;
   }
+}
+
+/* Footer Section */
+footer {
+  background-color: #fff; /* White background for the footer */
+  padding: 20px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center; /* Center the links horizontally */
+  align-items: center; /* Align items vertically */
+}
+
+footer .box {
+  display: flex;
+  justify-content: space-between; /* Space links evenly */
+  width: 50%; /* Adjust the width as needed */
+}
+
+footer .box a {
+  color: #84f600; /* Red text color */
+  text-decoration: none; /* Remove underlines */
+  font-size: 16px; /* Font size */
+  padding: 0 20px; /* Space between the links */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer .box a:hover {
+  color: #a9a9a9; /* Change to black when hovered */
 }
