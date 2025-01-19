@@ -1,10 +1,10 @@
 export const nav = [
-  { text: 'Home', path: '/' }, // Case-sensitive, matches "/"
-  { text: 'About', path: '/about' }, // Matches "/about"
-  { text: 'Blog', path: '/about' },
-  { text: 'Consultancy', path: '/services' },
-  { text: 'Properties', path: '/properties' },
-  { text: 'Support', path: '/contact' },
+  { text: 'Home', path: '/', active: false },
+  { text: 'About', path: '/about', active: false },
+  { text: 'Blog', path: '/blog', active: false },
+  { text: 'Consultancy', path: '/services', active: false },
+  { text: 'Properties', path: '/properties', active: false },
+  { text: 'Support', path: '/contact', active: false },
 ]
 export const featured = [
   {
