@@ -44,6 +44,7 @@ const Hero = () => {
       <div className="container">
         <p>
           We Have <span className="typing-animation">{currentWord}</span>{' '}
+          <br />
           Available Across Nigeria
         </p>
         <button className="cta-button" onClick={handleWhatsAppClick}>

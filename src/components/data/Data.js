@@ -1,10 +1,10 @@
 export const nav = [
-  { text: 'Home', path: '/', active: false },
-  { text: 'About', path: '/about', active: false },
-  { text: 'Blog', path: '/blog', active: false },
-  { text: 'Consultancy', path: '/services', active: false },
-  { text: 'Properties', path: '/properties', active: false },
-  { text: 'Support', path: '/contact', active: false },
+  { text: 'Home', path: '/' }, // Case-sensitive, matches "/"
+  { text: 'About', path: '/about' }, // Matches "/about"
+  { text: 'Blog', path: '/blog' },
+  { text: 'Consultancy', path: '/services' },
+  { text: 'Properties', path: '/properties' },
+  { text: 'Support', path: '/contact' },
 ]
 export const featured = [
   {
@@ -41,77 +41,78 @@ export const featured = [
 export const list = [
   {
     id: 1,
-    cover: '../images/list/p-1.jpeg',
+    cover: '/images/list/p-1.jpeg',
     name: 'Lekki Pride 2',
     location:
       'Ogombo Road by Abraham Adesanya Roundabout, Lekki-Epe Expressway.',
     category: 'For Sale',
     type: 'Land',
-    description:
-      'FEATURES includes 24-hours Power Supply ,Electric Fencing, Security Gatehouse, Management Office Building, Cinema House, Recreational Centre, Solar Powered Streetlights, CCTV Surveillance Cameras, Estate Gym, Smart Home Features and so much more!',
+    description: 'FEATURES includes 24-hours Power Supply...',
+    slug: 'lekki-pride-2',
   },
   {
     id: 2,
-    cover: '../images/list/p-2.jpeg',
+    cover: '/images/list/p-2.jpeg',
     name: 'ZYLUS COURT BUNGALOWS BOGIJE',
     location: 'along Lekki-Epe Expressway',
     category: 'For Sale',
     type: 'Bungalow',
-    description:
-      'FEATURES includes Perimeter Fencing, Good Road, Electricity, Security, Management Office Building, Recreational Centre, Solar Powered Streetlights, CCTV Surveillance Cameras, Smart Homes Features (Based on clients’ request with extra charges)',
+    description: 'FEATURES includes Perimeter Fencing...',
+    slug: 'zylus-court-bungalows-bogije',
   },
   {
     id: 3,
-    cover: '../images/list/p-3.jpeg',
+    cover: '/images/list/p-3.jpeg',
     name: 'Ambiance Heights Lekki Phase 1',
-    location: ' Freedom way, Lekki Phase 1, Lekki Lagos.',
+    location: 'Freedom way, Lekki Phase 1, Lekki Lagos.',
     category: 'For Rent',
     type: 'Maisonette',
-    description:
-      'FEATURES includes 24/7 Power supply | 24/7 advanced Security | Water supply | Modern Elevators | Kids playground | Swimming pool | Gym | Smart Homes Features | BQ | Drivers Lounge',
+    description: 'FEATURES includes 24/7 Power supply...',
+    slug: 'ambiance-heights-lekki-phase-1',
   },
   {
     id: 4,
-    cover: '../images/list/p-4.jpeg',
+    cover: '/images/list/p-4.jpeg',
     name: 'OPEBI CASTLES AND TERRACES',
     location: 'Opebi road in ikeja area of lagos, Nigeria',
     category: 'For Sale',
     type: 'Homes & Villas',
-    description:
-      'FEATURES includes Gated Estate | Road Network | Water supply | Security | Street Lights',
+    description: 'FEATURES includes Gated Estate...',
+    slug: 'opebi-castles-and-terraces',
   },
   {
     id: 5,
-    cover: '../images/list/p-5.jpeg',
+    cover: '/images/list/p-5.jpeg',
     name: 'LAGOON FRONT ESTATE EPE',
-    location: ' Lekki Epe Corridor, Lagos Nigeria.',
+    location: 'Lekki Epe Corridor, Lagos Nigeria.',
     category: 'For Rent',
     type: 'Homes & Villas',
-    description:
-      'FEATURES includes  Buy and Build |  Dry land | fastest selling | Most affordable title land | Proximity to the Ocean | Motorable Access Roads| Perimeter Fencing | Recreational Centers',
+    description: 'FEATURES includes Buy and Build...',
+    slug: 'lagoon-front-estate-epe',
   },
   {
     id: 6,
-    cover: '../images/list/p-6.jpeg',
-    name: ' METRO BAY ESTATE',
+    cover: '/images/list/p-6.jpeg',
+    name: 'METRO BAY ESTATE',
     location: 'heart of Sangotedo, Eti osa, Lagos Nigeria.',
     category: 'For Sale',
     type: 'Land',
-    description:
-      'FEATURES includes  Buy and Build |  Dry land | fastest selling | Most affordable title land | Proximity to the Ocean | Motorable Access Roads| Perimeter Fencing | Recreational Centers',
+    description: 'FEATURES includes Buy and Build...',
+    slug: 'metro-bay-estate',
   },
   {
     id: 7,
-    cover: '../images/list/p-7.jpeg',
+    cover: '/images/list/p-7.jpeg',
     name: 'Ruby City Ibadan.',
-    location:
-      ' Ijaiye market, Iseyin Road, Akinyele L.G.A, Moniya Ibadan, Oyo State Nigeria.',
+    location: 'Ijaiye market, Iseyin Road, Moniya Ibadan, Oyo State Nigeria.',
     category: 'For Rent',
     type: 'Land',
-    description:
-      'FEATURES includes  Buy and Build |  Dry land | fastest selling | Most affordable title land | Proximity to the Ocean | Motorable Access Roads| Perimeter Fencing | Recreational Centers',
+    description: 'FEATURES includes Buy and Build...',
+    slug: 'ruby-city-ibadan',
   },
 ]
+
+
 export const awards = [
   {
     icon: <i class="fa-solid fa-heart"></i>,
@@ -324,3 +325,40 @@ export const footer = [
     ],
   },
 ]
+
+export const blogData = [
+  {
+    id: 1,
+    title: 'Top Real Estate Trends in 2025',
+    date: 'January 15, 2025',
+    description:
+      'Discover the latest real estate trends to watch in 2025, including market shifts and buyer preferences.',
+    longNote:
+      'This blog explores the key trends that will influence the real estate market in 2025, from changing buyer behaviors to evolving market dynamics, offering valuable insights for investors and homebuyers alike.',
+    image: '../images/blog/img-1.jpg',
+    slug: 'top-real-estate-trends-2025', // Unique slug
+  },
+  {
+    id: 2,
+    title: '5 Tips for First-Time Home Buyers',
+    date: 'December 30, 2024',
+    description:
+      'Learn essential tips for first-time home buyers to make informed decisions in the real estate market.',
+    longNote:
+      'For first-time homebuyers, understanding the process can be overwhelming. This post provides five essential tips, from budget planning to selecting the right property, ensuring a smoother buying experience.',
+    image: '../images/blog/img-2.jpg',
+    slug: '5-tips-for-first-time-home-buyers', // Unique slug
+  },
+  {
+    id: 3,
+    title: 'Understanding Real Estate Investment',
+    date: 'December 20, 2024',
+    description:
+      'A beginner’s guide to investing in real estate and maximizing returns.',
+    longNote:
+      'Real estate investment can be a profitable venture, but it requires a clear understanding of market conditions, financing options, and investment strategies. This guide outlines the fundamentals to help you get started with real estate investments.',
+    image: '../images/blog/img-3.jpg',
+    slug: 'understanding-real-estate-investment', // Unique slug
+  },
+]
+

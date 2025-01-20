@@ -16,7 +16,7 @@
 }
 
 .recent p {
-  color: #72809d;
+  color: #84f600;
 }
 
 .recent .button {
@@ -145,4 +145,75 @@
   padding: 6px 10px; /* Slightly smaller padding */
   font-size: 12px; /* Smaller font size */
   border-radius: 15px; /* Adjusted curve for smaller buttons */
+}
+
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  background-color: #fff; /* White background */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Carousel Items */
+.carousel-item {
+  flex: 0 0 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+/* Carousel Image */
+.carousel-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Carousel Caption */
+.carousel-caption {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.carousel-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: #555;
 }
