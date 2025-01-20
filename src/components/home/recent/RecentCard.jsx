@@ -57,7 +57,7 @@ const RecentCard = () => {
       {/* Swiper Carousel */}
       <Swiper
         spaceBetween={20}
-        slidesPerView={3}
+        slidesPerView={1} // Default to 1 slide
         loop={true}
         autoplay={{
           delay: 3000,
@@ -65,9 +65,9 @@ const RecentCard = () => {
         }}
         navigation={true} // Enable navigation
         breakpoints={{
-          480: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          480: { slidesPerView: 1 }, // 1 slide for small screens
+          768: { slidesPerView: 2 }, // 2 slides for tablets
+          1024: { slidesPerView: 3 }, // 3 slides for larger screens
         }}
         modules={[Autoplay, Navigation]}
         className="recent-swiper"

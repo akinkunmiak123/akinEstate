@@ -69,7 +69,9 @@
   .details-image {
     width: 100%; /* Image takes full width on smaller screens */
     margin-top: 20px; /* Add margin for spacing */
+     margin-left: 0;
   }
+  
 }
 
 /* Back Button Styling */
@@ -89,3 +91,4 @@
 .back-home-btn:hover {
   background-color: #1e954e; /* Darker green on hover */
 }
+

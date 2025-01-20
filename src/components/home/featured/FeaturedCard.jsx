@@ -13,7 +13,7 @@ const FeaturedCard = () => {
         <h2 className="section-title">Featured Properties</h2>
         <Swiper
           spaceBetween={20}
-          slidesPerView={3}
+          slidesPerView={1} // Default to 1 slide
           loop={true}
           autoplay={{
             delay: 3000,
