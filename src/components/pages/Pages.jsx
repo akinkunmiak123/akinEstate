@@ -10,10 +10,12 @@ import Contact from '../contact/Contact'
 import DetailsPage from '../details/DetailsPage'
 import Blog from '../Blog/Blog'
 import BlogDetails from '../BlogDetails/BlogDetails'
+import ScrollToTop from '../../ScrollToTop' // Adjust path if needed
 
 const Pages = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
