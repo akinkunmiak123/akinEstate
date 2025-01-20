@@ -107,6 +107,12 @@
 
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
+  /* Hide navigation buttons on mobile */
+  .recent-swiper .swiper-button-next,
+  .recent-swiper .swiper-button-prev {
+    display: none; /* Disable navigation buttons on mobile */
+  }
+
   .recent-swiper .swiper-button-next,
   .recent-swiper .swiper-button-prev {
     width: 30px;
@@ -115,8 +121,4 @@
     right: 30px; /* Adjust for smaller screens */
     left: 30px;
   }
-}
-
-.filter-container {
-    color: #84f600;
 }
