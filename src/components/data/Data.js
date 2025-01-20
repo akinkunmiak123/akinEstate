@@ -1,11 +1,11 @@
 export const nav = [
-  { text: 'Home', path: '/' }, // Case-sensitive, matches "/"
   { text: 'About', path: '/about' }, // Matches "/about"
   { text: 'Blog', path: '/blog' },
   { text: 'Consultancy', path: '/services' },
   { text: 'Properties', path: '/properties' },
   { text: 'Support', path: '/contact' },
 ]
+
 export const featured = [
   {
     cover: '../images/hero/h1.png',
@@ -111,7 +111,6 @@ export const list = [
     slug: 'ruby-city-ibadan',
   },
 ]
-
 
 export const awards = [
   {
@@ -361,4 +360,3 @@ export const blogData = [
     slug: 'understanding-real-estate-investment', // Unique slug
   },
 ]
-

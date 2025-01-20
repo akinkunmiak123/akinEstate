@@ -21,7 +21,10 @@ const Header = () => {
     <header className="header">
       <div className="header-container flex">
         <div className="header-logo">
-          <img src={logo} alt="Logo" />
+          {/* Logo as a clickable link to the home page */}
+          <NavLink to="/" onClick={handleLinkClick}>
+            <img src={logo} alt="Logo" />
+          </NavLink>
         </div>
         <div className="header-menu-icon" onClick={toggleMenu}>
           <span>{isMenuOpen ? 'Close' : 'Menu'}</span>
