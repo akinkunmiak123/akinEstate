@@ -41,7 +41,7 @@ const BlogPage = () => {
               <p className="blog-date">{blog.date}</p>
               <h2 className="blog-card-title">{blog.title}</h2>
               <p className="blog-description">{blog.description}</p>
-              <a href="#" className="blog-read-more">
+              <a className="blog-read-more">
                 <button
                   className="btn2 small-btn"
                   onClick={() => handleReadMore(blog)}
