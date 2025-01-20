@@ -25,4 +25,85 @@
   .contact input {
     width: 100%;
   }
+  form.shadow {
+ max-width: 500px;
+}
+}
+
+
+form.shadow {
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px 40px;
+  width: 100%;
+   
+}
+.center{
+display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form.shadow h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #84f600;
+  text-align: center;
+}
+
+form.shadow div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+form.shadow input,
+form.shadow textarea {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+form.shadow input:focus,
+form.shadow textarea:focus {
+  border-color: #25b579;
+}
+
+form.shadow textarea {
+  resize: none;
+  height: 120px;
+}
+
+
+form.shadow button {
+  width: 50%;
+  padding: 12px 20px;
+  background: #25b579;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form.shadow button:hover {
+  background: #1e9650;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form.shadow div {
+    flex-direction: column;
+  }
+  form.shadow button {
+    width: 100%;
+  }
 }

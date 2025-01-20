@@ -28,7 +28,7 @@ const RecentCard = () => {
 
   // Handle "Chat to Purchase" click
   const handleChatToPurchase = (name) => {
-    const phone = '09068457292'
+    const phone = '09130000004'
     const message = `Hello, I am interested in purchasing ${name}.`
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
       message

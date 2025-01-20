@@ -32,7 +32,7 @@ const Hero = () => {
   }, [currentWord, isDeleting, wordIndex, words, typingSpeed])
 
   const handleWhatsAppClick = () => {
-    const phone = '09068457292'
+    const phone = '09130000004 '
     const message = 'I am interested in your services.'
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
