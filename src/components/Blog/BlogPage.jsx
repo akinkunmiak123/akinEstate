@@ -41,15 +41,13 @@ const BlogPage = () => {
               <p className="blog-date">{blog.date}</p>
               <h2 className="blog-card-title">{blog.title}</h2>
               <p className="blog-description">{blog.description}</p>
-              <a className="blog-read-more">
-                <button
-                  className="btn2 small-btn"
-                  onClick={() => handleReadMore(blog)}
-                >
-                  Read More
-                  <span className="arrow">&rarr;</span>
-                </button>
-              </a>
+              <button
+                className="btn2 small-btn"
+                onClick={() => handleReadMore(blog)} // Navigate to the blog detail
+              >
+                Read More
+                <span className="arrow">&rarr;</span>
+              </button>
             </div>
           </div>
         ))}
