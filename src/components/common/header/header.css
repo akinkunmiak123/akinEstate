@@ -27,7 +27,8 @@
 
 /* Logo styles */
 .header-logo img {
-  height: 40px; /* Adjusted size for the logo */
+  height: 90px; /* Adjusted size for the logo */
+  width: 90px;
 }
 
  .header-logo {

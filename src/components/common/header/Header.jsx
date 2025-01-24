@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './header.css'
 import { nav } from '../../data/Data'
 import { NavLink } from 'react-router-dom'
-import logo from '../../images/logo.png'
+import logo from '../../images/logos.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
