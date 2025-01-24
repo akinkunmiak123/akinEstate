@@ -16,7 +16,7 @@
 }
 
 .recent p {
-  color: #84f600;
+  color: #f5811f;
 }
 
 .recent .button {
@@ -28,7 +28,7 @@
 .filter-container {
   margin-bottom: 20px;
   text-align: left;
-  width: 20%; /* Ensure the filter spans full width */
+  width: 30%; /* Ensure the filter spans full width */
 }
 
 .filter-container select {
@@ -87,7 +87,10 @@
     font-size: 14px; /* Smaller font size for mobile */
     padding: 8px; /* Adjust padding for better mobile view */
   }
-
+  
+  .filter-container{
+    width: 80%;
+  }
   .recent h1 {
     font-size: 30px; /* Adjust title font size */
   }
@@ -97,16 +100,9 @@
   }
 
   /* Ensure the "btn2" and type label inside each card fits */
-  .button {
-    padding: 10px 15px;
-    flex-direction: column; /* Stack the button and label */
-    justify-content: center;
-  }
 
-  .button button {
-    font-size: 14px;
-    width: 100%; /* Ensure button spans full width on mobile */
-  }
+
+
 
   .button label {
     font-size: 14px;
@@ -123,22 +119,7 @@
 }
 
 /* Button styling */
-.btn2 {
-  padding: 8px 12px; /* Smaller padding for a compact look */
-  font-size: 14px; /* Adjust font size */
-  border: none;
-  border-radius: 20px; /* Fully curved edges */
-  background-color: #84f600; /* Button background color */
-  color: white; /* Text color */
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.3s ease; /* Smooth hover effect */
-}
 
-/* Button hover effect */
-.btn2:hover {
-  background-color: #84f600; /* Slightly darker green on hover */
-}
 
 /* Class for small buttons */
 .small-btn {

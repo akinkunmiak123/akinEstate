@@ -1,14 +1,16 @@
 /* Recent Section Styles */
 .recent-section {
+    padding: 2rem;
   background-color: #f9f9f9;
   padding: 20px;
+  padding-bottom: 100px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
 .filter-container {
-  margin-bottom: 20px;
+   padding: 2rem;
   text-align: center;
 }
 
@@ -16,7 +18,7 @@
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  color: #84f600;
+  color: #f5811f;
 }
 
 .swiper {
@@ -30,8 +32,9 @@
 }
 
 .box {
+  height: auto;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -49,16 +52,22 @@
   border-radius: 8px;
   margin-bottom: 10px;
 }
-
+.text {
+  height: 30vh;
+}
+.text h4{
+  margin-bottom: 20px;
+}
 .text .category span {
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 12px;
   display: inline-block;
+
 }
 
 .btn2 {
-  background-color: #25b579;
+  background-color: #dc741b;
   color: #fff;
   padding: 8px 16px;
   border: none;
@@ -68,42 +77,9 @@
 }
 
 .btn2:hover {
-  background-color: #1e9650;
+  background-color: #c66818 ;
 }
 
-/* Navigation buttons at the bottom center */
-.recent-swiper .swiper-button-next,
-.recent-swiper .swiper-button-prev {
-  position: absolute;
-  bottom: 10px; /* Positioned 10px from the bottom */
-  transform: translateY(0); /* Remove vertical centering */
-  z-index: 10;
-  color: #333;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Adjust individual button positioning for center alignment */
-.recent-swiper .swiper-button-next {
-  right: 45px; /* Distance from center */
-}
-
-.recent-swiper .swiper-button-prev {
-  left: 45px; /* Distance from center */
-}
-
-/* Hover effects for navigation buttons */
-.recent-swiper .swiper-button-next:hover,
-.recent-swiper .swiper-button-prev:hover {
-  background: #25b579;
-  color: #fff;
-}
 
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
@@ -121,4 +97,9 @@
     right: 30px; /* Adjust for smaller screens */
     left: 30px;
   }
+  .text {
+  height:auto;
 }
+}
+
+

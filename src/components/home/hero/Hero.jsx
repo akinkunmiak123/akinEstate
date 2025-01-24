@@ -1,4 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
+import '@fontsource/poppins'; // Default weight
+import '@fontsource/poppins/500.css'; // Medium weight
+import '@fontsource/pacifico'; // Pacifico cursive font
 import './hero.css'
 import { FaWhatsapp } from 'react-icons/fa' // Importing WhatsApp logo
 
@@ -39,20 +42,20 @@ const Hero = () => {
   }
 
   return (
-    <section className="hero">
+    <section className="heros">
       <div className="overlay"></div>
       <div className="container">
         <p>
-          We Have <span className="typing-animation">{currentWord}</span>{' '}
-          <br />
+          We Have <span className="typing-animation">{currentWord}</span> <br />
           Available Across Nigeria
         </p>
+
         <button className="cta-button" onClick={handleWhatsAppClick}>
           <div className="fleChange">
-           Message us
+            Message us
+            <FaWhatsapp className="whatsapp-logo" />
             <span className="arrow">→</span>
           </div>
-          <FaWhatsapp className="whatsapp-logo" />
         </button>
       </div>
     </section>

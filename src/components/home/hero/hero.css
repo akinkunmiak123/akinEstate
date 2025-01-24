@@ -1,16 +1,16 @@
 /* Hero Section */
-.hero {
+.heros {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #84f600;
+  color: #f5811f;
   overflow: hidden;
 }
 
-.hero::before {
+.heros::before {
   content: "";
   position: absolute;
   top: 0;
@@ -24,13 +24,13 @@
   z-index: -2;
 }
 
-.hero .overlay {
+.heros .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 
@@ -47,7 +47,7 @@
 }
 
 /* Container Section */
-.hero .container {
+.heros .container {
   text-align: center;
   padding: 15%;
   padding-top: 10%;
@@ -57,14 +57,9 @@
   box-sizing: border-box;
 }
 
-.hero h1 {
-  color: #84f600;
-  font-size: 60px;
-  margin-bottom: 25px;
-}
 
-.hero p {
-  color: #84f600;
+.heros p {
+  color: #f5811f;
   font-weight: 500;
   opacity: 0.9;
   font-size: 50px;
@@ -73,7 +68,7 @@
 
 /* Button Styling */
 .cta-button {
-  background-color: #84f600;
+  background-color: #f5811f;
   color: #fff;
   padding: 8px 16px; /* Smaller padding */
   width: auto; /* Remove fixed width */
@@ -91,42 +86,54 @@
 }
 
 .cta-button:hover {
-  background-color: #0D3920;
+  background-color: #dc741b;
   transform: scale(1.05);
 }
 
+.fleChange {
+  display: flex;
+  align-items: center;  /* Vertically center the items */
+  justify-content: center; /* Horizontally center the items */
+  gap: 10px; /* Space between items */
+}
+
 .arrow {
-  margin-left: 10px;
   font-size: 18px;
+  margin-left: 5px; /* Adjust spacing between the arrow and the WhatsApp icon */
 }
 
 .whatsapp-logo {
-  font-size: 20px; /* Smaller size for the logo */
+  font-size: 20px; /* Adjust logo size */
   color: #fff;
 }
 
+
 /* Mobile View */
 @media screen and (max-width: 900px) {
-  .hero {
-    height: auto;
+  .heros {
+    height: 80vh;
     padding: 0;
   }
   
-  .hero .container {
+  .heros .container {
     padding: 10%;
     width: 100%;
     box-sizing: border-box;
   }
 
-  .hero h1 {
+  .heros h1 {
     font-size: 40px;
     margin-bottom: 10px;
   }
 
-  .hero p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
+.heros p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Bold weight for better visibility */
+  color: #f5811f;
+  font-size: 50px;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
 
   .cta-button {
     font-size: 12px;
@@ -137,10 +144,12 @@
 }
 
 .typing-animation {
-  display: inline-block;
-  border-right: 3px solid #84f600;
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-size: 50px;
+  color: #f5811f;
+  border-right: 3px solid #dc741b; /* Typing effect */
   animation: blink 3s steps(2, start) infinite;
-  color: #84f600;
 }
 
 @keyframes blink {

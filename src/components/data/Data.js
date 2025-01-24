@@ -9,31 +9,31 @@ export const nav = [
 export const featured = [
   {
     cover: '../images/hero/h1.png',
-    name: 'Land For Family House',
+    name: 'Lands',
     total: '122 Property',
     desc: 'Our agents across Nigeria are ready to connect you with lands in the areas you are looking for',
   },
   {
     cover: '../images/hero/h2.png',
-    name: 'House & Villa',
+    name: 'Apartments',
     total: '155 Property',
     desc: 'Finding you the best Apartments and Homes that meets your Personal or Business Needs',
   },
   {
     cover: '../images/hero/h3.png',
-    name: 'Real Estate Deal',
+    name: 'Real Estate Deals',
     total: '300 Property',
     desc: 'We have Agents in Place to connect you with Information about the best Real Estate Deals you will find',
   },
   {
     cover: '../images/hero/h4.png',
-    name: 'Office & Studio',
+    name: 'Real Estate Investment',
     total: '80 Property',
     desc: 'We have Agents in Place to connect you with Information about the best Office & Studio Deals you will find',
   },
   {
     cover: '../images/hero/h6.png',
-    name: 'Villa & Condo',
+    name: 'Real Estate Consultancy',
     total: '80 Property',
     desc: 'Talk with Us, Share your Dreams and Project, Our Talent is to Guide you firmly with Industry Know-How',
   },
@@ -53,7 +53,7 @@ export const list = [
   {
     id: 2,
     cover: '/images/list/p-2.jpeg',
-    name: 'ZYLUS COURT BUNGALOWS BOGIJE',
+    name: 'ZYLUS COURT BOGIJE',
     location: 'along Lekki-Epe Expressway',
     category: 'For Sale',
     type: 'Bungalow',
@@ -63,7 +63,7 @@ export const list = [
   {
     id: 3,
     cover: '/images/list/p-3.jpeg',
-    name: 'Ambiance Heights Lekki Phase 1',
+    name: 'Ambiance Heights Lekki',
     location: 'Freedom way, Lekki Phase 1, Lekki Lagos.',
     category: 'For Rent',
     type: 'Maisonette',

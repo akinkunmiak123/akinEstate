@@ -1,43 +1,38 @@
-/* Footer Section */
 footer {
   background-color: #fff; /* White background for the footer */
   padding: 20px 0;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Ensure content stacks vertically if needed */
 }
 
-footer .container {
-  display: flex;
-  justify-content: center; /* Center the links horizontally */
-  align-items: center; /* Align items vertically */
-}
-
-footer .box {
+footer .boxs {
   display: flex;
   flex-direction: row; /* Links in a row */
-  width: 50%; /* Adjust the width as needed */
   gap: 20px; /* Space between the links */
-  justify-content: flex-start; /* Align links to the left */
   flex-wrap: wrap; /* Ensure links wrap on smaller screens */
+  justify-content: center; /* Center the links horizontally */
+  align-items: center; /* Align items vertically */
+  width: auto; /* Adjust width to content */
+  margin-bottom: 30px;
 }
 
 /* Footer links */
-footer .box a {
-  color: #84f600; /* Green text color */
+footer .boxs a {
+  color: #f5811f; /* Green text color */
   text-decoration: none; /* Remove underlines */
   font-size: 16px; /* Font size */
   padding: 0 20px; /* Space between the links */
   transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-footer .box a:hover {
+footer .boxs a:hover {
   color: #a9a9a9; /* Change to gray when hovered */
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  footer .container {
-    grid-template-columns: 1fr; /* Stack sections vertically */
-    gap: 20px; /* Add space between sections */
-  }
   .send {
     display: flex;
     flex-direction: column;
@@ -56,16 +51,13 @@ footer .box a:hover {
     text-align: center;
   }
 
-  /* Adjust the footer .box to be a row on mobile */
-  footer .box {
-    display: flex;
-    justify-content: flex-start; /* Align to the left */
-    flex-direction: column; /* Ensure horizontal row for links */
+  /* Adjust the footer .box to stack on mobile */
+  footer .boxs {
+    flex-direction: column; /* Stack links vertically */
     gap: 10px; /* Adjust spacing for mobile */
-    width: 100%;
   }
 
-  footer .box a {
+  footer .boxs a {
     font-size: 14px; /* Smaller text size */
     padding: 0 10px; /* Adjust spacing for mobile */
   }

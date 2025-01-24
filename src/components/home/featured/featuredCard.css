@@ -9,7 +9,7 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #84f600;
+  color: #f5811f;
 }
 
 .swiper {
@@ -29,6 +29,9 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s;
+  width: 30vw;
+  height: 40vh; /* Should work unless there are conflicting styles */
+  min-height: 40vh;
 }
 
 .box:hover {
@@ -40,29 +43,40 @@
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
-.see-property-btn {
+.read-more-btn {
   margin-top: 10px;
   display: inline-block;
-  background-color: #008000;
+  background-color: #dc741b;
   color: #fff;
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 4px;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.see-property-btn:hover {
-  background-color: #006400;
+.read-more-btn:hover {
+  background-color: #dc741b;
 }
 
-.box h4{
-  color: #84f600;
+.box h4 {
+  color: #f5811f;
   font-weight: 800;
+  margin-bottom: 20px;
+  height: 30px;
 }
 
-.box label{
-  color: #84f600;
+.box label {
+  color: #f5811f;
+  margin-bottom: 20px;
+}
+
+.property-desc {
+  color: #333;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
 }

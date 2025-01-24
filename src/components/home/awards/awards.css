@@ -1,5 +1,5 @@
 .awards {
-  color: #84f600;
+  color: #f5811f;
   text-align: center;
   padding: 40px 0;
   background-color: #F6F6F6;
@@ -11,13 +11,13 @@
 }
 
 .awards .heading p {
-  color: #84f600;
+  color: #f5811f;
   font-size: 40px;
   font-weight: 800;
 }
 
 .awards .heading h1 {
-  color: #84f600;
+  color: #f5811f;
   font-size: 20px;
   font-weight: 700;
 }
@@ -40,7 +40,7 @@
   line-height: 100px;
   margin: auto;
   margin-top: 50px;
-  background: #84f600;
+  background: #f5811f;
   border-radius: 4% 50%;
   font-size: 32px;
   color: #fff;

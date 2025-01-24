@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { list } from '../../data/Data'
 import { useHistory } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Navigation } from 'swiper/modules' // Import Autoplay and Navigation modules
+import { Autoplay, Navigation} from 'swiper/modules'
+import { SwiperNavButtons } from './SwiperNavButton'
 import 'swiper/swiper-bundle.css'
-import './recentCard.css' // Add this for light theme, carousel styles, and navigation buttons
+import './recentCard.css'
 
 const RecentCard = () => {
   const [selectedType, setSelectedType] = useState('All')
@@ -57,26 +58,27 @@ const RecentCard = () => {
       {/* Swiper Carousel */}
       <Swiper
         spaceBetween={20}
-        slidesPerView={1} // Default to 1 slide
+        slidesPerView={1}
         loop={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
-        navigation={true} // Enable navigation
+       
+        pagination={{ clickable: true }}
         breakpoints={{
-          480: { slidesPerView: 1 }, // 1 slide for small screens
-          768: { slidesPerView: 2 }, // 2 slides for tablets
-          1024: { slidesPerView: 3 }, // 3 slides for larger screens
+          480: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
         }}
-        modules={[Autoplay, Navigation]}
+        modules={[Autoplay, Navigation,]}
         className="recent-swiper"
       >
         {filteredList.map((item, index) => {
           const { id, cover, category, location, name, type } = item
           return (
             <SwiperSlide key={id}>
-              <div className="box shadow">
+              <div className="box">
                 <div className="img">
                   <img src={cover} alt={name} />
                 </div>
@@ -119,6 +121,7 @@ const RecentCard = () => {
             </SwiperSlide>
           )
         })}
+        <SwiperNavButtons />
       </Swiper>
     </div>
   )

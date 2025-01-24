@@ -30,13 +30,12 @@ const Footer = () => {
       </section>
 
       <footer className="footer">
-        <div className="container">
-          <div className="box">
+          <div className="boxs">
             <Link to="/about">About</Link>
             <Link to="/services">Services</Link>
             <Link to="/properties">Properties</Link>
           </div>
-        </div>
+        
       </footer>
     </>
   )

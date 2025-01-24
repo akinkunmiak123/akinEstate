@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { featured } from '../../data/Data'
-import { Link } from 'react-router-dom'
 import './featuredCard.css' // Add this for light theme and carousel styles
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper/modules' // Import Autoplay module
+import { Autoplay, Navigation } from 'swiper/modules' // Import Autoplay module
 import 'swiper/swiper-bundle.css'
+import { SwiperNavButtons } from '../recent/SwiperNavButton'
 
 const FeaturedCard = () => {
+  // State to manage visibility of the description
+  const [visibleDescription, setVisibleDescription] = useState(null)
+
+  const toggleDescription = (index) => {
+    setVisibleDescription(visibleDescription === index ? null : index)
+  }
+
   return (
     <>
       <div className="featured-section">
-        <h2 className="section-title">Featured Properties</h2>
+        <h2 className="section-title">Our Offers</h2>
         <Swiper
           spaceBetween={20}
           slidesPerView={1} // Default to 1 slide
@@ -24,7 +31,7 @@ const FeaturedCard = () => {
             768: { slidesPerView: 2 }, // 2 slides for tablets
             1024: { slidesPerView: 3 }, // 3 slides for larger screens
           }}
-          modules={[Autoplay]} // Register the Autoplay module
+          modules={[Autoplay, Navigation]} // Register the Autoplay module
         >
           {featured.map((item, index) => (
             <SwiperSlide key={index}>
@@ -37,13 +44,22 @@ const FeaturedCard = () => {
                 <h4>{item.name}</h4>
                 <label>{item.total}</label>
                 <div>
-                  <Link to="/services" className="see-property-btn">
-                    See Property
-                  </Link>
+                  <button
+                    className="read-more-btn"
+                    onClick={() => toggleDescription(index)}
+                  >
+                    {visibleDescription === index
+                      ? 'Hide Description'
+                      : 'Read More'}
+                  </button>
+                  {visibleDescription === index && (
+                    <p className="property-desc">{item.desc}</p>
+                  )}
                 </div>
               </div>
             </SwiperSlide>
           ))}
+          <SwiperNavButtons />
         </Swiper>
       </div>
     </>

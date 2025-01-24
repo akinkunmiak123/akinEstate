@@ -1,0 +1,36 @@
+.swiper-nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.swiper-nav-buttons .nav-btn {
+  width: 50px; /* Button width */
+  height: 50px; /* Button height */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  border-radius: 50%; /* Circular shape */
+  border: none;
+  outline: none;
+  background-color: #f5811f; /* Blue color */
+  color: #fff; /* White text */
+  font-size: 16px; /* Text size */
+  font-weight: bold; /* Make text bold for better readability */
+  margin: 0 0.5rem; /* Space between buttons */
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.swiper-nav-buttons .nav-btn:hover {
+  background-color: #dc741b; /* Darker blue on hover */
+  cursor: pointer;
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+}
+
+.swiper-nav-buttons .nav-btn:active {
+  transform: translateY(2px); /* Press effect */
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Normal shadow */
+}

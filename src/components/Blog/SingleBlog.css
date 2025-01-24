@@ -13,7 +13,7 @@
 
 .single-blog-subtitle {
   font-size: 1.2rem;
-  color: #84f600;
+  color: #f5811f;
   margin-bottom: 40px;
 }
 
@@ -51,7 +51,7 @@
 
 .featured-blog-date {
   font-size: 0.9rem;
-  color: #84f600;
+  color: #f5811f;
   margin-bottom: 10px;
 }
 
@@ -59,13 +59,13 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #84f600;
+  color: #f5811f;
 }
 
 .featured-blog-description {
   font-size: 1rem;
   margin-bottom: 20px;
-  color: #84f600;
+  color: #f5811f;
 }
 
 .featured-blog-link {
