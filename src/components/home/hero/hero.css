@@ -110,6 +110,7 @@
 
 /* Mobile View */
 @media screen and (max-width: 900px) {
+  
   .heros {
     height: 80vh;
     padding: 0;
@@ -138,7 +139,7 @@
   .cta-button {
     font-size: 12px;
     padding: 8px 15px;
-    width: 40%;
+    width: 60%;
     box-sizing: border-box;
   }
 }
