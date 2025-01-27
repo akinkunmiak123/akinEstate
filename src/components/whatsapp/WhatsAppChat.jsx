@@ -8,6 +8,9 @@ const WhatsAppChat = () => {
     setIsOpen(!isOpen)
   }
 
+  const whatsappNumber = '09130000005' // Add your WhatsApp number here
+  const prefilledMessage = 'Hi, I would like to...' // Pre-filled message
+
   return (
     <div className="whatsapp-container">
       <div className={`chat-popup ${isOpen ? 'open' : ''}`}>
@@ -21,8 +24,19 @@ const WhatsAppChat = () => {
           <p>
             Hello, I'm Fifo Juliet, Head of Sales at Findville Realty Ltd.
             <br />I will be happy to answer all your questions.
+            <br />
+            <br />
           </p>
-          <button className="chat-btn">Open chat</button>
+          <a
+            className="chat-btn"
+            href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+              prefilledMessage
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open chat
+          </a>
         </div>
       </div>
       <button className="whatsapp-button" onClick={toggleChat}>

@@ -6,7 +6,7 @@
 }
 
 .whatsapp-button {
-  background-color: #25d366;
+  background-color: #ff7f00;
   border: none;
   border-radius: 50%;
   padding: 10px;
@@ -60,9 +60,13 @@
   padding: 15px;
   text-align: center;
 }
+.chat-body p{
+    text-align: left;
+    color: gray;
+}
 
 .chat-btn {
-  background-color: #25d366;
+  background-color: #ff7f00;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -72,5 +76,5 @@
 }
 
 .chat-btn:hover {
-  background-color: #1da851;
+  background-color: #ff7f00;
 }
