@@ -10,12 +10,14 @@ import Contact from '../contact/Contact'
 import DetailsPage from '../details/DetailsPage'
 import Blog from '../Blog/Blog'
 import BlogDetails from '../BlogDetails/BlogDetails'
-import ScrollToTop from '../../ScrollToTop' // Adjust path if needed
+
+import WhatsAppChat from '../whatsapp/WhatsAppChat'
+import ScrollToTop from '../Scroll/ScrollToTop'
 
 const Pages = () => {
   return (
     <Router>
-      <ScrollToTop />
+      <ScrollToTop/>
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -27,9 +29,11 @@ const Pages = () => {
         <Route path="/contact" component={Contact} />
         <Route path="/details/:slug" component={DetailsPage} />
       </Switch>
+      <WhatsAppChat />
       <Footer />
     </Router>
   )
 }
+
 
 export default Pages
