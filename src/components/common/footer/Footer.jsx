@@ -4,14 +4,14 @@ import './footer.css'
 
 const Footer = () => {
   // Function to handle WhatsApp link
-  const handleWhatsAppClick = () => {
-    const phone = '09130000005'
-    const message = 'Hi, I need assistance.'
-    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
-      message
-    )}`
-    window.open(whatsappUrl, '_blank')
-  }
+  // const handleWhatsAppClick = () => {
+  //   const phone = '09130000005'
+  //   const message = 'Hi, I need assistance.'
+  //   const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
+  //     message
+  //   )}`
+  //   window.open(whatsappUrl, '_blank')
+  // }
 
   return (
     <>
