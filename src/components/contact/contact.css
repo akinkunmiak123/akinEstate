@@ -47,7 +47,7 @@ form.shadow h4 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #f5811f;
+  color: #171717;
   text-align: center;
 }
 
@@ -71,7 +71,7 @@ form.shadow textarea {
 
 form.shadow input:focus,
 form.shadow textarea:focus {
-  border-color: #dc741b ;
+  border-color: #171717 ;
 }
 
 form.shadow textarea {
@@ -83,7 +83,7 @@ form.shadow textarea {
 form.shadow button {
   width: 50%;
   padding: 12px 20px;
-  background: #dc741b ;
+  background: #171717;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -95,11 +95,27 @@ form.shadow button {
 }
 
 form.shadow button:hover {
-  background: #1e9650;
+  background: #333333;
+}
+
+ .contact h1 {
+  font-size: 29px;
+  color: #fff;
+}
+
+ .contact h2 {
+  font-size: 49px;
+  color: #fff;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+   .contact h1 {
+  font-size: 15px;
+}
+.contact h2 {
+  font-size: 20px;
+}
   form.shadow div {
     flex-direction: column;
   }

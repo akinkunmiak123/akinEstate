@@ -17,7 +17,7 @@ const FeaturedCard = () => {
   return (
     <>
       <div className="featured-section">
-        <h2 className="section-title">Our Offers</h2>
+        <h2 className="section-title">Offers available</h2>
         <Swiper
           spaceBetween={20}
           slidesPerView={1} // Default to 1 slide
@@ -42,7 +42,6 @@ const FeaturedCard = () => {
                   className="property-image"
                 />
                 <h4>{item.name}</h4>
-                <label>{item.total}</label>
                 <div>
                   <button
                     className="read-more-btn"

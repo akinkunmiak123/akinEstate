@@ -60,7 +60,7 @@
 
 .header-nav-link {
   font-size: 18px;
-  color: #f5811f; /* Green text */
+  color: #ffffff; /* Green text */
   text-decoration: none;
   padding: 5px 0;
   transition: color 0.3s ease, border-bottom 0.3s ease;
@@ -68,13 +68,13 @@
 }
 
 .header-nav-link:hover {
-  color: #dc741b; /* Darker green on hover */
+  color: #808080; /* Darker green on hover */
 }
 
 .header-nav-link.active {
-  border-bottom: 2px solid #dc741b; /* Green underline for active tab */
+  border-bottom: 2px solid #808080; /* Green underline for active tab */
   font-weight: bold;
-  color: #dc741b; /* Darker green for the active link */
+  color: #fff; /* Darker green for the active link */
 }
 
 /* Mobile view styles */
@@ -85,7 +85,7 @@
     position: absolute;
     top: 10vh;
     left: 0;
-    background-color: white;
+    background-color: #000000;
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -102,11 +102,16 @@
     margin: 15px 0; /* Spacing between links vertically */
   }
 
+  .header-nav-link {
+  font-size: 24px;
+  padding: 2px 0;
+}
+
   /* Menu icon is visible on mobile */
   .header-menu-icon {
     display: flex;
-    font-size: 18px;
-    color: #f5811f;
+    font-size: 24px;
+    color: #fff;
   }
 
   /* Make the nav links go vertically */

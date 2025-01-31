@@ -6,8 +6,15 @@ import Team from '../home/team/Team'
 
 import img from "../images/about.jpeg"
 import "./about.css"
+import { IoMdArrowForward } from 'react-icons/io'
+import { MdMore } from 'react-icons/md'
+
 
 const About = () => {
+    const handleYouTubeClick = () => {
+      const youtubeUrl = '/blog'
+      window.open(youtubeUrl)
+    }
   return (
     <>
       <section className="about">
@@ -48,14 +55,24 @@ const About = () => {
                 expect it.
               </b>
             </p>
-            <button className="btn2">More About Us</button>
+            <div className="body">
+              <button className="btn" onClick={handleYouTubeClick}>
+                <div className="fleChange">
+                  Explore More
+                  <MdMore className="youtube-logo" />
+                </div>
+                <span>
+                  <IoMdArrowForward />
+                </span>
+              </button>
+            </div>
           </div>
           <div className="right row">
             <img src="./immio.jpeg" alt="" />
           </div>
         </div>
       </section>
-      <Team/>
+      <Team />
     </>
   )
 }

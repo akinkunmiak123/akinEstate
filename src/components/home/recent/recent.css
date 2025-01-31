@@ -16,7 +16,7 @@
 }
 
 .recent p {
-  color: #f5811f;
+ margin-bottom: 20px;
 }
 
 .recent .button {
@@ -70,9 +70,25 @@
   transform: translateY(-5px);
 }
 
+ .blog-out h1 {
+  font-size: 29px;
+  color: #fff;
+}
+
+ .blog-out h2 {
+  font-size: 49px;
+  color: #fff;
+}
 
 /* Mobile View */
 @media screen and (max-width: 900px) {
+
+  .blog-out h1 {
+  font-size: 15px;
+}
+.blog-out h2 {
+  font-size: 20px;
+}
   /* Adjust grid layout for smaller screens */
   .content.grid3 {
     grid-template-columns: repeat(1, 1fr); /* Stack items on small screens */

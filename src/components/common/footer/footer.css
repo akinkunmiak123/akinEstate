@@ -1,5 +1,5 @@
 footer {
-  background-color: #fff; /* White background for the footer */
+  background-color: #000000; /* White background for the footer */
   padding: 20px 0;
   display: flex; /* Use flexbox */
   justify-content: center; /* Center horizontally */
@@ -20,7 +20,7 @@ footer .boxs {
 
 /* Footer links */
 footer .boxs a {
-  color: #f5811f; /* Green text color */
+  color: #fff; /* Green text color */
   text-decoration: none; /* Remove underlines */
   font-size: 16px; /* Font size */
   padding: 0 20px; /* Space between the links */

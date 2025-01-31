@@ -1,43 +1,51 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import '@fontsource/poppins'; // Default weight
-import '@fontsource/poppins/500.css'; // Medium weight
-import '@fontsource/pacifico'; // Pacifico cursive font
+import '@fontsource/poppins' // Default weight
+import '@fontsource/poppins/500.css' // Medium weight
+import '@fontsource/pacifico' // Pacifico cursive font
 import './hero.css'
+import { IoMdArrowForward } from 'react-icons/io'
 import { FaWhatsapp } from 'react-icons/fa' // Importing WhatsApp logo
 
 const Hero = () => {
-  const words = useMemo(() => ['properties', 'lands', 'apartments'], []) // Memoize words array
+  const words = useMemo(() => ['properties', 'lands', 'apartments'], []) // Memoized words
   const [currentWord, setCurrentWord] = useState('')
   const [wordIndex, setWordIndex] = useState(0)
-  const [isDeleting, setIsDeleting] = useState(false)
-  const typingSpeed = isDeleting ? 50 : 150 // Adjust typing speed dynamically
+  const [charIndex, setCharIndex] = useState(0)
+  const [isTyping, setIsTyping] = useState(true)
 
   useEffect(() => {
-    const handleTyping = () => {
-      const current = words[wordIndex]
+    const current = words[wordIndex]
+    const typingSpeed = isTyping ? 100 : 50 // Typing is slower, deleting is faster
 
-      if (!isDeleting) {
-        setCurrentWord((prev) => current.slice(0, prev.length + 1))
-        if (currentWord === current) {
-          setTimeout(() => setIsDeleting(true), 1000) // Pause before deleting
+    const handleTyping = () => {
+      if (isTyping) {
+        if (charIndex < current.length) {
+          setCurrentWord(current.slice(0, charIndex + 1))
+          setCharIndex((prev) => prev + 1)
+        } else {
+          setTimeout(() => setIsTyping(false), 1500) // Pause before deleting
         }
       } else {
-        setCurrentWord((prev) => current.slice(0, prev.length - 1))
-        if (currentWord === '') {
-          setIsDeleting(false)
-          setWordIndex((prev) => (prev + 1) % words.length) // Move to the next word
+        if (charIndex > 0) {
+          setCurrentWord(current.slice(0, charIndex - 1))
+          setCharIndex((prev) => prev - 1)
+        } else {
+          setIsTyping(true)
+          setWordIndex((prev) => (prev + 1) % words.length) // Move to next word
         }
       }
     }
 
     const timer = setTimeout(handleTyping, typingSpeed)
     return () => clearTimeout(timer)
-  }, [currentWord, isDeleting, wordIndex, words, typingSpeed])
+  }, [charIndex, isTyping, wordIndex, words])
 
   const handleWhatsAppClick = () => {
-    const phone = '09130000004 '
+    const phone = '09130000004'
     const message = 'I am interested in your services.'
-    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
+      message
+    )}`
     window.open(whatsappUrl, '_blank')
   }
 
@@ -50,13 +58,17 @@ const Hero = () => {
           Available Across Nigeria
         </p>
 
-        <button className="cta-button" onClick={handleWhatsAppClick}>
-          <div className="fleChange">
-            Message us
-            <FaWhatsapp className="whatsapp-logo" />
-            <span className="arrow">→</span>
-          </div>
-        </button>
+        <div className='body'>
+          <button className="btn" onClick={handleWhatsAppClick}>
+            <div className="fleChange">
+              Message us
+              <FaWhatsapp className="whatsapp-logo" />
+            </div>
+            <span>
+              <IoMdArrowForward />
+            </span>
+          </button>
+        </div>
       </div>
     </section>
   )

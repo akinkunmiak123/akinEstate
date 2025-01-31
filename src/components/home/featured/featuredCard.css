@@ -9,7 +9,7 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #f5811f;
+  color: #808080;
 }
 
 .swiper {
@@ -29,28 +29,20 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s;
-  width: 30vw;
-  height: 40vh; /* Should work unless there are conflicting styles */
-  min-height: 40vh;
+ 
 }
 
 .box:hover {
   transform: translateY(-5px);
 }
 
-.property-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 30px;
-}
+
 
 .read-more-btn {
   margin-top: 10px;
   display: inline-block;
-  background-color: #dc741b;
-  color: #fff;
+  background-color: transparent;
+  color: #808080;
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 4px;
@@ -59,20 +51,19 @@
 }
 
 .read-more-btn:hover {
-  background-color: #dc741b;
+  background-color: transparent;
 }
 
 .box h4 {
-  color: #f5811f;
+  color: #333333;
   font-weight: 800;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   height: 30px;
 }
 
-.box label {
-  color: #f5811f;
-  margin-bottom: 20px;
-}
+
 
 .property-desc {
   color: #333;
@@ -82,28 +73,17 @@
 }
 
 
-.box {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s;
-  width: 30vw;
-  height: 40vh; /* Default for larger screens */
-  min-height: 40vh;
-}
-
-.box:hover {
-  transform: translateY(-5px);
-}
 
 .property-image {
-  width: 100%;
-  height: 200px;
+  width: 300px;
+  height: 400px;
   object-fit: cover;
-  border-radius: 8px;
   margin-bottom: 30px;
+}
+.box img{
+   border-radius: 50%;
+   width: 50%;
+  height: 50%;
 }
 
 /* Responsive styles for mobile screens */

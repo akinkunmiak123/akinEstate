@@ -12,17 +12,13 @@
   margin: auto;
 }
 
-.box p {
-  color: #f5811f;  /* Light gray color */
-  font-size: 14px;    /* Smaller font size */
-  margin-top: 10px;   /* Space between the label and description */
-}
-
 .container h1{
-  color: #f5811f;
+  color: #333333;
 }
 .container p {
-  color: #f5811f;
+  color: #adadc9;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .content img {
@@ -101,9 +97,18 @@
 .see-property-btn:hover {
   background-color: #dc741b;
 }
+ .services h1 {
+  font-size: 29px;
+  color: #fff;
+}
+
+ .services h2 {
+  font-size: 49px;
+  color: #fff;
+}
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .content {
     overflow: hidden !important;
     width: 100%;
@@ -114,4 +119,13 @@
   .box {
     margin-bottom: 20px; /* Add some space below each card */
   }
+
+.services h1 {
+  font-size: 15px;
 }
+.services h2 {
+  font-size: 20px;
+}
+}
+
+

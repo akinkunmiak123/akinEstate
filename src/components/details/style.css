@@ -30,14 +30,14 @@
 /* Paragraph Styling */
 .details-container p {
   font-size: 16px;
-  color: #72809d;
+  color: #454545;
   margin-bottom: 10px;
   line-height: 1.6;
 }
 
 /* Bold Labels */
 .details-container strong {
-  color: #dc741b ;
+  color: #000000 ;
   font-weight: 600;
 }
 
@@ -58,7 +58,7 @@
 
 /* Back to Home Button Styling */
 .back-btn {
-  background-color: #dc741b ; /* Button color */
+  background-color: #171717 ; /* Button color */
   color: white; /* Text color */
   padding: 10px 20px; /* Button padding */
   font-size: 16px; /* Font size */
@@ -71,5 +71,5 @@
 
 /* Button Hover Effect */
 .back-btn:hover {
-  background-color: #1e954e; /* Darker green on hover */
+  background-color: #8A8A8A; /* Darker green on hover */
 }

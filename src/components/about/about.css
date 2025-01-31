@@ -3,12 +3,13 @@
 }
  .about h1 {
   font-size: 29px;
-}
-.about span {
-  font-size: 32px;
-  color: #f5811f;
+  color: #fff;
 }
 
+ .about h2 {
+  font-size: 49px;
+  color: #fff;
+}
 
 
 .about .heading {
@@ -21,6 +22,7 @@
   padding-right: 30px;
   margin-bottom: 20px;
   line-height: 30px;
+  color: #373737;
 }
 @media screen and (max-width: 900px) {
   
@@ -36,7 +38,91 @@
   .about h1 {
   font-size: 15px;
 }
-.about span {
+.about h2 {
   font-size: 20px;
 }
+}
+
+
+.body{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  background: rgba(10, 10, 10, 0.7);
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255,255,255, 0.5);
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-top: 0.5px solid rgba(255,255,255, 0.35);
+  border-left: 0.5px solid rgba(255,255,255, 0.35);
+  padding-left: 40px;
+  transition: 0.5s;
+   overflow: hidden;
+}
+
+.btn:hover {
+ padding-left: 0px;
+ padding-right: 40px;
+ color: rgba(255,255,255,1);
+}
+
+.btn:hover span {
+  left: calc(100% - 55px)
+}
+
+.fleChange {
+  padding-left: 30px;
+  padding-right: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;  /* Vertically center the items */
+  justify-content: center; /* Horizontally center the items */
+  gap: 10px; /* Space between items */
+}
+
+.btn span {
+  position: absolute;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50% ;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a191d;
+  font-size: 1.5em;
+}
+.btn:after{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  z-index: 1;
+  background: rgba(255,255,255, 0.5);
+  transform: translateX(-170px) skewX(30deg);
+  transition: 0.75s ease-in-out;
+}
+
+.btn:hover:after{
+  transform:  translateX(170px) skewX(30deg);
+}
+
+
+
+
+.youtube-logo {
+  font-size: 30px; /* Adjust logo size */
+  color: #fff;
 }

@@ -15,19 +15,7 @@ const Footer = () => {
 
   return (
     <>
-      <section className="footerContact">
-        <div className="container">
-          <div className="send flex">
-            <div className="text">
-              <h1>Do You Have Questions?</h1>
-              <p>We'll help you grow your career and growth.</p>
-            </div>
-            <button className="btn5" onClick={handleWhatsAppClick}>
-              Message us
-            </button>
-          </div>
-        </div>
-      </section>
+    
 
       <footer className="footer">
           <div className="boxs">

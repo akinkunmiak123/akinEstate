@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f5811f;
+  color: #fff;
   overflow: hidden;
 }
 
@@ -30,7 +30,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(12, 12, 12, 0.5);
   z-index: -1;
 }
 
@@ -59,7 +59,7 @@
 
 
 .heros p {
-  color: #f5811f;
+  color: #fff;
   font-weight: 500;
   opacity: 0.9;
   font-size: 50px;
@@ -67,44 +67,86 @@
 }
 
 /* Button Styling */
-.cta-button {
-  background-color: #f5811f;
-  color: #fff;
-  padding: 8px 16px; /* Smaller padding */
-  width: auto; /* Remove fixed width */
-  border: none;
-  border-radius: 25px;
-  font-size: 14px; /* Smaller font */
-  cursor: pointer;
+.body{
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center;
   justify-content: center;
-  gap: 8px; /* Space between text, arrow, and logo */
-  transition: all 0.3s ease;
-  margin: 0 auto;
+  align-items: center;
 }
 
-.cta-button:hover {
-  background-color: #dc741b;
-  transform: scale(1.05);
+.btn {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  background: rgba(255,255,255, 0.3);
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255,255,255, 0.5);
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-top: 0.5px solid rgba(255,255,255, 0.35);
+  border-left: 0.5px solid rgba(255,255,255, 0.35);
+  padding-left: 40px;
+  transition: 0.5s;
+   overflow: hidden;
+}
+
+.btn:hover {
+ padding-left: 0px;
+ padding-right: 40px;
+ color: rgba(255,255,255,1);
+}
+
+.btn:hover span {
+  left: calc(100% - 55px)
 }
 
 .fleChange {
+  padding-left: 30px;
+  padding-right: 20px;
+  color: #1a191d;
   display: flex;
   align-items: center;  /* Vertically center the items */
   justify-content: center; /* Horizontally center the items */
   gap: 10px; /* Space between items */
 }
 
-.arrow {
-  font-size: 18px;
-  margin-left: 5px; /* Adjust spacing between the arrow and the WhatsApp icon */
+.btn span {
+  position: absolute;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50% ;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a191d;
+  font-size: 1.5em;
 }
+.btn:after{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  z-index: 1;
+  background: rgba(255,255,255, 0.5);
+  transform: translateX(-170px) skewX(30deg);
+  transition: 0.75s ease-in-out;
+}
+
+.btn:hover:after{
+  transform:  translateX(170px) skewX(30deg);
+}
+
+
+
 
 .whatsapp-logo {
   font-size: 20px; /* Adjust logo size */
-  color: #fff;
+  color: #04fe4d;
 }
 
 
@@ -112,7 +154,7 @@
 @media screen and (max-width: 900px) {
   
   .heros {
-    height: 80vh;
+    height: 100vh;
     padding: 0;
   }
   
@@ -130,7 +172,7 @@
 .heros p {
   font-family: 'Poppins', sans-serif;
   font-weight: 600; /* Bold weight for better visibility */
-  color: #f5811f;
+  color: #fff;
   font-size: 50px;
   margin-bottom: 25px;
   line-height: 1.2;
@@ -148,8 +190,8 @@
   font-family: 'Pacifico', cursive;
   font-weight: 400;
   font-size: 50px;
-  color: #f5811f;
-  border-right: 3px solid #dc741b; /* Typing effect */
+  color: #fff;
+  border-right: 3px solid #FFA500; /* Typing effect */
   animation: blink 3s steps(2, start) infinite;
 }
 
