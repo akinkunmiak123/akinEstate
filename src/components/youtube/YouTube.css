@@ -5,7 +5,7 @@
 }
 
 .youtube-container .heading p {
-  color: #1a191d;
+  color: #fff;
   font-size: 40px;
   font-weight: 800;
   margin-bottom: 30px;
@@ -111,7 +111,7 @@
 
 
 
-.youtube-logo {
-  font-size: 30px; /* Adjust logo size */
+.youtube {
+  font-size: 40px; /* Adjust logo size */
   color: #FF0000;
 }

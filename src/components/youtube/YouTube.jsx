@@ -14,7 +14,7 @@ const YouTube = () => {
     <div className="youtube-container">
       <Heading
         title="Explore our engaging content and learn more about our real estate expertise."
-        subtitle=""
+        subtitle="Understand better how real estate works"
       />
 
       <div className="video-wrapper">
@@ -35,7 +35,7 @@ const YouTube = () => {
         <button className="btn" onClick={handleYouTubeClick}>
           <div className="fleChange">
             Explore More
-            <FaYoutube className="youtube-logo" />
+            <FaYoutube className="youtube" />
           </div>
           <span>
             <IoMdArrowForward />

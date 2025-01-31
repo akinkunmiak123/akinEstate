@@ -15,15 +15,12 @@ const Footer = () => {
 
   return (
     <>
-    
-
       <footer className="footer">
-          <div className="boxs">
-            <Link to="/about">About</Link>
-            <Link to="/services">Services</Link>
-            <Link to="/properties">Properties</Link>
-          </div>
-        
+        <div className="boxs">
+          <Link to="/about">About</Link>
+          <Link to="/services">Consultancy</Link>
+          <Link to="/properties">Properties</Link>
+        </div>
       </footer>
     </>
   )

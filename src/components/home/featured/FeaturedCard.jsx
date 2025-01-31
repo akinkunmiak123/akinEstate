@@ -17,7 +17,7 @@ const FeaturedCard = () => {
   return (
     <>
       <div className="featured-section">
-        <h2 className="section-title">Offers available</h2>
+        <h2 className="section-title">We Offer</h2>
         <Swiper
           spaceBetween={20}
           slidesPerView={1} // Default to 1 slide
