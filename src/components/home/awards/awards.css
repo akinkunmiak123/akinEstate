@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 768px) {
   .awards .icon{
-    width: 30%;
+    display: none;
   }
   .awards .content{
     gap: 5px;
