@@ -2,6 +2,7 @@
   margin: 0 ;
 }
  .about h1 {
+  text-align: center;
   font-size: 29px;
   color: #fff;
 }
@@ -9,6 +10,7 @@
  .about h2 {
   font-size: 49px;
   color: #fff;
+  text-align: center;
 }
 
 
@@ -22,7 +24,7 @@
   padding-right: 30px;
   margin-bottom: 20px;
   line-height: 30px;
-  color: #373737;
+  color: #D1D1D1;
 }
 @media screen and (max-width: 900px) {
   

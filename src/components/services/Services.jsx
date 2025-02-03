@@ -1,4 +1,5 @@
 import React from "react"
+import './Services.css'
 import img from "../images/services.jpg"
 import Back from "../common/Back"
 import "../home/featured/Featured.css"
@@ -9,11 +10,11 @@ const Services = () => {
   return (
     <>
       <section className="services mb">
-        <Back name="Services" title="Services -All Services" cover={img} />
-        <div className="featured container" style={{marginBottom:'3rem'}}>
+        <Coach />
+        <Back name="Services" title="We Offer" cover={img} />
+        <div className="featured container" style={{marginTop:'3rem', marginBottom: '3rem' }}>
           <FeaturedCard />
         </div>
-        <Coach />
       </section>
     </>
   )

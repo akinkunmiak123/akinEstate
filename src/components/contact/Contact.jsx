@@ -40,50 +40,48 @@ const Contact = () => {
           title="Get Help & Friendly Support"
           cover={img}
         />
-        <div className="container">
-          <form className="shadow" onSubmit={handleSubmit}>
-            <h4>Fill up The Form</h4>
-            <br />
-            <div>
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
+        <form className="shadow" onSubmit={handleSubmit}>
+          <h4>Fill up The Form</h4>
+          <br />
+          <div>
             <input
               type="text"
-              name="subject"
-              placeholder="Subject"
-              value={formData.subject}
+              name="name"
+              placeholder="Name"
+              value={formData.name}
               onChange={handleChange}
               required
             />
-            <textarea
-              name="message"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-              value={formData.message}
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
               onChange={handleChange}
               required
-            ></textarea>
-            <div className='center'>
-              <button type="submit">Send via WhatsApp</button>
-            </div>
-          </form>
-        </div>
+            />
+          </div>
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            value={formData.subject}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
+          <div className="center">
+            <button type="submit">Send via WhatsApp</button>
+          </div>
+        </form>
       </section>
     </>
   )

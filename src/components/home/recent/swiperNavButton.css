@@ -4,34 +4,41 @@
   align-items: center;
   margin-top: 20px;
 }
-
-
 .swiper-nav-buttons .nav-btn {
-  width: 50px; /* Button width */
-  height: 50px; /* Button height */
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  border-radius: 50%; /* Circular shape */
-  border: none;
+  width: 60px; /* Perfectly circular */
+  height: 60px; /* Perfectly circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Ensure a perfect circle */
+  border: 1px solid white; /* Add white border */
   outline: none;
-  background-color: #000000; /* Blue color */
-  color: #fff; /* White text */
-  font-size: 16px; /* Text size */
-  font-weight: bold; /* Make text bold for better readability */
-  margin: 0 0.5rem; /* Space between buttons */
+  background-color: transparent; /* Transparent background */
+  color: #fff; /* White icon */
+  font-size: 24px; /* Adjust icon size */
+  margin: 0 10px; /* Space between buttons */
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  transition: all 0.3s ease-in-out;
 }
 
+
+
 .swiper-nav-buttons .nav-btn:hover {
-  background-color: #8A8A8A; /* Darker blue on hover */
+   background-color: rgba(255, 255, 255, 0.1); /* Slight white background on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
   cursor: pointer;
-  transform: translateY(-3px); /* Lift effect */
-  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+  transform: translateY(-3px);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
 }
 
 .swiper-nav-buttons .nav-btn:active {
-  transform: translateY(2px); /* Press effect */
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Normal shadow */
+  transform: translateY(2px);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
+
+/* Icon Styling */
+.nav-btn .icon {
+  font-size: 29px; /* Ensure icons are visible */
+  color: #fff; /* Ensure the icon color contrasts the button background */
+}
+

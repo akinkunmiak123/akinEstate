@@ -114,17 +114,17 @@ export const list = [
 
 export const awards = [
   {
-    icon: <i class="fa-solid fa-heart"></i>,
+    icon: <i class="fa-solid fa-user-tie"></i>,
     num: '150+',
     name: 'Clients',
   },
   {
-    icon: <i class="fa-solid fa-briefcase"></i>,
+    icon: <i class="fa-solid fa-building"></i>,
     num: '350+',
     name: 'Lands/Apartments',
   },
   {
-    icon: <i class="fa-solid fa-lightbulb"></i>,
+    icon: <i class="fa-solid fa-calendar-days"></i>,
     num: '4+',
     name: 'Years In Business',
   },

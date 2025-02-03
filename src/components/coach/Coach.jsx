@@ -4,13 +4,14 @@ import Heading from '../common/Heading'
 import img from '../images/coach.jpg'
 import './coach.css'
 
+
 const Coach = () => {
   return (
     <>
       <section className="about">
         <Back
           name="Welcome to Property lady Real Estate Coaching"
-          title="Are you tired of struggling to find success in the competitive world of real estate? My coaching program is here to help you take your business to the next level."
+          title="Struggling in real estate? My coaching helps you succeed!"
           cover={img}
         />
         <div className="container flex mtop">
@@ -61,7 +62,7 @@ const Coach = () => {
               opportunity to network with other realtors and gain valuable
               insight into the industry.
             </p>
-            <button className="btn2">Talk To Property Lady</button>
+            <button className="btnStyle">Talk To Property Lady</button>
           </div>
         </div>
       </section>

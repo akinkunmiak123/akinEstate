@@ -1,0 +1,13 @@
+
+.line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 0 0; /* Adjust spacing above and below */
+}
+
+.line {
+  width: 90%;
+  height: 2px; /* Thin line */
+  background-color: #D18700; /* Line color */
+}

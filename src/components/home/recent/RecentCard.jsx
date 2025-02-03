@@ -3,7 +3,8 @@ import { list } from '../../data/Data'
 import { useHistory } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation} from 'swiper/modules'
-import { SwiperNavButtons } from './SwiperNavButton'
+import SwiperNavButtons from '../recent/SwiperNavButton'
+
 import 'swiper/swiper-bundle.css'
 import './recentCard.css'
 
@@ -47,11 +48,10 @@ const RecentCard = () => {
           value={selectedType}
         >
           <option value="All">All Types</option>
-          <option value="Apartment">Apartment</option>
+          <option value="Land">Land</option>
           <option value="Bungalow">Bungalow</option>
-          <option value="Offices">Offices</option>
+          <option value="Maisonette">Maisonette</option>
           <option value="Homes & Villas">Homes & Villas</option>
-          <option value="Commercial">Commercial</option>
         </select>
       </div>
 
@@ -64,14 +64,13 @@ const RecentCard = () => {
           delay: 3000,
           disableOnInteraction: false,
         }}
-       
         pagination={{ clickable: true }}
         breakpoints={{
           480: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        modules={[Autoplay, Navigation,]}
+        modules={[Autoplay, Navigation]}
         className="recent-swiper"
       >
         {filteredList.map((item, index) => {

@@ -1,5 +1,5 @@
 footer {
-  background-color: #000000; /* White background for the footer */
+  margin-top: 20px;
   padding: 20px 0;
   display: flex; /* Use flexbox */
   justify-content: center; /* Center horizontally */

@@ -1,23 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { featured } from '../../data/Data'
 import './featuredCard.css' // Add this for light theme and carousel styles
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation } from 'swiper/modules' // Import Autoplay module
 import 'swiper/swiper-bundle.css'
-import { SwiperNavButtons } from '../recent/SwiperNavButton'
+import SwiperNavButtons from '../recent/SwiperNavButton'
+
 
 const FeaturedCard = () => {
-  // State to manage visibility of the description
-  const [visibleDescription, setVisibleDescription] = useState(null)
-
-  const toggleDescription = (index) => {
-    setVisibleDescription(visibleDescription === index ? null : index)
-  }
-
   return (
     <>
       <div className="featured-section">
-        <h2 className="section-title">We Offer</h2>
         <Swiper
           spaceBetween={20}
           slidesPerView={1} // Default to 1 slide
@@ -42,19 +35,8 @@ const FeaturedCard = () => {
                   className="property-image"
                 />
                 <h4>{item.name}</h4>
-                <div>
-                  <button
-                    className="read-more-btn"
-                    onClick={() => toggleDescription(index)}
-                  >
-                    {visibleDescription === index
-                      ? 'Hide Description'
-                      : 'Read More'}
-                  </button>
-                  {visibleDescription === index && (
-                    <p className="property-desc">{item.desc}</p>
-                  )}
-                </div>
+                <p className="property-desc">{item.desc}</p>{' '}
+                {/* Display description directly */}
               </div>
             </SwiperSlide>
           ))}

@@ -1,11 +1,17 @@
 /* General header styles */
+body {
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px; /* Default padding for all pages */
+  max-width: 1600px; /* Maximum width for the content */
+}
 .header {
-  background-color: #000000; /* White background */
+  /* background-color: #000000; */ /* Remove or comment out this line */
   padding: 0 20px;
   height: 10vh;
   display: flex;
   justify-content: space-between; /* Space between logo and navigation */
   align-items: center;
+   background-color: #050505;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -31,9 +37,9 @@
   width: 90px;
 }
 
- .header-logo {
-    margin-left: 40px;
-  }
+.header-logo {
+  margin-left: 40px;
+}
 
 /* Menu Icon styles */
 .header-menu-icon {
@@ -60,7 +66,7 @@
 
 .header-nav-link {
   font-size: 18px;
-  color: #ffffff; /* Green text */
+  color: #ffffff; /* White text */
   text-decoration: none;
   padding: 5px 0;
   transition: color 0.3s ease, border-bottom 0.3s ease;
@@ -68,24 +74,26 @@
 }
 
 .header-nav-link:hover {
-  color: #808080; /* Darker green on hover */
+  color: #D18700; /* Gray on hover */
 }
 
 .header-nav-link.active {
-  border-bottom: 2px solid #808080; /* Green underline for active tab */
+  border-bottom: 2px solid #D18700; /* Gray underline for active tab */
   font-weight: bold;
-  color: #fff; /* Darker green for the active link */
+  color: #fff; /* White for the active link */
 }
 
 /* Mobile view styles */
 @media only screen and (max-width: 768px) {
+ 
   .header-nav {
     display: none;
     width: 100%;
+    background-color: #353935;
     position: absolute;
     top: 10vh;
     left: 0;
-    background-color: #000000;
+    /* background-color: #000000; */ /* Remove or comment out this line */
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -103,9 +111,9 @@
   }
 
   .header-nav-link {
-  font-size: 24px;
-  padding: 2px 0;
-}
+    font-size: 24px;
+    padding: 2px 0;
+  }
 
   /* Menu icon is visible on mobile */
   .header-menu-icon {

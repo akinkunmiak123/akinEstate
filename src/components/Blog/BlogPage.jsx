@@ -37,7 +37,7 @@ const BlogPage = () => {
             onClick={() => handleBlogSelect(blog)} // Update selected blog on click
           >
             <img src={blog.image} alt={blog.title} className="blog-image" />
-            <div className="blog-content">
+            <div >
               <p className="blog-date">{blog.date}</p>
               <h2 className="blog-card-title">{blog.title}</h2>
               <p className="blog-description">{blog.description}</p>

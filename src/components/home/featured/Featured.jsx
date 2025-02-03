@@ -9,8 +9,8 @@ const Featured = () => {
       <section className="featured background">
         <div className="container">
           <Heading
-            title="We Are Find Ville"
-            subtitle="We offer services from finding homes and lands to real estate investment, securing your future."
+            title="We Offering"
+            subtitle=""
           />
           <FeaturedCard />
         </div>

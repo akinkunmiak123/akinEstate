@@ -32,11 +32,12 @@
 
 
 form.shadow {
-  background: #fff;
+  background: #171717; /* Dark background for contrast */
   border-radius: 8px;
   padding: 30px 40px;
   width: 100%;
-   
+  margin-top: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .center{
 display: flex;
@@ -47,7 +48,7 @@ form.shadow h4 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #171717;
+  color: #ffffff; /* White text for better readability */
   text-align: center;
 }
 
@@ -60,18 +61,25 @@ form.shadow div {
 
 form.shadow input,
 form.shadow textarea {
-  width: 100%;
+ width: 100%;
   padding: 12px 15px;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #555; /* Softer border color */
   border-radius: 5px;
+  background: #222; /* Dark input background */
+  color: #fff; /* White text */
   outline: none;
   transition: border-color 0.3s ease;
 }
 
+form.shadow input::placeholder,
+form.shadow textarea::placeholder {
+  color: #bbb; /* Lighter placeholder */
+}
+
 form.shadow input:focus,
 form.shadow textarea:focus {
-  border-color: #171717 ;
+  border-color: #D18700; /* Highlight border */
 }
 
 form.shadow textarea {
@@ -81,31 +89,33 @@ form.shadow textarea {
 
 
 form.shadow button {
-  width: 50%;
-  padding: 12px 20px;
-  background: #171717;
+  width: 30%;
+  padding: 10px;
+  background: #D18700;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 form.shadow button:hover {
-  background: #333333;
+  background: #D18700;
 }
 
  .contact h1 {
   font-size: 29px;
   color: #fff;
+  text-align: center;
 }
 
  .contact h2 {
   font-size: 49px;
   color: #fff;
+  text-align: center;
 }
 
 /* Responsive Design */

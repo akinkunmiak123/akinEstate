@@ -8,10 +8,7 @@ const Team = () => {
     <>
       <section className="team background">
         <div className="container">
-          <Heading
-            title="Meet Our Team"
-            subtitle="Here to guide you every step of the way."
-          />
+          <Heading title="Our Team" subtitle="" />
 
           <div className="content mtop grid3">
             {team.map((val, index) => (
@@ -29,8 +26,8 @@ const Team = () => {
                       <li key={idx}>{icon}</li>
                     ))}
                   </ul>
-                  <div className="button flex">
-                    <button>
+                  <div className="button flex ">
+                    <button style={{ backgroundColor: '#D18700' }}>
                       <i className="fa fa-envelope"></i> Message
                     </button>
                     <button className="btn4">

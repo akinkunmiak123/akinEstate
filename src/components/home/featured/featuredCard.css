@@ -1,16 +1,7 @@
 .featured-section {
-  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.section-title {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #808080;
 }
 
 .swiper {
@@ -26,45 +17,28 @@
 .box {
   background-color: #fff;
   border-radius: 8px;
-  padding: 16px;
+  padding: 20px; /* Increased padding for bigger boxes */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s;
- 
+  width: 100%; /* Ensure the box takes full width of the slide */
+  max-width: 350px; /* Increased max-width for bigger boxes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box:hover {
   transform: translateY(-5px);
 }
 
-
-
-.read-more-btn {
-  margin-top: 10px;
-  display: inline-block;
-  background-color: transparent;
-  color: #808080;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.read-more-btn:hover {
-  background-color: transparent;
-}
-
 .box h4 {
   color: #333333;
   font-weight: 800;
   font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-
 
 .property-desc {
   color: #333;
@@ -73,18 +47,12 @@
   line-height: 1.6;
 }
 
-
-
 .property-image {
-  width: 300px;
-  height: 400px;
+  width: 100%; /* Ensure the image takes full width of the box */
+  height: 250px; /* Increased height for bigger images */
   object-fit: cover;
-  margin-bottom: 30px;
-}
-.box img{
-   border-radius: 50%;
-   width: 50%;
-  height: 50%;
+  border-radius: 8px; /* Add border-radius for a consistent look */
+  margin-bottom: 20px;
 }
 
 /* Responsive styles for mobile screens */
@@ -96,7 +64,7 @@
   }
 
   .property-image {
-    height: 150px; /* Adjust image height for smaller screens */
+    height: 200px; /* Adjust image height for smaller screens */
   }
 
   .swiper-slide {
@@ -107,15 +75,4 @@
   .featured-section {
     padding: 10px; /* Reduce padding for smaller screens */
   }
-
-  .section-title {
-    font-size: 20px; /* Adjust title size for mobile */
-    margin-bottom: 15px;
-  }
-
-  .read-more-btn {
-    font-size: 14px; /* Adjust button size */
-    padding: 6px 12px;
-  }
 }
-

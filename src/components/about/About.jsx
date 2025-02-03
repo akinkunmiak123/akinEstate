@@ -1,26 +1,36 @@
-import React from "react"
-import Back from "../common/Back"
-import Heading from "../common/Heading"
-
+import React, { useState, useEffect } from 'react'
+import Back from '../common/Back'
+import Heading from '../common/Heading'
+import LineSection from '../Line/LineSection'
 import Team from '../home/team/Team'
 
-import img from "../images/about.jpeg"
-import "./about.css"
+import img from '../images/about.jpeg'
+import './about.css'
 import { IoMdArrowForward } from 'react-icons/io'
 import { MdMore } from 'react-icons/md'
 
-
 const About = () => {
-    const handleYouTubeClick = () => {
-      const youtubeUrl = '/blog'
-      window.open(youtubeUrl)
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
+     const handleYouTubeClick = () => {
+       const youtubeUrl = '/blog'
+       window.open(youtubeUrl)
+     }
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768)
     }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
     <>
       <section className="about">
         <Back
           name="About Us"
-          title="Learn all about Our Special Team  and the Benefits we bring YOU when trusted with finding the suitable Home and Properties for your needs"
+          title="Discover How We Find Your Perfect Home or Property"
           cover={img}
         />
         <div className="container flex mtop">
@@ -66,6 +76,8 @@ const About = () => {
                 </span>
               </button>
             </div>
+            {/* Conditionally render LineSection based on screen size */}
+            {isMobile && <LineSection />}
           </div>
           <div className="right row">
             <img src="./immio.jpeg" alt="" />
