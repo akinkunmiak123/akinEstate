@@ -58,12 +58,14 @@
 .text h4{
   margin-bottom: 20px;
 }
+.text p{
+  color: #232023;
+}
 .text .category span {
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 12px;
   display: inline-block;
-
 }
 
 .btn2 {

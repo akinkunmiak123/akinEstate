@@ -58,10 +58,10 @@ const Hero = () => {
           Available Across Nigeria
         </p>
 
-        <div className='body'>
-          <button className="btn" onClick={handleWhatsAppClick}>
+        <div className="body">
+          <button className="btns" onClick={handleWhatsAppClick}>
             <div className="fleChange">
-              Message us
+              Chat with us
               <FaWhatsapp className="whatsapp-logo" />
             </div>
             <span>

@@ -34,7 +34,7 @@
   background: #050505; /* Background color for the icon */
   border-radius: 50%; /* Circular shape */
   font-size: 32px; /* Icon size */
-  color: #D18700; /* Icon color */
+  color: #e65713; /* Icon color */
 }
 
 .awards h6 {
@@ -44,7 +44,7 @@
 }
 .awards p {
   font-size: 16px; /* Font size for the description */
-  color: #555; /* Slightly lighter color for the description */
+  color: #222; /* Slightly lighter color for the description */
   margin: 0; /* Remove default margin */
 }
 

@@ -79,7 +79,7 @@ form.shadow textarea::placeholder {
 
 form.shadow input:focus,
 form.shadow textarea:focus {
-  border-color: #D18700; /* Highlight border */
+  border-color: #e65713; /* Highlight border */
 }
 
 form.shadow textarea {
@@ -91,7 +91,7 @@ form.shadow textarea {
 form.shadow button {
   width: 30%;
   padding: 10px;
-  background: #D18700;
+  background: #e65713;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -103,7 +103,7 @@ form.shadow button {
 }
 
 form.shadow button:hover {
-  background: #D18700;
+  background: #e65713;
 }
 
  .contact h1 {

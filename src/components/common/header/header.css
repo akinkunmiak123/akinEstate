@@ -1,17 +1,17 @@
 /* General header styles */
 body {
   margin: 0 auto; /* Center the content horizontally */
-  padding: 20px; /* Default padding for all pages */
+  padding: 20px 5px; /* Default padding for all pages */
   max-width: 1600px; /* Maximum width for the content */
 }
 .header {
   /* background-color: #000000; */ /* Remove or comment out this line */
-  padding: 0 20px;
+  padding: 0;
   height: 10vh;
   display: flex;
   justify-content: space-between; /* Space between logo and navigation */
   align-items: center;
-   background-color: #050505;
+  background-color: #050505;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -37,9 +37,9 @@ body {
   width: 90px;
 }
 
-.header-logo {
+/* .header-logo {
   margin-left: 40px;
-}
+} */
 
 /* Menu Icon styles */
 .header-menu-icon {
@@ -74,11 +74,11 @@ body {
 }
 
 .header-nav-link:hover {
-  color: #D18700; /* Gray on hover */
+  color: #e65713; /* Gray on hover */
 }
 
 .header-nav-link.active {
-  border-bottom: 2px solid #D18700; /* Gray underline for active tab */
+  border-bottom: 2px solid #e65713; /* Gray underline for active tab */
   font-weight: bold;
   color: #fff; /* White for the active link */
 }
@@ -137,10 +137,7 @@ body {
   }
 
   /* Logo styles */
-  .header-logo {
-    flex: 1; /* Push logo to the left */
-    margin-left: 0;
-  }
+
 
   /* Menu Icon styles */
   .header-menu-icon {
