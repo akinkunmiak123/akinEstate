@@ -9,7 +9,7 @@ import Line from '../Line/LineSection'
 import SingleBlog from '../Blog/SingleBlog'
 
 const Home = () => {
-  const [selectedBlog, setSelectedBlog] = useState(
+  const [selectedBlog] = useState(
     blogData.find((blog) => blog.id === 2)
   )
   return (
