@@ -61,7 +61,7 @@ button i {
 }
 
 .heading p {
-  color: #72809d;
+  color: #050505;
 }
 
 textarea,
@@ -84,7 +84,7 @@ input {
 }
 
 label {
-  color: #2d3954;
+  color: #050505;
   font-size: 14px;
 }
 
@@ -144,7 +144,7 @@ img {
   color: #e65713;
   font-size: 20px;
   font-weight: 400;
-  border: 5px solid #27ae601f;
+  border: 5px solid #050505;
   background: #fff;
 }
 

@@ -7,7 +7,7 @@ footer {
   flex-direction: column; /* Ensure content stacks vertically if needed */
 }
 
-footer .boxs {
+footer .boxss {
   display: flex;
   flex-direction: row; /* Links in a row */
   gap: 20px; /* Space between the links */
@@ -19,7 +19,7 @@ footer .boxs {
 }
 
 /* Footer links */
-footer .boxs a {
+footer .boxss a {
   color: #fff; /* White text color */
   text-decoration: none; /* Remove underlines */
   font-size: 20px; /* Font size */
@@ -28,7 +28,7 @@ footer .boxs a {
   transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-footer .boxs a:hover {
+footer .boxss a:hover {
   color: #a9a9a9; /* Change to gray when hovered */
 }
 
@@ -53,12 +53,12 @@ footer .boxs a:hover {
   }
 
   /* Adjust the footer .box to stack on mobile */
-  footer .boxs {
+  footer .boxss {
     flex-direction: column; /* Stack links vertically */
     gap: 10px; /* Adjust spacing for mobile */
   }
 
-  footer .boxs a {
+  footer .boxss a {
     font-size: 20px; /* Font size */
     font-weight: 500;
     padding: 0 10px; /* Adjust spacing for mobile */

@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <div className="boxs">
+        <div className="boxss">
           <Link to="/about">About</Link>
           <Link to="/services">Consultancy</Link>
           <Link to="/properties">Properties</Link>

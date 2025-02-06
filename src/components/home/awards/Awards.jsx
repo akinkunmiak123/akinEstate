@@ -20,7 +20,7 @@ const Awards = () => {
                   <span>{val.icon}</span>
                 </div>
                 <h6>{val.num}</h6>
-                <p>{val.name}</p>
+                <p >{val.name}</p>
               </div>
             ))}
           </div>

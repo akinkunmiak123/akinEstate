@@ -8,6 +8,10 @@
   justify-content: center;
   color: #fff;
   overflow: hidden;
+  padding-right: calc(2rem* .5);
+  padding-left: calc(2rem* .5);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .heros::before {

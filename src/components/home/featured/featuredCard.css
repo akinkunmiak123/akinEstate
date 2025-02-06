@@ -14,65 +14,76 @@
   justify-content: center;
 }
 
-.box {
+/* Box layout with asymmetry */
+.boxs {
   background-color: #fff;
   border-radius: 8px;
-  padding: 20px; /* Increased padding for bigger boxes */
+  padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s;
-  width: 100%; /* Ensure the box takes full width of the slide */
-  max-width: 350px; /* Increased max-width for bigger boxes */
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 400px;
+  height: 250px; /* Ensures a uniform height */
+  transition: transform 0.3s;
 }
 
 .box:hover {
   transform: translateY(-5px);
 }
 
-.box h4 {
-  color: #333333;
-  font-weight: 800;
+/* Image container */
+.img-container {
+  flex: 1.2; /* Gives more space to the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.property-image {
+  width: 100%;
+  height: 100%;
+  max-height: 220px; /* Larger images */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Text container */
+.text-container {
+  flex: 1; /* Adjust width dynamically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container h4 {
+  color: #000000;
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .property-desc {
-  color: #333;
-  margin-top: 10px;
+  color: #2E2E2E;
   font-size: 14px;
   line-height: 1.6;
 }
 
-.property-image {
-  width: 100%; /* Ensure the image takes full width of the box */
-  height: 250px; /* Increased height for bigger images */
-  object-fit: cover;
-  border-radius: 8px; /* Add border-radius for a consistent look */
-  margin-bottom: 20px;
-}
-
-/* Responsive styles for mobile screens */
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
   .box {
-    width: 90vw; /* Use 90% of the viewport width for better spacing */
-    height: auto; /* Adjust height automatically based on content */
-    min-height: auto; /* Remove minimum height for flexibility */
+    flex-direction: column; /* Stack image and text for smaller screens */
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .img-container {
+    width: 100%;
   }
 
   .property-image {
-    height: 200px; /* Adjust image height for smaller screens */
-  }
-
-  .swiper-slide {
-    width: 100%; /* Ensure the slide uses full width */
-    justify-content: center;
-  }
-
-  .featured-section {
-    padding: 10px; /* Reduce padding for smaller screens */
+    height: 200px;
   }
 }

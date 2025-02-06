@@ -73,16 +73,19 @@ const RecentCard = () => {
         modules={[Autoplay, Navigation]}
         className="recent-swiper"
       >
-        {filteredList.map((item, index) => {
-          const { id, cover, category, location, name, type } = item
+        {filteredList.map((item) => {
+          const { id, cover, location, name, type } = item
           return (
             <SwiperSlide key={id}>
               <div className="box">
-                <div className="img">
+                {/* Image section */}
+                <div className="img-container">
                   <img src={cover} alt={name} />
                 </div>
-                <div className="text">
-                  <div className="category flex">
+
+                {/* Text section */}
+                <div className="text-container">
+                  {/* <div className="category">
                     <span
                       style={{
                         background:
@@ -93,7 +96,7 @@ const RecentCard = () => {
                       {category}
                     </span>
                     <i className="fa fa-heart"></i>
-                  </div>
+                  </div> */}
                   <h4>{name}</h4>
                   <p>
                     <i className="fa fa-location-dot"></i> {location}
@@ -101,20 +104,22 @@ const RecentCard = () => {
                   <p>
                     <strong>Type:</strong> {type}
                   </p>
-                </div>
-                <div className="button flex">
-                  <button
-                    className="btn2 small-btn"
-                    onClick={() => handleChatToPurchase(name)}
-                  >
-                    Chat to Purchase
-                  </button>
-                  <button
-                    className="btn2 small-btn"
-                    onClick={() => handleReadMore(item)}
-                  >
-                    Read More
-                  </button>
+
+                  {/* Buttons */}
+                  <div className="button-container">
+                    <button
+                      className="btn2 small-btn"
+                      onClick={() => handleChatToPurchase(name)}
+                    >
+                      Chat to Purchase
+                    </button>
+                    <button
+                      className="btn2 small-btn"
+                      onClick={() => handleReadMore(item)}
+                    >
+                      Read More
+                    </button>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
