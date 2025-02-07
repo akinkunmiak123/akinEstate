@@ -88,7 +88,7 @@ body {
     width: 100%;
     background-color: #050505;
     position: absolute;
-    top: 10vh; /* Adjusted to match the reduced header height */
+    top: 77px; /* Adjusted to match the reduced header height */
     left: 0;
     text-align: center;
     flex-direction: column;
