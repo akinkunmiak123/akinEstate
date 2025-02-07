@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content:center; /* Align left */
   align-items: center;
-  width: 100%;
+  width: 1400px;
 }
 
 .flex {
