@@ -21,7 +21,7 @@ body {
 
 .header-container {
   display: flex;
-  justify-content: flex-start; /* Align left */
+  justify-content:center; /* Align left */
   align-items: center;
   width: 100%;
 }
