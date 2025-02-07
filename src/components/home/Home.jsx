@@ -27,7 +27,6 @@ const Home = () => {
       <Line />
       <Awards />
       <YouTube />
-      <Line />
     </>
   )
 }
