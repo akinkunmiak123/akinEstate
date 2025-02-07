@@ -36,7 +36,7 @@ ul {
 button {
   border-radius: 5px;
   padding: 17px 30px;
-  background: #e65713;
+  background: #F84C0B;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -129,7 +129,7 @@ img {
 }
 
 .btn3 {
-  background: #e65713;
+  background: #F84C0B;
   border-radius: 50px;
 }
 
@@ -141,7 +141,7 @@ img {
 .btn5 {
   border-radius: 50px;
   padding: 20px 40px;
-  color: #e65713;
+  color: #F84C0B;
   font-size: 20px;
   font-weight: 400;
   border: 5px solid #050505;
@@ -185,7 +185,7 @@ img {
 
 .back span {
   font-size: 32px;
-  color: #e65713;
+  color: #F84C0B;
 }
 
 .mb {

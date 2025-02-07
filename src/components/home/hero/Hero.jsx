@@ -61,7 +61,7 @@ const Hero = () => {
         <div className="body">
           <button className="btns" onClick={handleWhatsAppClick}>
             <div className="fleChange">
-              Chat with us
+              WhatsApp Us
               <FaWhatsapp className="whatsapp-logo" />
             </div>
             <span>

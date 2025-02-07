@@ -27,7 +27,7 @@ const Team = () => {
                     ))}
                   </ul>
                   <div className="button flex ">
-                    <button style={{ backgroundColor: '#e65713' }}>
+                    <button style={{ backgroundColor: '#F84C0B' }}>
                       <i className="fa fa-envelope"></i> Message
                     </button>
                     <button className="btn4">

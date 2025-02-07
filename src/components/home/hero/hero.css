@@ -196,7 +196,7 @@
   font-weight: 400;
   font-size: 50px;
   color: #fff;
-  border-right: 3px solid #e65713; /* Typing effect */
+  border-right: 3px solid #F84C0B; /* Typing effect */
   animation: blink 3s steps(2, start) infinite;
 }
 
