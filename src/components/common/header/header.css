@@ -34,7 +34,7 @@ body {
 
 /* Logo styles */
 .header-logo img {
-  height: 80px; /* Reduced size for the logo */
+  height: 50px; /* Reduced size for the logo */
   width: 80px;
 }
 
@@ -86,9 +86,10 @@ body {
   .header-nav {
     display: none;
     width: 100%;
+    height: 100vh;
     background-color: #050505;
     position: absolute;
-    top: 77px; /* Adjusted to match the reduced header height */
+    top: 76px; /* Adjusted to match the reduced header height */
     left: 0;
     text-align: center;
     flex-direction: column;
@@ -135,6 +136,6 @@ body {
   /* Adjust logo image size */
   .header-logo img {
     width: 60px; /* Reduced size for mobile */
-    height: 60px;
+    height: 40px;
   }
 }
