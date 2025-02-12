@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react'
+// import React, { useState, useEffect, useMemo } from 'react'
 import '@fontsource/poppins' // Default weight
 import '@fontsource/poppins/500.css' // Medium weight
 import '@fontsource/pacifico' // Pacifico cursive font
@@ -7,38 +7,38 @@ import { IoMdArrowForward } from 'react-icons/io'
 import { FaWhatsapp } from 'react-icons/fa' // Importing WhatsApp logo
 
 const Hero = () => {
-  const words = useMemo(() => ['properties', 'lands', 'apartments'], []) // Memoized words
-  const [currentWord, setCurrentWord] = useState('')
-  const [wordIndex, setWordIndex] = useState(0)
-  const [charIndex, setCharIndex] = useState(0)
-  const [isTyping, setIsTyping] = useState(true)
+  // const words = useMemo(() => ['properties', 'lands', 'apartments'], []) // Memoized words
+  // const [currentWord, setCurrentWord] = useState('')
+  // const [wordIndex, setWordIndex] = useState(0)
+  // const [charIndex, setCharIndex] = useState(0)
+  // const [isTyping, setIsTyping] = useState(true)
 
-  useEffect(() => {
-    const current = words[wordIndex]
-    const typingSpeed = isTyping ? 100 : 50 // Typing is slower, deleting is faster
+  // useEffect(() => {
+  //   const current = words[wordIndex]
+  //   const typingSpeed = isTyping ? 100 : 50 // Typing is slower, deleting is faster
 
-    const handleTyping = () => {
-      if (isTyping) {
-        if (charIndex < current.length) {
-          setCurrentWord(current.slice(0, charIndex + 1))
-          setCharIndex((prev) => prev + 1)
-        } else {
-          setTimeout(() => setIsTyping(false), 1500) // Pause before deleting
-        }
-      } else {
-        if (charIndex > 0) {
-          setCurrentWord(current.slice(0, charIndex - 1))
-          setCharIndex((prev) => prev - 1)
-        } else {
-          setIsTyping(true)
-          setWordIndex((prev) => (prev + 1) % words.length) // Move to next word
-        }
-      }
-    }
+  //   const handleTyping = () => {
+  //     if (isTyping) {
+  //       if (charIndex < current.length) {
+  //         setCurrentWord(current.slice(0, charIndex + 1))
+  //         setCharIndex((prev) => prev + 1)
+  //       } else {
+  //         setTimeout(() => setIsTyping(false), 1500) // Pause before deleting
+  //       }
+  //     } else {
+  //       if (charIndex > 0) {
+  //         setCurrentWord(current.slice(0, charIndex - 1))
+  //         setCharIndex((prev) => prev - 1)
+  //       } else {
+  //         setIsTyping(true)
+  //         setWordIndex((prev) => (prev + 1) % words.length) // Move to next word
+  //       }
+  //     }
+  //   }
 
-    const timer = setTimeout(handleTyping, typingSpeed)
-    return () => clearTimeout(timer)
-  }, [charIndex, isTyping, wordIndex, words])
+  //   const timer = setTimeout(handleTyping, typingSpeed)
+  //   return () => clearTimeout(timer)
+  // }, [charIndex, isTyping, wordIndex, words])
 
   const handleWhatsAppClick = () => {
     const phone = '09130000004'
