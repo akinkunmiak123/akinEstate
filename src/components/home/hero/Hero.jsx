@@ -54,8 +54,9 @@ const Hero = () => {
       <div className="overlay"></div>
       <div className="container">
         <p>
-          We Have <span className="typing-animation">{currentWord}</span> <br />
-          Available Across Nigeria
+          Welcome to Findville Realty Ltd{' '}
+          {/* <span className="typing-animation">{currentWord}</span> <br /> */}
+          your seamless path to successful real estate journeys.
         </p>
 
         <div className="body">
