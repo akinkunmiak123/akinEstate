@@ -67,10 +67,12 @@
   color: #fff;
   font-weight: 500;
   opacity: 0.9;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 25px;
 }
-
+.heros p .smaller{
+  font-size: 25px;
+}
 /* Button Styling */
 .body{
   display: flex;
@@ -178,9 +180,12 @@
   font-family: "Open Sans", serif;
   font-weight: 600; /* Bold weight for better visibility */
   color: #fff;
-  font-size: 50px;
+  font-size: 35px;
   margin-bottom: 25px;
   line-height: 1.2;
+}
+.heros p .smaller{
+  font-size: 20px;
 }
 
   .cta-button {

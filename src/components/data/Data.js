@@ -116,7 +116,7 @@ export const awards = [
   {
     icon: <i class="fa-solid fa-user-tie"></i>,
     num: '150+',
-    name: 'Clients',
+    name: "Client's",
   },
   {
     icon: <i class="fa-solid fa-building"></i>,

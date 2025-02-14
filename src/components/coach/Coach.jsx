@@ -20,7 +20,7 @@ const Coach = () => {
 
             <p>
               I have a proven track record of success in the industry as I have
-              helped over 200 clients achieve their real estate goals and I can
+              helped over 200 client's achieve their real estate goals and I can
               help you achieve your growth goals too.
             </p>
             <p>
