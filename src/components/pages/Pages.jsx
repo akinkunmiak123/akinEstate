@@ -17,8 +17,8 @@ import ScrollToTop from '../Scroll/ScrollToTop'
 const Pages = () => {
   return (
     <Router>
-      <ScrollToTop />
       <Header />
+      <ScrollToTop />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />

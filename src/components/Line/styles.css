@@ -1,13 +1,34 @@
-
-.line-container {
+.line-section {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 40px 0 0 0; /* Adjust spacing above and below */
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 40px;
+  width: 90%;
+}
+
+.line-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white; /* Adjust based on your theme */
 }
 
 .line {
-  width: 90%;
-  height: 2px; /* Thin line */
-  background-color: #F84C0B ; /* Line color */
+  flex-grow: 1;
+  height: 2px;
+  background-color: #F84C0B;
+  margin: 0 10px;
+  width: 75%;
+}
+
+.line-link {
+  font-size: 16px;
+  color: lightgray;
+  text-decoration: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.line-link:hover {
+  color: white;
+  border-bottom: 1px solid white;
 }

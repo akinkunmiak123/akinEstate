@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './WhatsAppChat.css'
+import img from './icons8-whatsapp-100.png'
 
 const WhatsAppChat = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -40,10 +41,7 @@ const WhatsAppChat = () => {
         </div>
       </div>
       <button className="whatsapp-button" onClick={toggleChat}>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-          alt="WhatsApp"
-        />
+        <img src={img} alt="WhatsApp" />
       </button>
     </div>
   )

@@ -31,10 +31,10 @@
   height: 60px; /* Fixed size for the icon container */
   line-height: 60px; /* Center the icon vertically */
   margin: 0 auto 20px; /* Center the icon and add space below */
-  background: #050505; /* Background color for the icon */
+  background: transparent; /* Background color for the icon */
   border-radius: 50%; /* Circular shape */
   font-size: 32px; /* Icon size */
-  color: #F84C0B; /* Icon color */
+  color: #050505; /* Icon color */
 }
 
 .awards h6 {

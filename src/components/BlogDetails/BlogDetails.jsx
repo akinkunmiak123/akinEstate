@@ -21,12 +21,23 @@ const BlogDetails = () => {
           <div className="details-content">
             <p>{blog.description}</p>
             <p>{blog.longNote}</p>
+
+            {/* Render Points Dynamically */}
+            {blog.points && (
+              <ul className="blog-points">
+                {blog.points.map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
+              </ul>
+            )}
+
+            {/* End Note */}
+            {blog.endNote && <p className="end-note">{blog.endNote}</p>}
           </div>
         </div>
 
         <img src={blog.image} alt={blog.title} className="details-image" />
       </div>
-
       <button className="back-home-btn" onClick={() => history.push('/blog')}>
         Go Back
       </button>

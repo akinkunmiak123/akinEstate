@@ -333,9 +333,18 @@ export const blogData = [
     description:
       'Discover the latest real estate trends to watch in 2025, including market shifts and buyer preferences.',
     longNote:
-      'This blog explores the key trends that will influence the real estate market in 2025, from changing buyer behaviors to evolving market dynamics, offering valuable insights for investors and homebuyers alike.',
+      'The real estate market is ever-evolving, and 2025 is no exception. As we move forward, various trends will shape the industry, impacting both buyers and investors. Here are some of the key trends to watch:',
+    points: [
+      '1. Smart Homes & Technology Integration - More homebuyers are seeking properties with advanced technology, including smart security systems, energy-efficient appliances, and automated controls.',
+      '2. Sustainable & Eco-Friendly Housing - The demand for green homes is growing, with buyers prioritizing properties that use solar panels, energy-efficient windows, and sustainable materials.',
+      '3. Urban vs. Suburban Shifts - While city living remains attractive, many buyers are looking toward suburban and semi-rural areas for affordability and space.',
+      '4. Rise in Co-Living Spaces - Shared living arrangements are gaining popularity among young professionals and retirees alike, offering affordability and community living.',
+      '5. Real Estate Investment in Digital Platforms - Tokenization of properties and real estate investment through blockchain technology are becoming more prevalent, making property investment more accessible.',
+    ],
+    endNote:
+      'For investors and homebuyers, staying informed on these trends can be key to making the right decisions in 2025.',
     image: '../images/blog/img-1.jpg',
-    slug: 'top-real-estate-trends-2025', // Unique slug
+    slug: 'top-real-estate-trends-2025',
   },
   {
     id: 2,
@@ -344,9 +353,18 @@ export const blogData = [
     description:
       'Learn essential tips for first-time home buyers to make informed decisions in the real estate market.',
     longNote:
-      'For first-time homebuyers, understanding the process can be overwhelming. This post provides five essential tips, from budget planning to selecting the right property, ensuring a smoother buying experience.',
+      'Buying a home for the first time can be overwhelming, but with the right approach, you can make the process smooth and rewarding. Here are five essential tips:',
+    points: [
+      '1. Set a Realistic Budget: Understand how much you can afford by considering your income, expenses, and mortgage rates before starting your search.',
+      '2. Get Pre-Approved: for a MortgageA pre-approval letter from a lender helps you understand your buying power and makes you a serious buyer in the eyes of sellers.',
+      '3.Research the Neighborhood: Location matters! Look for areas with good schools, amenities, and future growth potential to ensure a valuable investment.',
+      '4. Inspect the Property Thoroughly: Never skip a home inspection. Identifying structural issues early can save you from costly repairs down the road.',
+      '5. Work with a Trusted Real Estate Agent: An experienced agent can guide you through the process, negotiate on your behalf, and help you make informed decisions.',
+    ],
+    endNote:
+      'By following these steps, first-time buyers can navigate the real estate market confidently and make informed purchases.',
     image: '../images/blog/img-2.jpg',
-    slug: '5-tips-for-first-time-home-buyers', // Unique slug
+    slug: '5-tips-for-first-time-home-buyers',
   },
   {
     id: 3,
@@ -355,8 +373,17 @@ export const blogData = [
     description:
       'A beginner’s guide to investing in real estate and maximizing returns.',
     longNote:
-      'Real estate investment can be a profitable venture, but it requires a clear understanding of market conditions, financing options, and investment strategies. This guide outlines the fundamentals to help you get started with real estate investments.',
+      'Real estate investment can be a profitable endeavor, but it requires careful planning and knowledge of market trends. Here’s what you need to know to get started:',
+    points: [
+      '1.Know Your Investment Strategy: Decide whether you want to flip houses, invest in rental properties, or buy and hold for long-term appreciation.',
+      '2. Understand Market Conditions: Research trends in the local and national housing markets to determine the best areas for investment.',
+      '3.Secure Financing Options: Whether using personal savings, bank loans, or real estate investment groups, ensure you have a financial plan in place',
+      '4.Consider Rental Income Potential: Investing in rental properties can provide a steady income stream. Be sure to analyze rental demand and property management requirements.',
+      '5. Mitigate Risks & DiversifyAvoid putting all your resources into a single investment. Diversify by considering different property types and locations.',
+    ],
+    endNote:
+      'With the right strategy and market understanding, real estate investment can provide lucrative returns and long-term financial growth.',
     image: '../images/blog/img-3.jpg',
-    slug: 'understanding-real-estate-investment', // Unique slug
+    slug: 'understanding-real-estate-investment',
   },
 ]

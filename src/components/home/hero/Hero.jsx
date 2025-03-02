@@ -54,9 +54,11 @@ const Hero = () => {
       <div className="overlay"></div>
       <div className="container">
         <p>
-          Welcome to Findville Realty Ltd. <br />
+          Welcome to Findville Realty Limited. <br />
           {/* <span className="typing-animation">{currentWord}</span> <br /> */}
-          <p className='smaller'> your seamless path to successful real estate journeys.</p>
+          <p className="smaller">
+            A better partner for your real estate journey.
+          </p>
         </p>
 
         <div className="body">

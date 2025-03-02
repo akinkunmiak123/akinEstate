@@ -123,8 +123,8 @@
 
 
 .youtube {
-  font-size: 40px; /* Adjust logo size */
-  color: #FF0000;
+  font-size: 50px; /* Adjust logo size */
+  color: #fff;
 }
 @media only screen and (max-width: 768px) {
   .video {

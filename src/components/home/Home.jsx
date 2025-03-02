@@ -15,10 +15,16 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Line />
+      <Line title="Services" link="/services" linkText="more on services" />
+
       <Featured />
+      <Line
+        title="Properties"
+        link="/properties"
+        linkText="Explore Properties"
+      />
       <Recent />
-      <Line />
+      <Line title="Blog" link="/blog" linkText="View all articles" />
       <br />
       <div style={{ width: '80%', margin: '0px auto' }}>
         <SingleBlog blog={selectedBlog} />
@@ -26,6 +32,11 @@ const Home = () => {
 
       <Line />
       <Awards />
+      <Line
+        title="Youtube"
+        link="https://www.youtube.com/@findvillerealty/videos"
+        linkText="Our Videos"
+      />
       <YouTube />
     </>
   )
