@@ -3,6 +3,7 @@ body {
   margin: 0 auto; /* Center the content horizontally */
   padding: 20px 5px; /* Default padding for all pages */
   max-width: 1400px; /* Maximum width for the content */
+  max-height: 100%;
 }
 
 .header {

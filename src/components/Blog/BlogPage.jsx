@@ -33,14 +33,20 @@ const BlogPage = () => {
         {blogData.map((blog) => (
           <div
             key={blog.id}
-            className={`blog-card ${blog.id === selectedBlog.id ? 'featured-card' : ''}`}
+            className={`blog-card ${
+              blog.id === selectedBlog.id ? 'featured-card' : ''
+            }`}
             onClick={() => handleBlogSelect(blog)} // Update selected blog on click
           >
             <img src={blog.image} alt={blog.title} className="blog-image" />
-            <div >
+            <div>
               <p className="blog-date">{blog.date}</p>
-              <h2 className="blog-card-title">{blog.title}</h2>
-              <p className="blog-description">{blog.description}</p>
+              <h2 className="blog-card-title">
+               {blog.title.split(' ').slice(0, 3).join(' ')}...
+              </h2>
+              <p className="blog-description">
+                {blog.description.split(' ').slice(0, 10).join(' ')}...
+              </p>
               <button
                 className="btn2 small-btn"
                 onClick={() => handleReadMore(blog)} // Navigate to the blog detail

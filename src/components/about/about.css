@@ -1,131 +1,69 @@
 .about {
-  margin: 0 ;
+  margin: 0;
   margin-top: 4rem;
+  text-align: center; /* Ensures text is centered */
 }
- .about h1 {
+
+.about h1 {
   text-align: center;
   font-size: 29px;
   color: #fff;
 }
 
- .about h2 {
+.about h2 {
   font-size: 49px;
   color: #fff;
   text-align: center;
 }
 
-
 .about .heading {
-  text-align: left;
+  text-align: center; /* Center the heading */
   width: 100%;
   margin-bottom: 30px;
 }
-.about p {
-  font-size: 15px;
-  padding-right: 30px;
-  margin-bottom: 20px;
-  line-height: 30px;
-  color: #D1D1D1;
+
+/* Center Mission & Vision section */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
 }
+
+.center-container p {
+  /* Increased font size */
+  font-weight: bold;
+  color: #D1D1D1;
+  max-width: 80%; /* Ensures text doesn't stretch too wide */
+}
+
+/* Responsive Adjustments */
 @media screen and (max-width: 900px) {
-  
   .about .container {
     flex-direction: column;
   }
+
   .about p {
     padding: 0;
   }
+
   .about .container img {
     margin-top: 50px;
   }
+
   .about h1 {
-  font-size: 15px;
-}
-.about h2 {
-  font-size: 20px;
-}
-}
+    font-size: 20px;
+  }
 
+  .about h2 {
+    font-size: 25px;
+  }
 
-.body{
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn {
-  position: relative;
-  width: 200px;
-  height: 60px;
-  background: rgba(10, 10, 10, 0.7);
-  border-radius: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255,255,255, 0.5);
-  text-decoration: none;
-  letter-spacing: 2px;
-  border-top: 0.5px solid rgba(255,255,255, 0.35);
-  border-left: 0.5px solid rgba(255,255,255, 0.35);
-  padding-left: 40px;
-  transition: 0.5s;
-   overflow: hidden;
-}
-
-.btn:hover {
- padding-left: 0px;
- padding-right: 40px;
- color: rgba(255,255,255,1);
-}
-
-.btn:hover span {
-  left: calc(100% - 55px)
-}
-
-.fleChange {
-  padding-left: 30px;
-  padding-right: 20px;
-  color: #fff;
-  display: flex;
-  align-items: center;  /* Vertically center the items */
-  justify-content: center; /* Horizontally center the items */
-  gap: 10px; /* Space between items */
-}
-
-.btn span {
-  position: absolute;
-  left: 5px;
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  border-radius: 50% ;
-  transition: 0.5s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #1a191d;
-  font-size: 1.5em;
-}
-.btn:after{
-  content: '';
-  position: absolute;
-  width: 80px;
-  height: 100%;
-  z-index: 1;
-  background: rgba(255,255,255, 0.5);
-  transform: translateX(-170px) skewX(30deg);
-  transition: 0.75s ease-in-out;
-}
-
-.btn:hover:after{
-  transform:  translateX(170px) skewX(30deg);
-}
-
-
-
-
-.youtube-logo {
-  font-size: 30px; /* Adjust logo size */
-  color: #fff;
+  .center-container p {
+    font-size: 18px;
+    max-width: 90%;
+  }
 }

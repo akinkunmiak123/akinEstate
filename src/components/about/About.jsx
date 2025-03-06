@@ -11,10 +11,10 @@ import { MdMore } from 'react-icons/md'
 
 const About = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
-     const handleYouTubeClick = () => {
-       const youtubeUrl = '/blog'
-       window.open(youtubeUrl)
-     }
+  const handleYouTubeClick = () => {
+    const youtubeUrl = '/blog'
+    window.open(youtubeUrl)
+  }
 
   useEffect(() => {
     const handleResize = () => {
@@ -33,6 +33,22 @@ const About = () => {
           title="Discover How We Find Your Perfect Home or Property"
           cover={img}
         />
+        <div className="center-container">
+          <Heading title="Our Vision" subtitle="" />
+          <p style={{ fontSize: ' 22px' }}>
+            To provide our clients with premium and need-based real estate
+            investments in Nigeria and beyond.
+          </p>
+        </div>
+
+        <div className="center-container">
+          <Heading title="Our Mission" subtitle="" />
+          <p style={{ fontSize: ' 22px' }}>
+            Providing professional solutions with commitment and transparency
+            while delivering undiluted and trusted investment options.
+          </p>
+        </div>
+
         <div className="container flex mtop">
           <div className="left row">
             <Heading
@@ -65,6 +81,7 @@ const About = () => {
                 expect it.
               </b>
             </p>
+
             <div className="body">
               <button className="btn" onClick={handleYouTubeClick}>
                 <div className="fleChange">

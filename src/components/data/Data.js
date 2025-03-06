@@ -328,6 +328,24 @@ export const footer = [
 export const blogData = [
   {
     id: 1,
+    title: ' Investing in Land in Abuja: Why a C of O Matters More Than Ever',
+    date: 'March 5,2025',
+    description:
+      'Amid rising concerns over land ownership in Abuja, securing land with a Certificate of Occupancy (C of O) is more important than ever. Here’s why our estate in Gwagwalada is the smart choice.',
+    longNote:
+      'The recent demolitions in Abuja have highlighted the risks of owning land without proper documentation. Many property owners have faced losses due to a lack of valid titles, making legally backed properties, especially those with a Certificate of Occupancy (C of O), more valuable than ever.Owning land in Abuja is a solid investment, but without a C of O, your property could be at risk. A Certificate of Occupancy provides:',
+    points: [
+      '1. Legal Security: The highest proof of ownership, protecting against disputes or government reclamation.',
+      '2. Increased Value: Well-documented land appreciates faster and attracts serious buyers.',
+      '3. Seamless Transactions: Makes resale, leasing, or development easier without legal roadblocks.',
+    ],
+    endNote:
+      'Avoid future risks and rising costs. Invest in a secure, legally documented property today.The recent land disputes in Abuja highlight the need for due diligence. Protect your investment with a C of O—because security is key in real estate.',
+    image: '../images/blog/img-4.png',
+    slug: 'investing-in-land-abuja',
+  },
+  {
+    id: 2,
     title: 'Top Real Estate Trends in 2025',
     date: 'January 15, 2025',
     description:
@@ -347,7 +365,7 @@ export const blogData = [
     slug: 'top-real-estate-trends-2025',
   },
   {
-    id: 2,
+    id: 3,
     title: '5 Tips for First-Time Home Buyers',
     date: 'December 30, 2024',
     description:
@@ -367,8 +385,8 @@ export const blogData = [
     slug: '5-tips-for-first-time-home-buyers',
   },
   {
-    id: 3,
-    title: 'Understanding Real Estate Investment',
+    id: 4,
+    title: 'Gain a Deeper Understanding of Real Estate Investment',
     date: 'December 20, 2024',
     description:
       'A beginner’s guide to investing in real estate and maximizing returns.',
