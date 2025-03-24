@@ -81,7 +81,7 @@
 .fleChange {
   padding-left: 30px;
   padding-right: 20px;
-  color: #1a191d;
+  color: #fff;
   display: flex;
   align-items: center;  /* Vertically center the items */
   justify-content: center; /* Horizontally center the items */

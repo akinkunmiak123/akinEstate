@@ -8,31 +8,31 @@ export const nav = [
 
 export const featured = [
   {
-    cover: '../images/hero/h1.png',
+    cover: '../images/hero/h1.svg',
     name: 'Lands',
     total: '122 Property',
     desc: 'Our agents across Nigeria are ready to connect you with lands in the areas you are looking for',
   },
   {
-    cover: '../images/hero/h2.png',
+    cover: '../images/hero/h2.svg',
     name: 'Apartments',
     total: '155 Property',
     desc: 'Finding you the best Apartments and Homes that meets your Personal or Business Needs',
   },
   {
-    cover: '../images/hero/h3.png',
+    cover: '../images/hero/h3.svg',
     name: 'Real Estate Deals',
     total: '300 Property',
     desc: 'We have Agents in Place to connect you with Information about the best Real Estate Deals you will find',
   },
   {
-    cover: '../images/hero/h4.png',
+    cover: '../images/hero/h4.svg',
     name: 'Real Estate Investment',
     total: '80 Property',
     desc: 'We have Agents in Place to connect you with Information about the best Office & Studio Deals you will find',
   },
   {
-    cover: '../images/hero/h6.png',
+    cover: '../images/hero/h6.svg',
     name: 'Real Estate Consultancy',
     total: '80 Property',
     desc: 'Talk with Us, Share your Dreams and Project, Our Talent is to Guide you firmly with Industry Know-How',
