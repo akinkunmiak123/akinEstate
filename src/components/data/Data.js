@@ -1,4 +1,5 @@
 export const nav = [
+  { text: 'Home', path: '/' },
   { text: 'About', path: '/about' }, // Matches "/about"
   { text: 'Blog', path: '/blog' },
   { text: 'Consultancy', path: '/services' },
@@ -8,35 +9,92 @@ export const nav = [
 
 export const featured = [
   {
-    cover: '../images/hero/h1.svg',
-    name: 'Lands',
-    total: '122 Property',
-    desc: 'Our agents across Nigeria are ready to connect you with lands in the areas you are looking for',
+    cover: '../images/hero/h2.svg',
+    name: 'Brokerage',
+    total: '155 Property',
+    desc: "At Findville, we take pride in matching our clients' unique needs with the right properties. Whether you're looking for a residential, commercial, or industrial property, we provide more than just advice — we deliver tailored solutions that align with your investment goals.",
   },
   {
     cover: '../images/hero/h2.svg',
-    name: 'Apartments',
+    name: 'Research and Analysis',
     total: '155 Property',
-    desc: 'Finding you the best Apartments and Homes that meets your Personal or Business Needs',
+    desc: 'Our dynamic research team analyzes market trends to forecast real estate growth and investment opportunities. With reliable data and proven methods, we provide clients with up-to-date, relevant insights to guide smart investment decisions.',
   },
   {
-    cover: '../images/hero/h3.svg',
-    name: 'Real Estate Deals',
-    total: '300 Property',
-    desc: 'We have Agents in Place to connect you with Information about the best Real Estate Deals you will find',
+    cover: '../images/hero/h2.svg',
+    name: ' Real Estate Advisory',
+    total: '155 Property',
+    desc: 'Our advisory services help clients make smart investment choices that deliver maximum returns. At Findville, we focus on your unique needs—carefully evaluating options to guide sound, personalized investment decisions.',
   },
   {
-    cover: '../images/hero/h4.svg',
-    name: 'Real Estate Investment',
-    total: '80 Property',
-    desc: 'We have Agents in Place to connect you with Information about the best Office & Studio Deals you will find',
+    cover: '../images/hero/h2.svg',
+    name: 'Training and Analysis',
+    total: '155 Property',
+    desc: 'To achieve meaningful growth, every organization must invest in its people. At Findville, we train, coach, and mentor driven individuals passionate about real estate consulting. Our academy equips them with the knowledge and tools needed to thrive and gain a strong foothold in the industry.',
+  },
+  // {
+  //   cover: '../images/hero/h1.svg',
+  //   name: 'Lands',
+  //   total: '122 Property',
+  //   desc: 'Our agents across Nigeria are ready to connect you with lands in the areas you are looking for',
+  // },
+  // {
+  //   cover: '../images/hero/h2.svg',
+  //   name: 'Apartments',
+  //   total: '155 Property',
+  //   desc: 'Finding you the best Apartments and Homes that meets your Personal or Business Needs',
+  // },
+  // {
+  //   cover: '../images/hero/h3.svg',
+  //   name: 'Real Estate Deals',
+  //   total: '300 Property',
+  //   desc: 'We have Agents in Place to connect you with Information about the best Real Estate Deals you will find',
+  // },
+  // {
+  //   cover: '../images/hero/h4.svg',
+  //   name: 'Real Estate Investment',
+  //   total: '80 Property',
+  //   desc: 'We have Agents in Place to connect you with Information about the best Office & Studio Deals you will find',
+  // },
+  // {
+  //   cover: '../images/hero/h6.svg',
+  //   name: 'Real Estate Consultancy',
+  //   total: '80 Property',
+  //   desc: 'Talk with Us, Share your Dreams and Project, Our Talent is to Guide you firmly with Industry Know-How',
+  // },
+]
+export const partners = [
+  {
+    name: 'Zylus Homes',
+    image: '/images/partners/zylus.webp',
+    url: 'https://www.zylushomes.com/',
   },
   {
-    cover: '../images/hero/h6.svg',
-    name: 'Real Estate Consultancy',
-    total: '80 Property',
-    desc: 'Talk with Us, Share your Dreams and Project, Our Talent is to Guide you firmly with Industry Know-How',
+    name: 'Landmark Corporate Realty',
+    image: '/images/partners/lcrng.png',
+    url: 'https://lcrng.com/',
   },
+  {
+    name: 'Gracias',
+    image: '/images/partners/gracias.webp',
+    url: 'https://graciasglobal.com/',
+  },
+  {
+    name: 'Flinx',
+    image: '/images/partners/flinx.png',
+    url: 'http://flinxrealtyltd.com/',
+  },
+  {
+    name: 'Tribitat',
+    image: '/images/partners/Tribitat.png',
+    url: 'https://tribitatrealestate.com/',
+  },
+
+  // {
+  //   name: 'Legal Homes and Properties',
+  //   image: '/images/partners/legalhomes.png',
+  //   url: '',
+  // },
 ]
 export const list = [
   {
@@ -46,8 +104,17 @@ export const list = [
     location:
       'Ogombo Road by Abraham Adesanya Roundabout, Lekki-Epe Expressway.',
     category: 'For Sale',
+    offer: 'Outright',
+    neighborhood: 'Ogombo',
+    keyword: 'Lekki, 105102',
+    bathrooms: '0',
+    title: 'Lekki Pride 2',
+    features:
+      '24-hours Power Supply, Perimeter Fencing, Excellent Drainage, Gated Security, Interlocked Roads, CCTV Surveillance, Street Lights',
+    payment: 'Flexible',
     type: 'Land',
-    description: 'FEATURES includes 24-hours Power Supply...',
+    description:
+      'Lekki Pride 2 is a premium residential estate designed for comfort and investment. Located in a rapidly developing area, it offers buyers an opportunity to own plots of land with modern infrastructure already in place. The estate provides easy accessibility and guarantees high return on investment in a serene environment.',
     slug: 'lekki-pride-2',
   },
   {
@@ -56,8 +123,17 @@ export const list = [
     name: 'ZYLUS COURT BOGIJE',
     location: 'along Lekki-Epe Expressway',
     category: 'For Sale',
+    offer: 'Installment',
+    neighborhood: 'Bogije',
+    keyword: 'Lekki, 105102',
+    bathrooms: '2',
+    title: 'ZYLUS COURT BOGIJE',
+    features:
+      'Perimeter Fencing, Water Supply, Fitted Kitchen, All Rooms Ensuite, Solar Street Lights, Green Area, Gatehouse with Security',
+    payment: 'Installment',
     type: 'Bungalow',
-    description: 'FEATURES includes Perimeter Fencing...',
+    description:
+      'Zylus Court Bogije offers contemporary bungalows built to the highest standards. With thoughtful interior layouts and luxury finishing, it’s ideal for families looking for modern homes in a secure and serene environment.',
     slug: 'zylus-court-bungalows-bogije',
   },
   {
@@ -66,18 +142,36 @@ export const list = [
     name: 'Ambiance Heights Lekki',
     location: 'Freedom way, Lekki Phase 1, Lekki Lagos.',
     category: 'For Rent',
+    offer: 'Outright',
+    neighborhood: 'Lekki Phase 1',
+    keyword: 'Lekki, 105102',
+    bathrooms: '3',
+    title: 'Ambiance Heights Lekki',
+    features:
+      '24/7 Power Supply, Smart Access, Elevator, Swimming Pool, Fitness Center, High-Speed Internet, Ample Parking',
+    payment: 'Flexible',
     type: 'Maisonette',
-    description: 'FEATURES includes 24/7 Power supply...',
+    description:
+      'Ambiance Heights is a high-rise residential masterpiece in the heart of Lekki Phase 1. With luxurious maisonettes and state-of-the-art amenities, it delivers both comfort and prestige to residents.',
     slug: 'ambiance-heights-lekki-phase-1',
   },
   {
     id: 4,
     cover: '/images/list/p-4.jpeg',
     name: 'OPEBI CASTLES AND TERRACES',
-    location: 'Opebi road in ikeja area of lagos, Nigeria',
+    location: 'Opebi road in Ikeja area of Lagos, Nigeria',
     category: 'For Sale',
+    offer: 'Outright',
+    neighborhood: 'Opebi',
+    keyword: 'Ikeja, 100271',
+    bathrooms: '4',
+    title: 'OPEBI CASTLES AND TERRACES',
+    features:
+      'Gated Estate, Security House, Ensuite Bedrooms, Fitted Kitchen, Interlocked Compound, Water Treatment Plant, Backup Power',
+    payment: 'Outright',
     type: 'Homes & Villas',
-    description: 'FEATURES includes Gated Estate...',
+    description:
+      'Opebi Castles and Terraces is an exclusive estate with uniquely designed duplexes and terraces. Located in the serene Ikeja neighborhood, this property is perfect for families seeking upscale city living.',
     slug: 'opebi-castles-and-terraces',
   },
   {
@@ -86,18 +180,36 @@ export const list = [
     name: 'LAGOON FRONT ESTATE EPE',
     location: 'Lekki Epe Corridor, Lagos Nigeria.',
     category: 'For Rent',
-    type: 'Homes & Villas',
-    description: 'FEATURES includes Buy and Build...',
+    offer: 'Installment',
+    neighborhood: 'Epe',
+    keyword: 'Epe, 106104',
+    bathrooms: '0',
+    title: 'LAGOON FRONT ESTATE EPE',
+    features:
+      'Lagoon View, Paved Roads, Gated Access, Central Drainage, Perimeter Fencing, Street Lights, Recreation Area',
+    payment: 'Installment',
+    type: 'Duplex',
+    description:
+      'Lagoon Front Estate Epe is a scenic residential community ideal for relaxation and investment. Overlooking the lagoon, this estate combines tranquility with accessibility, making it an ideal place to live and invest.',
     slug: 'lagoon-front-estate-epe',
   },
   {
     id: 6,
     cover: '/images/list/p-6.jpeg',
     name: 'METRO BAY ESTATE',
-    location: 'heart of Sangotedo, Eti osa, Lagos Nigeria.',
+    location: 'Heart of Sangotedo, Eti Osa, Lagos Nigeria.',
     category: 'For Sale',
-    type: 'Land',
-    description: 'FEATURES includes Buy and Build...',
+    offer: 'Outright',
+    neighborhood: 'Sangotedo',
+    keyword: 'Sangotedo, 105101',
+    bathrooms: '0',
+    title: 'METRO BAY ESTATE',
+    features:
+      'Buy & Build, Secure Gatehouse, Perimeter Fence, Commercial Zones, Recreational Parks, Street Lights, Access Roads',
+    payment: 'Outright',
+    type: 'Bungalows',
+    description:
+      'Metro Bay Estate offers dry land located in the fast-growing Sangotedo area. It is a perfect option for residential or mixed-use development and comes with infrastructure ready for construction.',
     slug: 'metro-bay-estate',
   },
   {
@@ -106,26 +218,38 @@ export const list = [
     name: 'Ruby City Ibadan.',
     location: 'Ijaiye market, Iseyin Road, Moniya Ibadan, Oyo State Nigeria.',
     category: 'For Rent',
-    type: 'Land',
-    description: 'FEATURES includes Buy and Build...',
+    offer: 'Installment',
+    neighborhood: 'Moniya',
+    keyword: 'Ibadan, 200132',
+    bathrooms: '0',
+    title: 'Ruby City Ibadan',
+    features:
+      'Buy and Build, Perimeter Fencing, Affordable C of O, Street Lights, Good Road Network, Commercial Plots',
+    payment: 'Installment',
+    type: 'Terrace Duplex',
+    description:
+      'Ruby City is a government-approved estate located in the heart of Moniya, Ibadan. It provides affordable land ownership in a rapidly developing environment with basic amenities in place.',
     slug: 'ruby-city-ibadan',
   },
 ]
 
+
+
+
 export const awards = [
   {
     icon: <i class="fa-solid fa-user-tie"></i>,
-    num: '150+',
+    num: '350+',
     name: "Client's",
   },
   {
     icon: <i class="fa-solid fa-building"></i>,
-    num: '350+',
+    num: '400+',
     name: 'Lands/Apartments',
   },
   {
     icon: <i class="fa-solid fa-calendar-days"></i>,
-    num: '4+',
+    num: '6+',
     name: 'Years In Business',
   },
 ]
@@ -323,6 +447,48 @@ export const footer = [
       { list: 'Property', path: '/property' },
     ],
   },
+]
+export const testemonialData = [
+  {
+    name: 'Mr. Bello',
+    role: 'Investor',
+    message:
+      'It has been a great experience with findville realty Ltd. I have gotten great value for every penny invested into Cashback for the past 4 years with zylus Investment. My financial portfolio has taken a positive turn. Thank you, findville Realty ltd for introducing us to this product.',
+    avatar: '/images/Avatar/avatar.jpg',
+  },
+  {
+    name: 'Mr Isaac O',
+    role: 'Investor',
+    message:
+      ' I just want to sincerely appreciate the excellent service I received from Findville Realty Ltd. From the moment I reached out, I was treated with respect, patience, and professionalism!',
+    avatar: '/images/Avatar/avatar.jpg',
+  },
+  {
+    name: 'MR.BALOGUN',
+    role: 'Investor',
+    message:
+      'I am privileged to work with Findville Realty Ltd with very  knowledgeable and professional staff with good communication skills and paying attention to details when dealing with clients.',
+    avatar: '/images/Avatar/avatar.jpg',
+  },
+  {
+    name: 'Mrs Oluwatoyin Ipeayeda',
+    role: 'Investor',
+    message:
+      'I started investing with Zylus through findville Realty Ltd a few years ago. Initially, I was skeptical, but I decided to give it a try, and I have not been disappointed. I trust the company and hope to continue to invest with them.',
+    avatar: '/images/Avatar/avatar.jpg',
+  },
+  // {
+  //   name: 'David Ekene',
+  //   role: 'Tenant',
+  //   message: 'Quick responses, reliable team, and excellent communication.',
+  //   avatar: '/images/Avatar/avatar.png',
+  // },
+  // {
+  //   name: 'Chioma Uche',
+  //   role: 'First-time Buyer',
+  //   message: 'Their expert advice made my dream home a reality!',
+  //   avatar: '/images/Avatar/man.png',
+  // },
 ]
 
 export const blogData = [

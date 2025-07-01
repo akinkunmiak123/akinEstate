@@ -88,7 +88,7 @@ const About = () => {
                   Explore More
                   <MdMore className="youtube-logo" />
                 </div>
-                <span>
+                <span style={{color:'white'}}>
                   <IoMdArrowForward />
                 </span>
               </button>

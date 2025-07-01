@@ -1,76 +1,59 @@
 .awards {
+  margin: auto;
+  margin-left: 20%;
   text-align: center;
   padding: 40px 0;
 }
 
-.awards .content {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: stretch;    /* Ensure all cards have the same height */
-  flex-wrap: wrap;         /* Allow items to wrap to the next row */
-  gap: 20px;               /* Add spacing between items */
+.awards .swiper {
+  padding: 20px 0;
 }
 
 .awards .card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   text-align: center;
-  background: #fff; /* White background for the card */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  padding: 20px; /* Padding inside the card */
-  width: 200px; /* Fixed width for each card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  width: 200px;
+  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .awards .card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.awards .icon {
-  width: 60px; /* Fixed size for the icon container */
-  height: 60px; /* Fixed size for the icon container */
-  line-height: 60px; /* Center the icon vertically */
-  margin: 0 auto 20px; /* Center the icon and add space below */
-  background: transparent; /* Background color for the icon */
-  border-radius: 50%; /* Circular shape */
-  font-size: 32px; /* Icon size */
-  color: #050505; /* Icon color */
+.awards .con {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto 20px;
+  font-size: 32px;
+  color: #050505;
 }
 
 .awards h6 {
-  font-size: 36px; /* Larger font size for the number */
-  color: #050505; /* Dark color for the number */
-  margin: 10px 0; /* Spacing around the number */
+  font-size: 36px;
+  color: #050505;
+  margin: 10px 0;
 }
+
 .awards p {
-  font-size: 16px; /* Font size for the description */
-  color: #222; /* Slightly lighter color for the description */
-  margin: 0; /* Remove default margin */
+  font-size: 16px;
+  color: #222;
+  margin: 0;
 }
-
-/* Responsive styles for mobile screens */
+.visible{
+  display: none;
+}
 @media screen and (max-width: 768px) {
-  .awards .content {
-    gap: 10px; /* Reduce gap between cards on smaller screens */
+  .awards {
+    margin-left: 0%;
   }
-
-  .awards .card {
-    width: 150px; /* Smaller width for cards on mobile */
-    padding: 15px; /* Reduce padding for smaller cards */
-  }
-
-  .awards .icon {
-    width: 50px; /* Smaller icon container */
-    height: 50px; /* Smaller icon container */
-    line-height: 50px; /* Adjust line height */
-    font-size: 24px; /* Smaller icon size */
-  }
-
-  .awards h1 {
-    font-size: 24px; /* Smaller font size for the number */
-  }
-
-  .awards p {
-    font-size: 14px; /* Smaller font size for the description */
+  
+  .visible{
+    display: block;
   }
 }

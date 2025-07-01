@@ -62,7 +62,7 @@ const Coach = () => {
               opportunity to network with other realtors and gain valuable
               insight into the industry.
             </p>
-            <button className="btnStyle" style={{marginBottom:'20px'}}>Talk To Property Lady</button>
+            <button className="btnStyle" >Talk To Property Lady</button>
           </div>
         </div>
       </section>

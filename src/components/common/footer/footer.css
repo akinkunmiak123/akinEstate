@@ -1,70 +1,161 @@
-footer {
-  margin-top: 20px;
-  padding: 20px 0;
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  flex-direction: column; /* Ensure content stacks vertically if needed */
+/* ========== FOOTER STYLES ========== */
+.footer {
+  background-color: #262626;
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 5%;
 }
 
-footer .boxss {
+.footer-container {
   display: flex;
-  flex-direction: row; /* Links in a row */
-  gap: 20px; /* Space between the links */
-  flex-wrap: wrap; /* Ensure links wrap on smaller screens */
-  justify-content: center; /* Center the links horizontally */
-  align-items: center; /* Align items vertically */
-  width: auto; /* Adjust width to content */
-  margin-bottom: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-/* Footer links */
-footer .boxss a {
-  color: #fff; /* White text color */
-  text-decoration: none; /* Remove underlines */
-  font-size: 20px; /* Font size */
-  font-weight: 700; /* Increased font weight for boldness */
-  padding: 0 20px; /* Space between the links */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+/* Left Section */
+.footer-left {
+  flex: 1;
+  min-width: 250px;
 }
 
-footer .boxss a:hover {
-  color: #a9a9a9; /* Change to gray when hovered */
+.footer-logo {
+  margin-bottom: 2%;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .send {
-    display: flex;
+.footer-logo img {
+  height: 20%;
+  width: 30%;
+}
+
+.footer-contact p {
+  margin-bottom: 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contact .icon {
+  color: #ee7e01;
+}
+
+/* Middle Section */
+.footer-middle {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-middle h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.property-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.property-tags span {
+  background-color: #444;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Right Section */
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-right h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 18px;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #ee7e01;
+}
+
+.quick-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px;
+}
+
+.quick-links a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #ee7e01;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 40px;
+}
+.footer-left img {
+  height: 50px;
+  width: 80px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
     flex-direction: column;
-  }
-
-  .footerContact h1 {
-    font-size: 28px;
-  }
-
-  footer p,
-  footer h2 {
+    gap: 30px;
     text-align: center;
   }
 
-  footer ul {
-    text-align: center;
+  .footer-contact p,
+  .footer-right ul,
+  .property-tags {
+    justify-content: center;
   }
 
-  /* Adjust the footer .box to stack on mobile */
-  footer .boxss {
-    flex-direction: column; /* Stack links vertically */
-    gap: 10px; /* Adjust spacing for mobile */
+  .footer-logo {
+    margin: 0 auto 20px;
   }
-
-  footer .boxss a {
-    font-size: 20px; /* Font size */
-    font-weight: 500;
-    padding: 0 10px; /* Adjust spacing for mobile */
+  .footer-left img {
+    width: 60px;
+    height: 40px;
+    margin-left: 30px;
   }
-
-  .footerContact {
-    padding: 30px 15px; /* Adjust padding for mobile */
+  .social-icons {
+    justify-content: center;
   }
 }

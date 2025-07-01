@@ -36,8 +36,12 @@
 .center-container p {
   /* Increased font size */
   font-weight: bold;
-  color: #D1D1D1;
+  color: #5C5C5C;
   max-width: 80%; /* Ensures text doesn't stretch too wide */
+}
+
+.left p {
+  color: #5C5C5C;
 }
 
 /* Responsive Adjustments */

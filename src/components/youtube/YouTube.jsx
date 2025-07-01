@@ -1,6 +1,5 @@
 import React from 'react'
 import './YouTube.css'
-import Heading from '../common/Heading'
 import { IoMdArrowForward } from 'react-icons/io'
 import { FaYoutube } from 'react-icons/fa'
 
@@ -12,10 +11,14 @@ const YouTube = () => {
 
   return (
     <div className="youtube-container">
-      <Heading
-        title="Want to Learn More About Real Estate?"
-        subtitle="Better understand how real estate works"
-      />
+      <div className="heading">
+        <h1 style={{ color: '#262626' }}>
+          Want to Learn More About Real Estate?
+        </h1>
+        <p style={{ color: '#262626' }}>
+          Better understand how real estate works
+        </p>
+      </div>
 
       <div className="video-wrapper">
         <div className="video">

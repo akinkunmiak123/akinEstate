@@ -10,25 +10,25 @@
 .line-title {
   font-size: 20px;
   font-weight: bold;
-  color: white; /* Adjust based on your theme */
+  color: #ee7e01; /* Adjust based on your theme */
 }
 
 .line {
   flex-grow: 1;
   height: 2px;
-  background-color: #F84C0B;
+  background-color: #ee7e01;
   margin: 0 10px;
   width: 75%;
 }
 
 .line-link {
   font-size: 16px;
-  color: lightgray;
+  color: #ee7e01;
   text-decoration: none;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #ee7e01;
 }
 
 .line-link:hover {
-  color: white;
-  border-bottom: 1px solid white;
+  color: #e57901;
+  border-bottom: 1px solid #e57901;
 }

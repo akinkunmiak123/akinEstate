@@ -10,7 +10,7 @@ const Recent = () => {
         <div className="container">
           <Heading
             title="Recent Listings"
-            subtitle="Explore the latest listings and find your perfect home."
+            subtitle="We are selling land and houses."
           />
 
           <RecentCard />

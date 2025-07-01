@@ -54,17 +54,17 @@ const Hero = () => {
       <div className="overlay"></div>
       <div className="container">
         <p>
-          Welcome to Findville Realty Limited. <br />
+          Welcome home. <br />
           {/* <span className="typing-animation">{currentWord}</span> <br /> */}
           <p className="smaller">
-            A better partner for your real estate journey.
+            Let’s match you with a property that meets your goals.
           </p>
         </p>
 
         <div className="body">
           <button className="btns" onClick={handleWhatsAppClick}>
             <div className="fleChange">
-              WhatsApp Us
+              <> WhatsApp Us</>
               <FaWhatsapp className="whatsapp-logo" />
             </div>
             <span>

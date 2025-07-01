@@ -1,32 +1,47 @@
-import React from "react"
-// import Heading from "../../common/Heading"
-import { awards } from "../../data/Data"
-import "./awards.css"
+import React from 'react'
+import { awards } from '../../data/Data'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper/modules'
+import 'swiper/swiper-bundle.css'
+import './awards.css'
+import SwiperNavButtons from '../recent/SwiperNavButton'
 
 const Awards = () => {
   return (
-    <>
-      <section className="awards padding">
-        <div className="container">
-          {/* <Heading
-            title="Our business is one of close relationship and we are very fortunate to be able to share so many positive real estate experiences with our clients"
-            subtitle="Our journey"
-          /> */}
-
-          <div className="content grid4 mtop">
-            {awards.map((val, index) => (
-              <div className="card" key={index}>
-                <div className="icon">
+    <section className="awards padding">
+      <div className="container">
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            480: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+          }}
+          modules={[Autoplay]}
+        >
+          {awards.map((val, index) => (
+            <SwiperSlide key={index}>
+              <div className="card">
+                <div className="con">
                   <span>{val.icon}</span>
                 </div>
                 <h6>{val.num}</h6>
-                <p style={{ color: '#222' }}>{val.name}</p>
+                <p>{val.name}</p>
               </div>
-            ))}
+            </SwiperSlide>
+          ))}
+          <div className='visible'>
+            <SwiperNavButtons />
           </div>
-        </div>
-      </section>
-    </>
+        </Swiper>
+      </div>
+    </section>
   )
 }
 

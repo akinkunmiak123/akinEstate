@@ -3,7 +3,7 @@
   position: fixed;
   bottom: 20px;
   /* left: 20px; */
-  background-color: #F84C0B; /* Button color */
+  background-color: #ee7e01; /* Button color */
   color: white;
   border: none;
   border-radius: 50%;
@@ -21,7 +21,7 @@
 
 .scroll-to-top-btn:hover {
   transform: scale(1.1);
-  background-color: #FFC55C; /* Hover color */
+  background-color: #fa9624; /* Hover color */
 }
 
 .scroll-to-top-btn:active {

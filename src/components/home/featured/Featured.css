@@ -27,17 +27,17 @@
 }
 
 .content h4{
-  color: #f5811f;
+  color: #ee7e01;
   font-weight: 700;
 }
 .content label{
-  color: #f5811f;
+  color: #ee7e01;
 }
 
 /* Style for the See Property Button */
 .see-property-btn {
   display: inline-block;
-  background-color: #f5811f;
+  background-color: #ee7e01;
   color: white;
   padding: 10px 20px;
   margin-top: 10px;
@@ -88,7 +88,7 @@
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #f5811f;
+  background-color: #ee7e01;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -129,3 +129,18 @@
 }
 
 
+.underline {
+  width: 60px;
+  height: 3px;
+  background-color: #ee7e01;
+  margin: 0 auto 30px;
+  border-radius: 2px;
+}
+
+.featured-title {
+  color: #232323;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}

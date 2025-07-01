@@ -47,6 +47,7 @@
   height: 60px;
   object-fit: cover;
   border-radius: 8px;
+  color: #ee7e01;
 }
 
 /* Text container */
@@ -58,15 +59,18 @@
 }
 
 .text-container h4 {
-  color: #000000;
+  color: black;
   font-size: 20px;
+  font-weight: 700;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.property-desc {
-  color: #2E2E2E;
+.text-container h6 {
+  color: #36454F;
   font-size: 14px;
   line-height: 1.6;
+  text-align: center;
 }
 
 /* Responsive Styles */

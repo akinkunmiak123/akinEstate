@@ -9,8 +9,10 @@
   color: #f5811f;
 }
 
-
-
+.btnStyle{
+margin-bottom: 20px;
+background-color: #ee7e01;
+}
 .about .heading {
   text-align: left;
   width: 100%;
@@ -21,6 +23,7 @@
   padding-right: 30px;
   margin-bottom: 20px;
   line-height: 30px;
+  color: #5C5C5C;
 }
 .marg {
   margin-left: 25px;

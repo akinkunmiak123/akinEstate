@@ -1,64 +1,116 @@
 import React, { useState } from 'react'
+import Back from '../common/Back'
+import img from '../images/about.jpeg'
 import './BlogPage.css'
 import { blogData } from '../data/Data'
-import SingleBlog from './SingleBlog'
 import { useHistory } from 'react-router-dom'
 
 const BlogPage = () => {
-  // State to manage the selected blog, default is the blog with id: 1
   const history = useHistory()
-  const [selectedBlog, setSelectedBlog] = useState(
-    blogData.find((blog) => blog.id === 1)
-  )
+  const [searchTerm, setSearchTerm] = useState('')
+  const [filteredBlogs, setFilteredBlogs] = useState(blogData)
 
   const handleReadMore = (item) => {
     history.push(`/blogs/${item.slug}`, { item })
   }
 
-  // Function to handle blog selection
-  const handleBlogSelect = (blog) => {
-    setSelectedBlog(blog)
+  const handleSearch = (e) => {
+    e.preventDefault()
+    const lower = searchTerm.toLowerCase()
+    const result = blogData.filter((blog) =>
+      blog.title.toLowerCase().includes(lower)
+    )
+    setFilteredBlogs(result)
   }
 
   return (
-    <div className="blog-page">
-      <h1 className="blog-title">Blog</h1>
-      {/* Pass the selected blog data to the SingleBlog component */}
-      <SingleBlog blog={selectedBlog} />
-      <p className="blog-subtitle">
-        Stay updated with the latest news and insights in the real estate
-        market.
-      </p>
-      <div className="blog-grid">
-        {blogData.map((blog) => (
-          <div
-            key={blog.id}
-            className={`blog-card ${
-              blog.id === selectedBlog.id ? 'featured-card' : ''
-            }`}
-            onClick={() => handleBlogSelect(blog)} // Update selected blog on click
-          >
-            <img src={blog.image} alt={blog.title} className="blog-image" />
-            <div>
-              <p className="blog-date">{blog.date}</p>
-              <h2 className="blog-card-title">
-               {blog.title.split(' ').slice(0, 3).join(' ')}...
-              </h2>
-              <p className="blog-description">
-                {blog.description.split(' ').slice(0, 10).join(' ')}...
-              </p>
-              <button
-                className="btn2 small-btn"
-                onClick={() => handleReadMore(blog)} // Navigate to the blog detail
-              >
-                Read More
-                <span className="arrow">&rarr;</span>
-              </button>
+    <>
+      <section className="about">
+        <Back
+          name={searchTerm ? `You are searching for '${searchTerm}'` : 'Our Blog'}
+          title={
+            searchTerm
+              ? `Pls click the search icon to see '${searchTerm}'`
+              : 'Real Estate Insights, News & Tips'
+          }
+          cover={img}
+        />
+      </section>
+
+      <div className="blog-layout">
+        <div className="blog-content">
+          {filteredBlogs.length === 0 ? (
+            <p>No blog found for “{searchTerm}”</p>
+          ) : (
+            filteredBlogs.map((blog) => (
+              <div key={blog.id} className="vertical-blog-card">
+                <div className="card-image-container">
+                  <img
+                    src={blog.image}
+                    alt={blog.title}
+                    className="card-image"
+                  />
+                  <div className="image-overlay">
+                    <h2 className="overlay-title">{blog.title}</h2>
+                    <p className="overlay-sub">Everything You Should Know</p>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <p className="blog-date">{blog.date}</p>
+                  <h3 className="blog-title">{blog.title}</h3>
+                  <p className="blog-description">
+                    {blog.description}
+                  </p>
+                  <button
+                    className="read-more-btn"
+                    onClick={() => handleReadMore(blog)}
+                  >
+                    READ MORE
+                  </button>
+                </div>
+              </div>
+            ))
+          )}
+        </div>
+
+        <aside className="blog-sidebar">
+          <form className="search-box" onSubmit={handleSearch}>
+            <input
+              type="text"
+              placeholder="Search ..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <button type="submit">🔍</button>
+          </form>
+
+          <div className="sidebar-section">
+            <h4 className="sidebar-title">Recent Posts</h4>
+            <ul className="recent-posts">
+              {blogData.slice(0, 5).map((item) => (
+                <li
+                  key={item.id}
+                  className="recent-post-link"
+                  onClick={() => handleReadMore(item)}
+                >
+                  {item.title}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="sidebar-section">
+            <h4 className="sidebar-title">Follow Us</h4>
+            <div className="social-icons">
+              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-twitter"></i>
+              <i className="fab fa-instagram"></i>
+              <i className="fab fa-youtube"></i>
             </div>
           </div>
-        ))}
+        </aside>
       </div>
-    </div>
+    </>
   )
 }
 

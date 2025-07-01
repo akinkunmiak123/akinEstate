@@ -30,7 +30,7 @@ const Pages = () => {
         <Route path="/details/:slug" component={DetailsPage} />
       </Switch>
       <WhatsAppChat />
-      <Line />
+      <Line  />
       <Footer />
     </Router>
   )

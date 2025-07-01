@@ -64,7 +64,8 @@
 
 
 .heros p {
-  color: #fff;
+  color: #FFFFFF;
+  text-transform: uppercase;
   font-weight: 500;
   opacity: 0.9;
   font-size: 40px;
@@ -72,6 +73,7 @@
 }
 .heros p .smaller{
   font-size: 25px;
+  text-transform: lowercase;
 }
 /* Button Styling */
 .body{
@@ -109,10 +111,11 @@
   left: calc(100% - 55px)
 }
 
+
+
 .fleChange {
   padding-left: 30px;
   padding-right: 20px;
-  color: #fff;
   display: flex;
   align-items: center;  /* Vertically center the items */
   justify-content: center; /* Horizontally center the items */
@@ -124,7 +127,7 @@
   left: 5px;
   width: 50px;
   height: 50px;
-  background: #fff;
+  background: #ee7e01;
   border-radius: 50% ;
   transition: 0.5s ease-in-out;
   display: flex;
@@ -153,7 +156,7 @@
 
 .whatsapp-logo {
   font-size: 20px; /* Adjust logo size */
-  color: #fff;
+  color: lightgreen;
 }
 
 
@@ -161,7 +164,7 @@
 @media screen and (max-width: 900px) {
   
   .heros {
-    height: 100vh;
+    height: 60vh;
     padding: 0;
   }
   
@@ -177,9 +180,8 @@
   }
 
 .heros p {
-  font-family: "Open Sans", serif;
   font-weight: 600; /* Bold weight for better visibility */
-  color: #fff;
+  color: #FFFFFF;
   font-size: 35px;
   margin-bottom: 25px;
   line-height: 1.2;
@@ -197,7 +199,6 @@
 }
 
 .typing-animation {
-  font-family: 'Pacifico', cursive;
   font-weight: 400;
   font-size: 50px;
   color: #fff;

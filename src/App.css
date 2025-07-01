@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -7,8 +8,12 @@
 }
 
 body {
-  font-family: "Open Sans", serif;
-  background-color: #050505; /* Remove if necessary */
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Bebas Neue", sans-serif; */
+  /* font-family: "Anton", sans-serif; */
+  /* font-weight: 400;
+  font-style: normal; */
+  background-color: #ffffff; /* Remove if necessary */
   overflow-x: hidden;
   height: 100%;
 }
@@ -221,4 +226,26 @@ img {
   .back span {
     font-size: 20px;
   }
+}
+
+.properties-overlap-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-top: -200px; /* Pulls PropertiesPage upward */
+}
+
+@media (max-width: 768px) {
+  .properties-overlap-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -70px;
+    padding: 0 15px; /* Optional: add side padding for breathing room */
+    box-sizing: border-box;
+  }
+}
+
+/* Optional: Ensure Hero is behind */
+.hero-section {
+  position: relative;
+  z-index: 1;
 }

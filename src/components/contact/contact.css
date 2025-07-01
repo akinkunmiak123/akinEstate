@@ -35,10 +35,11 @@
 
 
 form.shadow {
-  background: #171717; /* Dark background for contrast */
+  background: transparent; /* Dark background for contrast */
   border-radius: 8px;
   padding: 30px 40px;
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
   margin-top: 40px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -51,7 +52,7 @@ form.shadow h4 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #ffffff; /* White text for better readability */
+  color: #ee7e01; /* White text for better readability */
   text-align: center;
 }
 
@@ -67,17 +68,17 @@ form.shadow textarea {
  width: 100%;
   padding: 12px 15px;
   font-size: 14px;
-  border: 1px solid #555; /* Softer border color */
+  border: 1px solid #ee7e01; /* Softer border color */
   border-radius: 5px;
-  background: #222; /* Dark input background */
-  color: #fff; /* White text */
+  background: white; /* Dark input background */
+  color: black; /* White text */
   outline: none;
   transition: border-color 0.3s ease;
 }
 
 form.shadow input::placeholder,
 form.shadow textarea::placeholder {
-  color: #bbb; /* Lighter placeholder */
+  color: #ee7e01; /* Lighter placeholder */
 }
 
 form.shadow input:focus,
@@ -94,7 +95,7 @@ form.shadow textarea {
 form.shadow button {
   width: 30%;
   padding: 10px;
-  background: #F84C0B;
+  background: #ee7e01;
   color: #fff;
   font-size: 16px;
   font-weight: 600;

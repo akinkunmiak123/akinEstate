@@ -28,18 +28,18 @@ const FeaturedCard = () => {
           <SwiperSlide key={index}>
             <div className="boxs">
               {/* Image Section */}
-              <div className="img-container">
+              {/* <div className="img-container">
                 <img
                   src={item.cover}
                   alt={item.name}
                   className="property-image"
                 />
-              </div>
+              </div> */}
 
               {/* Text Section */}
               <div className="text-container">
                 <h4>{item.name}</h4>
-                <p className="property-desc">{item.desc}</p>
+                <h6>{item.desc}</h6>
               </div>
             </div>
           </SwiperSlide>
