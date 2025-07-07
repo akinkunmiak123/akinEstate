@@ -218,6 +218,7 @@ const { addToCompare } = useCompare()
       {/* === Google Map Section === */}
       <div id="map-section" className="map-container">
         <iframe
+          title={`Google Map of ${item.location}`}
           src={`https://maps.google.com?q=${encodeURIComponent(
             item.location
           )}&output=embed`}
@@ -226,7 +227,7 @@ const { addToCompare } = useCompare()
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
-        ></iframe>
+        />
       </div>
     </div>
   )
