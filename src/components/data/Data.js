@@ -114,8 +114,23 @@ export const list = [
     payment: 'Flexible',
     type: 'Land',
     description:
-      'Lekki Pride 2 is a premium residential estate designed for comfort and investment. Located in a rapidly developing area, it offers buyers an opportunity to own plots of land with modern infrastructure already in place. The estate provides easy accessibility and guarantees high return on investment in a serene environment.',
+      'Lekki Pride 2 is a premium residential estate designed for comfort and investment...',
     slug: 'lekki-pride-2',
+
+    // 👇 New fields for revamp
+    price: '₦10,000,000',
+    images: [
+      '/images/list/p-1.jpeg',
+      '/images/list/p-2.jpeg',
+      '/images/list/p-3.jpeg',
+    ],
+
+    instagram: 'https://www.instagram.com/p/DLtqbD3ozL8/',
+    video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    coordinates: {
+      lat: 6.4421,
+      lng: 3.4836,
+    },
   },
   {
     id: 2,
@@ -135,6 +150,18 @@ export const list = [
     description:
       'Zylus Court Bogije offers contemporary bungalows built to the highest standards. With thoughtful interior layouts and luxury finishing, it’s ideal for families looking for modern homes in a secure and serene environment.',
     slug: 'zylus-court-bungalows-bogije',
+    // 👇 New fields for revamp
+    price: '₦10,000,000',
+    images: [
+      '/images/list/p-1.jpeg',
+      '/images/list/p-1b.jpeg',
+      '/images/list/p-1c.jpeg',
+    ],
+    video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    coordinates: {
+      lat: 6.4421,
+      lng: 3.4836,
+    },
   },
   {
     id: 3,
@@ -154,6 +181,18 @@ export const list = [
     description:
       'Ambiance Heights is a high-rise residential masterpiece in the heart of Lekki Phase 1. With luxurious maisonettes and state-of-the-art amenities, it delivers both comfort and prestige to residents.',
     slug: 'ambiance-heights-lekki-phase-1',
+    // 👇 New fields for revamp
+    price: '₦10,000,000',
+    images: [
+      '/images/list/p-1.jpeg',
+      '/images/list/p-1b.jpeg',
+      '/images/list/p-1c.jpeg',
+    ],
+    video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    coordinates: {
+      lat: 6.4421,
+      lng: 3.4836,
+    },
   },
   {
     id: 4,
@@ -173,6 +212,18 @@ export const list = [
     description:
       'Opebi Castles and Terraces is an exclusive estate with uniquely designed duplexes and terraces. Located in the serene Ikeja neighborhood, this property is perfect for families seeking upscale city living.',
     slug: 'opebi-castles-and-terraces',
+    // 👇 New fields for revamp
+    price: '₦10,000,000',
+    images: [
+      '/images/list/p-1.jpeg',
+      '/images/list/p-1b.jpeg',
+      '/images/list/p-1c.jpeg',
+    ],
+    video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    coordinates: {
+      lat: 6.4421,
+      lng: 3.4836,
+    },
   },
   {
     id: 5,
@@ -192,6 +243,18 @@ export const list = [
     description:
       'Lagoon Front Estate Epe is a scenic residential community ideal for relaxation and investment. Overlooking the lagoon, this estate combines tranquility with accessibility, making it an ideal place to live and invest.',
     slug: 'lagoon-front-estate-epe',
+    // 👇 New fields for revamp
+    price: '₦10,000,000',
+    images: [
+      '/images/list/p-1.jpeg',
+      '/images/list/p-1b.jpeg',
+      '/images/list/p-1c.jpeg',
+    ],
+    video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    coordinates: {
+      lat: 6.4421,
+      lng: 3.4836,
+    },
   },
   {
     id: 6,
@@ -211,6 +274,18 @@ export const list = [
     description:
       'Metro Bay Estate offers dry land located in the fast-growing Sangotedo area. It is a perfect option for residential or mixed-use development and comes with infrastructure ready for construction.',
     slug: 'metro-bay-estate',
+    // 👇 New fields for revamp
+    price: '₦10,000,000',
+    images: [
+      '/images/list/p-1.jpeg',
+      '/images/list/p-1b.jpeg',
+      '/images/list/p-1c.jpeg',
+    ],
+    video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    coordinates: {
+      lat: 6.4421,
+      lng: 3.4836,
+    },
   },
   {
     id: 7,
@@ -230,6 +305,18 @@ export const list = [
     description:
       'Ruby City is a government-approved estate located in the heart of Moniya, Ibadan. It provides affordable land ownership in a rapidly developing environment with basic amenities in place.',
     slug: 'ruby-city-ibadan',
+    // 👇 New fields for revamp
+    price: '₦10,000,000',
+    images: [
+      '/images/list/p-1.jpeg',
+      '/images/list/p-1b.jpeg',
+      '/images/list/p-1c.jpeg',
+    ],
+    video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    coordinates: {
+      lat: 6.4421,
+      lng: 3.4836,
+    },
   },
 ]
 

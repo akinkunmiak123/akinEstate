@@ -1,5 +1,27 @@
-/* Properties Page Layout */
-.properties-layout {
+.prop-container {
+  background-color: #fff;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.prop-heading {
+  background-color: #fff;
+  padding: 20px 0;
+  border-top: 6px solid #ee7e01;
+  text-align: center;
+  margin: 0 auto 20px;
+  max-width: 1400px;
+}
+
+.prop-heading h2 {
+  color: #ee7e01;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.prop-layout {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -10,7 +32,7 @@
 }
 
 /* Filter Sidebar */
-.property-filter {
+.prop-filter {
   flex: 1;
   background-color: #f7f7f7;
   padding: 20px;
@@ -23,14 +45,14 @@
   max-width: 280px;
 }
 
-.property-filter h3 {
+.prop-filter h3 {
   color: #ee7e01;
   font-size: 1.3rem;
   margin-bottom: 5px;
 }
 
-.property-filter input,
-.property-filter select {
+.prop-filter input,
+.prop-filter select {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -38,7 +60,7 @@
   width: 100%;
 }
 
-.clear-btn {
+.prop-clear-btn {
   background-color: #ee7e01;
   color: #fff;
   border: none;
@@ -50,19 +72,19 @@
   width: 100%;
 }
 
-.clear-btn:hover {
+.prop-clear-btn:hover {
   background-color: #e65c00;
 }
 
-/* Properties Content Grid */
-.property-grid {
+/* Property Grid */
+.prop-grid {
   flex: 3;
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 20px;
 }
 
-.property-card {
+.prop-card {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -72,39 +94,63 @@
   flex-direction: column;
   padding: 0;
 }
-.property-card-text{
-  height: 100px;
-}
 
-.property-card:hover {
+.prop-card:hover {
   transform: translateY(-5px);
 }
 
-.property-card img {
+.prop-image-wrapper {
+  position: relative;
   width: 100%;
   height: 200px;
+  overflow: hidden;
+}
+
+.prop-image-wrapper img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.property-card h4 {
+.prop-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e60000;
+  color: white;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.prop-badge.rent {
+  background-color: #0073e6;
+}
+
+
+
+.prop-card h4 {
   font-size: 1.1rem;
   color: #232023;
   margin: 15px 20px 5px;
 }
 
-.property-card p {
+.prop-card p {
   font-size: 0.9rem;
   color: #555;
   margin: 0 20px 8px;
 }
 
-.property-buttons {
+.prop-buttons {
   display: flex;
   gap: 10px;
   margin: 15px 20px;
 }
 
-.property-buttons button {
+.prop-buttons button {
   background-color: #ee7e01;
   color: #fff;
   border: none;
@@ -115,102 +161,46 @@
   transition: background-color 0.3s;
 }
 
-.property-buttons button:hover {
+.prop-buttons button:hover {
   background-color: #e65c00;
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .properties-layout {
+  .prop-layout {
     flex-direction: column;
   }
 
-  .property-filter {
+  .prop-filter {
     width: 100%;
     margin-bottom: 30px;
     max-width: 100%;
   }
 
-  .property-grid {
+  .prop-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
 @media (max-width: 768px) {
-  .property-card img {
+  .prop-card img {
     height: 180px;
   }
 
-  .property-card h4 {
+  .prop-card h4 {
     font-size: 1rem;
   }
 
-  .property-card p {
+  .prop-card p {
     font-size: 0.9rem;
   }
 
-  .property-buttons button {
+  .prop-buttons button {
     font-size: 0.9rem;
     padding: 6px 12px;
   }
 
-  .property-grid {
+  .prop-grid {
     grid-template-columns: 1fr;
   }
 }
-
-.section-heading {
-  background-color: #fff;
-  padding: 20px 0;
-  border-top: 6px solid #ee7e01; /* Use your site’s orange color */
-  text-align: center;
-  margin: 0 auto 20px;
-  max-width: 1400px;
-}
-
-.section-heading h2 {
-  color: #ee7e01;
-  font-size: 1.6rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.propColor{
-  background-color: #fff;
-  max-width: 1400px;
-  margin: auto;
-}
-
-.property-image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.property-image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.for-sale-badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #e60000; /* Red */
-  color: white;
-  font-weight: bold;
-  font-size: 0.75rem;
-  padding: 4px 10px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  z-index: 1;
-}
-
-.rent-badge {
-  background-color: #0073e6; /* Blue for rent */
-}
-
-

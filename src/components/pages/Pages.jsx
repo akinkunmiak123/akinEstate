@@ -13,6 +13,8 @@ import BlogDetails from '../BlogDetails/BlogDetails'
 import Line from '../Line/LineSection'
 import WhatsAppChat from '../whatsapp/WhatsAppChat'
 import ScrollToTop from '../Scroll/ScrollToTop'
+import ComparePage from '../Compare/ComparePage'
+import CompareBar from '../Compare/CompareBar'
 
 const Pages = () => {
   return (
@@ -28,9 +30,11 @@ const Pages = () => {
         <Route path="/blogs/:slug" component={BlogDetails} />
         <Route path="/contact" component={Contact} />
         <Route path="/details/:slug" component={DetailsPage} />
+        <Route path="/compare" component={ComparePage} />
       </Switch>
+      <CompareBar />
       <WhatsAppChat />
-      <Line  />
+      <Line />
       <Footer />
     </Router>
   )
