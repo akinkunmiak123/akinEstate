@@ -30,7 +30,7 @@ const { addToCompare } = useCompare()
   // YouTube embed helper
   const getYoutubeEmbedUrl = (url) => {
     const match = url.match(
-      /(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([^\s&?\/]+)/
+      /(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([^\s&?/]+)/
     )
     return match ? `https://www.youtube.com/embed/${match[1]}` : null
   }
