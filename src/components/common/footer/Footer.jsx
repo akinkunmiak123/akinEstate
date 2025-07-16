@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="footer-logo">
             <NavLink to="/">
               <img
-                style={{ height: '30%', width: '40%' }}
+                style={{ height: '40%', width: '50%' }}
                 src={logo}
                 alt="Logo"
               />
