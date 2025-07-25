@@ -8,11 +8,15 @@ import './style.css'
 import { useCompare } from '../../utils/CompareContext'
 
 
+
+
 const DetailsPage = () => {
 const { addToCompare } = useCompare()
   const { state } = useLocation()
   const { item } = state
   const history = useHistory()
+  const [modalOpen, setModalOpen] = useState(false)
+  const [modalImage, setModalImage] = useState(null)
 
   const images = item.images || [item.cover]
   const swiperRef = useRef(null)
@@ -67,7 +71,15 @@ const { addToCompare } = useCompare()
             >
               {images.map((img, index) => (
                 <SwiperSlide key={index}>
-                  <img src={img} alt={`Slide ${index}`} />
+                  <img
+                    src={img}
+                    alt={`Slide ${index}`}
+                    onClick={() => {
+                      setModalImage(img)
+                      setModalOpen(true)
+                    }}
+                    style={{ cursor: 'pointer' }}
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -125,9 +137,13 @@ const { addToCompare } = useCompare()
           <div className="property-description">
             <h3>Description</h3>
             <ul>
-              {item.description.map((line, index) => (
-                <li key={index}> {line}</li>
-              ))}
+              {Array.isArray(item.description) ? (
+                item.description.map((desc, index) => (
+                  <li key={index}> {desc}</li>
+                ))
+              ) : (
+                <li> {item.description}</li>
+              )}
             </ul>
 
             <h4>Why {item.shortname}:</h4>
@@ -266,6 +282,16 @@ const { addToCompare } = useCompare()
           loading="lazy"
         />
       </div>
+      {modalOpen && (
+        <div className="image-modal" onClick={() => setModalOpen(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-btn" onClick={() => setModalOpen(false)}>
+              ✖
+            </button>
+            <img src={modalImage} alt="Enlarged" />
+          </div>
+        </div>
+      )}
     </div>
   )
 }
