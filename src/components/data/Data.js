@@ -99,46 +99,58 @@ export const partners = [
 export const list = [
   {
     id: 1,
-    cover: '/images/list/p-1.jpeg',
-    name: 'Lekki Pride 2',
-    location:
-      'Ogombo Road by Abraham Adesanya Roundabout, Lekki-Epe Expressway.',
-    category: 'For Sale',
-    offer: 'Outright',
-    neighborhood: 'Ogombo',
-    keyword: 'Lekki, 105102',
+    cover: '/images/list/Lekki/main.jpg',
+    name: 'Ambiance Heights, Lekki Phase 1',
+    shortname: 'Ambiance Heights',
+    location: 'Lekki Phase 1, Lagos',
+    category: 'For Rent',
+    Units: '2 & 3 Bedroom Luxury Maisonettes',
+    Design: 'Contemporary, Spacious, and Elegantly Finished',
+    Title: 'Governor’s Consent',
+    neighborhood: 'Victoria Island',
+    keyword: 'Ambiance Heights, Lekki Phase 1 ',
     bathrooms: '0',
-    title: 'Lekki Pride 2',
+    title: 'Ambiance Heights, Lekki Phase 1',
     features:
-      '24-hours Power Supply, Perimeter Fencing, Excellent Drainage, Gated Security, Interlocked Roads, CCTV Surveillance, Street Lights',
+      'Prime location just minutes from Lekki Phase 1 & Victoria Island, Dual-floor maisonette design = privacy + prestige, Strong capital appreciation & rental income potential, Perfect for living, Flexible payment plans are available, Built by a reputable developer with a track record of excellence',
     payment: 'Flexible',
-    type: 'Land',
-    description:
-      'Lekki Pride 2 is a premium residential estate designed for comfort and investment...',
-    slug: 'lekki-pride-2',
-
-    // 👇 New fields for revamp
-    price: '₦10,000,000',
-    images: [
-      '/images/list/p-1.jpeg',
-      '/images/list/p-2.jpeg',
-      '/images/list/p-3.jpeg',
+    prices:
+      '2 Bedroom Massionette 250 million , 3 Bedroom Massionette 300 million',
+    type: 'Apartment',
+    description: [
+      'Own a premium piece of Lagos real estate in one of the fastest-growing, most desirable neighborhoods in Africa?',
+      'Ambiance Heights, Lekki Phase 1 is not just a home—it’s a lifestyle investment.'
     ],
-
+    slug: 'ambiance-heights',
+    price: '₦250,000,000  ₦300,000,000',
+    images: [
+      '/images/list/Lekki/main.jpg',
+      '/images/list/Lekki/1.jpg',
+      '/images/list/Lekki/2.jpg',
+      '/images/list/Lekki/3.jpg',
+      '/images/list/Lekki/4.jpg'
+    ],
     instagram: 'https://www.instagram.com/p/DLtqbD3ozL8/',
     video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     coordinates: {
       lat: 6.4421,
-      lng: 3.4836,
+      lng: 3.4836
     },
+    cta: {
+      message: '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
+      phones: ['08037728675', '09130000004', '09130000005']
+    }
   },
   {
     id: 2,
     cover: '/images/list/p-2.jpeg',
     name: 'ZYLUS COURT BOGIJE',
+    shortname: 'ZYLUS COURT',
     location: 'along Lekki-Epe Expressway',
     category: 'For Sale',
-    offer: 'Installment',
+    Units: 'Installment',
+    Design: 'Contemporary, Spacious, and Elegantly Finished',
+    Title: 'Governor’s Consent',
     neighborhood: 'Bogije',
     keyword: 'Lekki, 105102',
     bathrooms: '2',
@@ -146,9 +158,13 @@ export const list = [
     features:
       'Perimeter Fencing, Water Supply, Fitted Kitchen, All Rooms Ensuite, Solar Street Lights, Green Area, Gatehouse with Security',
     payment: 'Installment',
+     prices:
+      '2 Bedroom Massionette 250 million , 3 Bedroom Massionette 300 million',
     type: 'Bungalow',
-    description:
-      'Zylus Court Bogije offers contemporary bungalows built to the highest standards. With thoughtful interior layouts and luxury finishing, it’s ideal for families looking for modern homes in a secure and serene environment.',
+     description: [
+      'Zylus Court Bogije offers contemporary bungalows built to the highest standards.',
+      ' With thoughtful interior layouts and luxury finishing, it’s ideal for families looking for modern homes in a secure and serene environment.'
+    ],
     slug: 'zylus-court-bungalows-bogije',
     // 👇 New fields for revamp
     price: '₦10,000,000',
@@ -162,14 +178,21 @@ export const list = [
       lat: 6.4421,
       lng: 3.4836,
     },
+      cta: {
+      message: '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
+      phones: ['08037728675', '09130000004', '09130000005']
+    }
   },
   {
     id: 3,
     cover: '/images/list/p-3.jpeg',
     name: 'Ambiance Heights Lekki',
+    shortname: 'Ambiance Heights',
     location: 'Freedom way, Lekki Phase 1, Lekki Lagos.',
     category: 'For Rent',
-    offer: 'Outright',
+    Units: 'Outright',
+     Design: 'Contemporary, Spacious, and Elegantly Finished',
+    Title: 'Governor’s Consent',
     neighborhood: 'Lekki Phase 1',
     keyword: 'Lekki, 105102',
     bathrooms: '3',
@@ -177,6 +200,8 @@ export const list = [
     features:
       '24/7 Power Supply, Smart Access, Elevator, Swimming Pool, Fitness Center, High-Speed Internet, Ample Parking',
     payment: 'Flexible',
+    prices:
+      '10,000,000',
     type: 'Maisonette',
     description:
       'Ambiance Heights is a high-rise residential masterpiece in the heart of Lekki Phase 1. With luxurious maisonettes and state-of-the-art amenities, it delivers both comfort and prestige to residents.',
@@ -193,14 +218,21 @@ export const list = [
       lat: 6.4421,
       lng: 3.4836,
     },
+     cta: {
+      message: '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
+      phones: ['08037728675', '09130000004', '09130000005']
+    }
   },
   {
     id: 4,
     cover: '/images/list/p-4.jpeg',
     name: 'OPEBI CASTLES AND TERRACES',
+    shortname: 'OPEBI CASTLE',
     location: 'Opebi road in Ikeja area of Lagos, Nigeria',
     category: 'For Sale',
-    offer: 'Outright',
+    Units: 'Outright',
+     Design: 'Contemporary, Spacious, and Elegantly Finished',
+    Title: 'Governor’s Consent',
     neighborhood: 'Opebi',
     keyword: 'Ikeja, 100271',
     bathrooms: '4',
@@ -209,8 +241,10 @@ export const list = [
       'Gated Estate, Security House, Ensuite Bedrooms, Fitted Kitchen, Interlocked Compound, Water Treatment Plant, Backup Power',
     payment: 'Outright',
     type: 'Homes & Villas',
-    description:
-      'Opebi Castles and Terraces is an exclusive estate with uniquely designed duplexes and terraces. Located in the serene Ikeja neighborhood, this property is perfect for families seeking upscale city living.',
+     description: [
+      'Opebi Castles and Terraces is an exclusive estate with uniquely designed duplexes and terraces.',
+      'Located in the serene Ikeja neighborhood, this property is perfect for families seeking upscale city living.'
+    ],
     slug: 'opebi-castles-and-terraces',
     // 👇 New fields for revamp
     price: '₦10,000,000',
@@ -224,6 +258,10 @@ export const list = [
       lat: 6.4421,
       lng: 3.4836,
     },
+     cta: {
+      message: '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
+      phones: ['08037728675', '09130000004', '09130000005']
+    }
   },
   {
     id: 5,
@@ -231,7 +269,7 @@ export const list = [
     name: 'LAGOON FRONT ESTATE EPE',
     location: 'Lekki Epe Corridor, Lagos Nigeria.',
     category: 'For Rent',
-    offer: 'Installment',
+    Units: 'Installment',
     neighborhood: 'Epe',
     keyword: 'Epe, 106104',
     bathrooms: '0',
@@ -262,7 +300,7 @@ export const list = [
     name: 'METRO BAY ESTATE',
     location: 'Heart of Sangotedo, Eti Osa, Lagos Nigeria.',
     category: 'For Sale',
-    offer: 'Outright',
+    Units: 'Outright',
     neighborhood: 'Sangotedo',
     keyword: 'Sangotedo, 105101',
     bathrooms: '0',
@@ -293,7 +331,7 @@ export const list = [
     name: 'Ruby City Ibadan.',
     location: 'Ijaiye market, Iseyin Road, Moniya Ibadan, Oyo State Nigeria.',
     category: 'For Rent',
-    offer: 'Installment',
+    Units: 'Installment',
     neighborhood: 'Moniya',
     keyword: 'Ibadan, 200132',
     bathrooms: '0',
@@ -312,6 +350,41 @@ export const list = [
       '/images/list/p-1b.jpeg',
       '/images/list/p-1c.jpeg',
     ],
+    video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    coordinates: {
+      lat: 6.4421,
+      lng: 3.4836,
+    },
+  },
+  {
+    id: 8,
+    cover: '/images/list/p-1.jpeg',
+    name: 'Lekki Pride 2',
+    location:
+      'Ogombo Road by Abraham Adesanya Roundabout, Lekki-Epe Expressway.',
+    category: 'For Sale',
+    Units: 'Outright',
+    neighborhood: 'Ogombo',
+    keyword: 'Lekki, 105102',
+    bathrooms: '0',
+    title: 'Lekki Pride 2',
+    features:
+      '24-hours Power Supply, Perimeter Fencing, Excellent Drainage, Gated Security, Interlocked Roads, CCTV Surveillance, Street Lights',
+    payment: 'Flexible',
+    type: 'Land',
+    description:
+      'Lekki Pride 2 is a premium residential estate designed for comfort and investment...',
+    slug: 'lekki-pride-2',
+
+    // 👇 New fields for revamp
+    price: '₦10,000,000',
+    images: [
+      '/images/list/p-1.jpeg',
+      '/images/list/p-2.jpeg',
+      '/images/list/p-3.jpeg',
+    ],
+
+    instagram: 'https://www.instagram.com/p/DLtqbD3ozL8/',
     video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     coordinates: {
       lat: 6.4421,

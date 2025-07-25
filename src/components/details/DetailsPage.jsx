@@ -92,33 +92,70 @@ const { addToCompare } = useCompare()
           {/* === Metadata === */}
           <div className="property-meta">
             <p>
-              <strong>Property Type:</strong> {item.type}
+              <strong>Location:</strong> {item.location}
+            </p>
+            <p>
+              <strong>Units:</strong> {item.Units}
+            </p>
+            <p>
+              <strong>Design:</strong> {item.Design}
+            </p>
+            <p>
+              <strong>Title:</strong> {item.Title}
             </p>
             <p>
               <strong>City:</strong> {item.keyword}
             </p>
             <p>
-              <strong>Offer Type:</strong> {item.offer}
-            </p>
-            <p>
-              <strong>Bedrooms:</strong> {item.bathrooms}
-            </p>
-            <p>
               <strong>Payment Plan:</strong> {item.payment}
+            </p>
+            <p>
+              <strong>Price:</strong>{' '}
+              <ul>
+                {item.prices.split(',').map((price, index) => (
+                  <li key={index} style={{ fontWeight: 'bold' }}>
+                    💰 {price.trim()}
+                  </li>
+                ))}
+              </ul>
             </p>
           </div>
 
           {/* === Description and Features === */}
           <div className="property-description">
             <h3>Description</h3>
-            <p>{item.description}</p>
-
-            <h4>Features:</h4>
             <ul>
-              {item.features.split(',').map((feature, index) => (
-                <li key={index}>{feature.trim()}</li>
+              {item.description.map((line, index) => (
+                <li key={index}> {line}</li>
               ))}
             </ul>
+
+            <h4>Why {item.shortname}:</h4>
+            <ul>
+              {item.features.split(',').map((feature, index) => (
+                <li key={index}>✅ {feature.trim()}</li>
+              ))}
+            </ul>
+            {/* === CTA Section === */}
+            {item.cta && (
+              <div className="cta-box">
+                <h4>{item.cta.message}</h4>
+                <ul className="cta-contacts">
+                  {item.cta.phones.map((number, index) => (
+                    <li key={index}>
+                      📱 Call / WhatsApp:{' '}
+                      <a
+                        href={`https://wa.me/234${number.slice(1)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {number}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* === Media Embed === */}
             {/* === Media Embeds === */}
@@ -190,7 +227,7 @@ const { addToCompare } = useCompare()
 
                 const text = `Hello, I'm interested in *${item.name}* (${item.location}).\n\nMy Details:\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`
                 const encodedText = encodeURIComponent(text)
-                const whatsappNumber = '234XXXXXXXXXX' // Replace with your WhatsApp number
+                const whatsappNumber = '09130000005' // Replace with your WhatsApp number
 
                 window.open(
                   `https://wa.me/${whatsappNumber}?text=${encodedText}`,
