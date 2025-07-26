@@ -119,7 +119,7 @@ export const list = [
     type: 'Apartment',
     description: [
       'Own a premium piece of Lagos real estate in one of the fastest-growing, most desirable neighborhoods in Africa?',
-      'Ambiance Heights, Lekki Phase 1 is not just a home—it’s a lifestyle investment.'
+      'Ambiance Heights, Lekki Phase 1 is not just a home—it’s a lifestyle investment.',
     ],
     slug: 'ambiance-heights',
     price: '₦250,000,000  ₦300,000,000',
@@ -128,18 +128,19 @@ export const list = [
       '/images/list/Lekki/1.jpg',
       '/images/list/Lekki/2.jpg',
       '/images/list/Lekki/3.jpg',
-      '/images/list/Lekki/4.jpg'
+      '/images/list/Lekki/4.jpg',
     ],
     instagram: 'https://www.instagram.com/p/DLtqbD3ozL8/',
-    video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    video: 'https://www.youtube.com/embed/8bbe3muyJWI',
     coordinates: {
       lat: 6.4421,
-      lng: 3.4836
+      lng: 3.4836,
     },
     cta: {
-      message: '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
-      phones: ['08037728675', '09130000004', '09130000005']
-    }
+      message:
+        '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
+      phones: ['08037728675', '09130000004', '09130000005'],
+    },
   },
   {
     id: 2,
@@ -158,12 +159,12 @@ export const list = [
     features:
       'Perimeter Fencing, Water Supply, Fitted Kitchen, All Rooms Ensuite, Solar Street Lights, Green Area, Gatehouse with Security',
     payment: 'Installment',
-     prices:
+    prices:
       '2 Bedroom Massionette 250 million , 3 Bedroom Massionette 300 million',
     type: 'Bungalow',
-     description: [
+    description: [
       'Zylus Court Bogije offers contemporary bungalows built to the highest standards.',
-      ' With thoughtful interior layouts and luxury finishing, it’s ideal for families looking for modern homes in a secure and serene environment.'
+      ' With thoughtful interior layouts and luxury finishing, it’s ideal for families looking for modern homes in a secure and serene environment.',
     ],
     slug: 'zylus-court-bungalows-bogije',
     // 👇 New fields for revamp
@@ -173,15 +174,16 @@ export const list = [
       '/images/list/p-1b.jpeg',
       '/images/list/p-1c.jpeg',
     ],
-    video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    video: 'https://www.youtube.com/embed/8bbe3muyJWI',
     coordinates: {
       lat: 6.4421,
       lng: 3.4836,
     },
-      cta: {
-      message: '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
-      phones: ['08037728675', '09130000004', '09130000005']
-    }
+    cta: {
+      message:
+        '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
+      phones: ['08037728675', '09130000004', '09130000005'],
+    },
   },
   {
     id: 3,
@@ -191,7 +193,7 @@ export const list = [
     location: 'Freedom way, Lekki Phase 1, Lekki Lagos.',
     category: 'For Rent',
     Units: 'Outright',
-     Design: 'Contemporary, Spacious, and Elegantly Finished',
+    Design: 'Contemporary, Spacious, and Elegantly Finished',
     Title: 'Governor’s Consent',
     neighborhood: 'Lekki Phase 1',
     keyword: 'Lekki, 105102',
@@ -200,8 +202,7 @@ export const list = [
     features:
       '24/7 Power Supply, Smart Access, Elevator, Swimming Pool, Fitness Center, High-Speed Internet, Ample Parking',
     payment: 'Flexible',
-    prices:
-      '10,000,000',
+    prices: '10,000,000',
     type: 'Maisonette',
     description:
       'Ambiance Heights is a high-rise residential masterpiece in the heart of Lekki Phase 1. With luxurious maisonettes and state-of-the-art amenities, it delivers both comfort and prestige to residents.',
@@ -218,10 +219,11 @@ export const list = [
       lat: 6.4421,
       lng: 3.4836,
     },
-     cta: {
-      message: '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
-      phones: ['08037728675', '09130000004', '09130000005']
-    }
+    cta: {
+      message:
+        '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
+      phones: ['08037728675', '09130000004', '09130000005'],
+    },
   },
   {
     id: 4,
@@ -231,7 +233,7 @@ export const list = [
     location: 'Opebi road in Ikeja area of Lagos, Nigeria',
     category: 'For Sale',
     Units: 'Outright',
-     Design: 'Contemporary, Spacious, and Elegantly Finished',
+    Design: 'Contemporary, Spacious, and Elegantly Finished',
     Title: 'Governor’s Consent',
     neighborhood: 'Opebi',
     keyword: 'Ikeja, 100271',
@@ -241,9 +243,9 @@ export const list = [
       'Gated Estate, Security House, Ensuite Bedrooms, Fitted Kitchen, Interlocked Compound, Water Treatment Plant, Backup Power',
     payment: 'Outright',
     type: 'Homes & Villas',
-     description: [
+    description: [
       'Opebi Castles and Terraces is an exclusive estate with uniquely designed duplexes and terraces.',
-      'Located in the serene Ikeja neighborhood, this property is perfect for families seeking upscale city living.'
+      'Located in the serene Ikeja neighborhood, this property is perfect for families seeking upscale city living.',
     ],
     slug: 'opebi-castles-and-terraces',
     // 👇 New fields for revamp
@@ -258,10 +260,11 @@ export const list = [
       lat: 6.4421,
       lng: 3.4836,
     },
-     cta: {
-      message: '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
-      phones: ['08037728675', '09130000004', '09130000005']
-    }
+    cta: {
+      message:
+        '📞 Limited units available. Send a DM or call now to schedule a virtual/in-person tour.',
+      phones: ['08037728675', '09130000004', '09130000005'],
+    },
   },
   {
     id: 5,
