@@ -657,6 +657,38 @@ export const testemonialData = [
 export const blogData = [
   {
     id: 1,
+    title:
+      'Is Real Estate Cash Back Worth It? What You Need to Know Before Investing',
+    date: 'July 30, 2025',
+    description:
+      'The idea of cash-back real estate sounds tempting, but is it sustainable? Here’s what you should know before diving into the numbers.',
+    longNote: `
+Over ₦5 billion has been paid out to more than 5,000 investors in just four years. This is a real headline from one of Nigeria’s up-and-coming real estate firms. Eye-catching? Definitely. However, as with all investments, appearances can be deceiving.
+
+Cash-back real estate is a new approach in which property companies offer guaranteed annual returns of 10% to 15%, even before a project is completed. For many, this sounds like a good deal. Who wouldn't want their money to work for them while they wait?
+But here’s the real question: Where is the money coming from?
+The model may be sustainable if these returns are funded by actual rental income or profit from sold units. However, if payouts depend heavily on funds from new investors, that's a red flag. We've seen that before, and it doesn't end well.
+Now, let's look at what makes real estate cash-back offers worthwhile and when to pause.
+  `,
+    points: [
+      '1. Understand the Source: Is the return backed by real rental income or expected appreciation in value? Transparency is paramount here.',
+      '2. Ask for documentation. Legitimate offers come with clearly written contracts that outline how returns are generated and when payouts occur.',
+      '3. Assess the risk vs. return. Assess the risk vs. return: A 15% annual return sounds appealing, but remember that no investment is risk-free. Make sure the reward justifies the risk.',
+      '4.Check Track Record: Look at the company’s past projects. Were they delivered on time? Did previous investors actually earn what was promised?',
+      "5. Don’t skip due diligence. Even if the website is flashy and the branding is good, always confirm the developer's credibility. Use CAC records, Nairametrics reviews, and investor forums.",
+    ],
+    endNote: `
+Final Thoughts:
+
+Real estate cash-back offers can be a smart way to earn passive income, but only if they’re backed by real assets, not hype. Before investing, ask the right questions and demand clarity. When executed properly, these deals can complement your long-term wealth-building strategy.
+
+If you're unsure where to start, consult professionals or real estate advisors who aren’t trying to sell you something. Remember, investing isn’t just about returns — it’s about peace of mind.
+  `,
+    image: '../images/blog/img-5.png', // or use your actual image path
+    slug: 'real-estate-cashback-worth-it',
+  },
+  {
+    id: 2,
     title: ' Investing in Land in Abuja: Why a C of O Matters More Than Ever',
     date: 'March 5,2025',
     description:
@@ -672,26 +704,6 @@ export const blogData = [
       'Avoid future risks and rising costs. Invest in a secure, legally documented property today.The recent land disputes in Abuja highlight the need for due diligence. Protect your investment with a C of O—because security is key in real estate.',
     image: '../images/blog/img-4.png',
     slug: 'investing-in-land-abuja',
-  },
-  {
-    id: 2,
-    title: 'Top Real Estate Trends in 2025',
-    date: 'January 15, 2025',
-    description:
-      'Discover the latest real estate trends to watch in 2025, including market shifts and buyer preferences.',
-    longNote:
-      'The real estate market is ever-evolving, and 2025 is no exception. As we move forward, various trends will shape the industry, impacting both buyers and investors. Here are some of the key trends to watch:',
-    points: [
-      '1. Smart Homes & Technology Integration - More homebuyers are seeking properties with advanced technology, including smart security systems, energy-efficient appliances, and automated controls.',
-      '2. Sustainable & Eco-Friendly Housing - The demand for green homes is growing, with buyers prioritizing properties that use solar panels, energy-efficient windows, and sustainable materials.',
-      '3. Urban vs. Suburban Shifts - While city living remains attractive, many buyers are looking toward suburban and semi-rural areas for affordability and space.',
-      '4. Rise in Co-Living Spaces - Shared living arrangements are gaining popularity among young professionals and retirees alike, offering affordability and community living.',
-      '5. Real Estate Investment in Digital Platforms - Tokenization of properties and real estate investment through blockchain technology are becoming more prevalent, making property investment more accessible.',
-    ],
-    endNote:
-      'For investors and homebuyers, staying informed on these trends can be key to making the right decisions in 2025.',
-    image: '../images/blog/img-1.jpg',
-    slug: 'top-real-estate-trends-2025',
   },
   {
     id: 3,
@@ -732,5 +744,25 @@ export const blogData = [
       'With the right strategy and market understanding, real estate investment can provide lucrative returns and long-term financial growth.',
     image: '../images/blog/img-3.jpg',
     slug: 'understanding-real-estate-investment',
+  },
+  {
+    id: 5,
+    title: 'Top Real Estate Trends in 2025',
+    date: 'January 15, 2025',
+    description:
+      'Discover the latest real estate trends to watch in 2025, including market shifts and buyer preferences.',
+    longNote:
+      'The real estate market is ever-evolving, and 2025 is no exception. As we move forward, various trends will shape the industry, impacting both buyers and investors. Here are some of the key trends to watch:',
+    points: [
+      '1. Smart Homes & Technology Integration - More homebuyers are seeking properties with advanced technology, including smart security systems, energy-efficient appliances, and automated controls.',
+      '2. Sustainable & Eco-Friendly Housing - The demand for green homes is growing, with buyers prioritizing properties that use solar panels, energy-efficient windows, and sustainable materials.',
+      '3. Urban vs. Suburban Shifts - While city living remains attractive, many buyers are looking toward suburban and semi-rural areas for affordability and space.',
+      '4. Rise in Co-Living Spaces - Shared living arrangements are gaining popularity among young professionals and retirees alike, offering affordability and community living.',
+      '5. Real Estate Investment in Digital Platforms - Tokenization of properties and real estate investment through blockchain technology are becoming more prevalent, making property investment more accessible.',
+    ],
+    endNote:
+      'For investors and homebuyers, staying informed on these trends can be key to making the right decisions in 2025.',
+    image: '../images/blog/img-1.jpg',
+    slug: 'top-real-estate-trends-2025',
   },
 ]

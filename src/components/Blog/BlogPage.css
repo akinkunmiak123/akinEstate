@@ -5,8 +5,8 @@
   gap: 30px;
   background-color: #fff;
   padding: 40px;
-  max-width: 1200px;  /* Limits the total width */
-  margin: 0 auto;     /* Centers it */
+  max-width: 1200px; /* Limits the total width */
+  margin: 0 auto; /* Centers it */
   width: 100%;
 }
 
@@ -31,17 +31,25 @@
   transform: translateY(-5px);
 }
 
+.vertical-blog-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+
 .card-image-container {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 350px;
   overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
 .image-overlay {
@@ -49,16 +57,18 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   color: #fff;
   padding: 20px;
   text-align: left;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
 }
 
 .overlay-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
 }
 
 .overlay-sub {
@@ -89,7 +99,13 @@
   font-size: 16px;
   color: #555;
   margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 .read-more-btn {
   background-color: #ee7e01;

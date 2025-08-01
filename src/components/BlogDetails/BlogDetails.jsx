@@ -3,7 +3,7 @@ import './BlogDetail.css'
 import { useParams, useHistory } from 'react-router-dom'
 import { blogData } from '../data/Data'
 import Back from '../common/Back'
-import img from '../images/about.jpeg'
+import img from '../images/blogsingle.jpg'
 
 const BlogDetails = () => {
   const { slug } = useParams()
@@ -53,7 +53,11 @@ const BlogDetails = () => {
         <div className="blog-content">
           <div className="vertical-blog-card">
             <div className="card-image-container">
-              <img src={blog.image} alt={blog.title} className="card-image" />
+              <img
+                src={blog.image}
+                alt={`Cover image for ${blog.title}`}
+                className="card-image"
+              />
               <div className="image-overlay">
                 <h2 className="overlay-title">{blog.title}</h2>
                 <p className="overlay-sub">Published on {blog.date}</p>
@@ -61,23 +65,50 @@ const BlogDetails = () => {
             </div>
 
             <div className="card-body">
+              {/* Blog Meta */}
               <p className="blog-date">{blog.date}</p>
               <h3 className="blog-title">{blog.title}</h3>
-              <p className="blog-description">{blog.description}</p>
-              <p className="blog-description">{blog.longNote}</p>
 
-              {blog.points && (
-                <ul className="blog-points">
-                  {blog.points.map((point, i) => (
-                    <li key={i}>{point}</li>
-                  ))}
-                </ul>
+              {/* Blog Description */}
+              {blog.description && (
+                <section className="blog-section">
+                  <p className="blog-description">{blog.description}</p>
+                </section>
+              )}
+              <hr className="section-divider" />
+
+              {/* Main Content / Long Note */}
+              {blog.longNote && (
+                <section className="blog-section">
+                  <h4 className="section-heading">What You Need to Know</h4>
+                  <div className="blog-description">
+                    {blog.longNote.split('\n\n').map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
+                  </div>
+                </section>
+              )}
+              <hr className="section-divider" />
+              {/* Bullet Points */}
+              {blog.points && blog.points.length > 0 && (
+                <section className="blog-section">
+                  <ul className="blog-points">
+                    {blog.points.map((point, index) => (
+                      <li key={index}>{point}</li>
+                    ))}
+                  </ul>
+                </section>
               )}
 
+              {/* End Note */}
               {blog.endNote && (
-                <p className="blog-description">{blog.endNote}</p>
+                <section className="blog-section">
+                  <h4 className="section-heading">Final Thoughts</h4>
+                  <p className="blog-description">{blog.endNote}</p>
+                </section>
               )}
 
+              {/* Back Button */}
               <button
                 className="read-more-btn"
                 onClick={() => history.push('/blog')}
@@ -111,9 +142,7 @@ const BlogDetails = () => {
                   <div className="card-body">
                     <p className="blog-date">{item.date}</p>
                     <h3 className="blog-title">{item.title}</h3>
-                    <p className="blog-description">
-                      {item.description.split(' ').slice(0, 25).join(' ')}...
-                    </p>
+                    <p className="blog-description">{item.description}</p>
                   </div>
                 </div>
               ))}

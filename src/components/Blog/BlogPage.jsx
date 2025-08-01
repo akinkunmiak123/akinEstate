@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Back from '../common/Back'
-import img from '../images/about.jpeg'
+import img from '../images/blog.jpg'
 import './BlogPage.css'
 import { blogData } from '../data/Data'
 import { useHistory } from 'react-router-dom'
@@ -43,30 +43,28 @@ const BlogPage = () => {
             <p>No blog found for “{searchTerm}”</p>
           ) : (
             filteredBlogs.map((blog) => (
-              <div key={blog.id} className="vertical-blog-card">
-                <div className="card-image-container">
-                  <img
-                    src={blog.image}
-                    alt={blog.title}
-                    className="card-image"
-                  />
-                  <div className="image-overlay">
-                    <h2 className="overlay-title">{blog.title}</h2>
-                    <p className="overlay-sub">Everything You Should Know</p>
-                  </div>
-                </div>
-                <div className="card-body">
-                  <p className="blog-date">{blog.date}</p>
-                  <h3 className="blog-title">{blog.title}</h3>
-                  <p className="blog-description">
-                    {blog.description}
-                  </p>
-                  <button
-                    className="read-more-btn"
-                    onClick={() => handleReadMore(blog)}
-                  >
-                    READ MORE
-                  </button>
+  <div key={blog.id} className="vertical-blog-card">
+    <div className="card-image-container">
+      <img
+        src={blog.image}
+        alt={blog.title}
+        className="card-image"
+      />
+      <div className="image-overlay">
+        <h2 className="overlay-title">{blog.title}</h2>
+      </div>
+    </div>
+    <div className="card-body">
+      <p className="blog-date">{blog.date}</p>
+      <p className="blog-description">
+        {blog.description}
+      </p>
+      <button
+        className="read-more-btn"
+        onClick={() => handleReadMore(blog)}
+      >
+        READ MORE
+      </button>
                 </div>
               </div>
             ))
