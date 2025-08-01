@@ -289,6 +289,11 @@
     height: 250px;
   }
 
+  .overlay-title {
+  font-size: 14px;
+  font-weight: 300;
+}
+
   .blog-title {
     font-size: 1.4rem;
   }
