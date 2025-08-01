@@ -136,3 +136,12 @@
   color: #999;
   margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+  .related-blog-title {
+  font-size: 0.5rem;
+  font-weight: 300;
+  height: auto;
+}
+
+}
