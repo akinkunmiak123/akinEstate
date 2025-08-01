@@ -29,9 +29,7 @@ const BlogDetails = () => {
     window.scrollTo(0, 0)
   }
 
-  if (!blog) {
-    return <h1>Blog Not Found</h1>
-  }
+  if (!blog) return <h1>Blog Not Found</h1>
 
   return (
     <>
@@ -53,11 +51,7 @@ const BlogDetails = () => {
         <div className="blog-content">
           <div className="vertical-blog-card">
             <div className="card-image-container">
-              <img
-                src={blog.image}
-                alt={`Cover image for ${blog.title}`}
-                className="card-image"
-              />
+              <img src={blog.image} alt={blog.title} className="card-image" />
               <div className="image-overlay">
                 <h2 className="overlay-title">{blog.title}</h2>
                 <p className="overlay-sub">Published on {blog.date}</p>
@@ -65,19 +59,17 @@ const BlogDetails = () => {
             </div>
 
             <div className="card-body">
-              {/* Blog Meta */}
               <p className="blog-date">{blog.date}</p>
               <h3 className="blog-title">{blog.title}</h3>
 
-              {/* Blog Description */}
               {blog.description && (
                 <section className="blog-section">
                   <p className="blog-description">{blog.description}</p>
                 </section>
               )}
+
               <hr className="section-divider" />
 
-              {/* Main Content / Long Note */}
               {blog.longNote && (
                 <section className="blog-section">
                   <h4 className="section-heading">What You Need to Know</h4>
@@ -88,9 +80,10 @@ const BlogDetails = () => {
                   </div>
                 </section>
               )}
+
               <hr className="section-divider" />
-              {/* Bullet Points */}
-              {blog.points && blog.points.length > 0 && (
+
+              {blog.points?.length > 0 && (
                 <section className="blog-section">
                   <ul className="blog-points">
                     {blog.points.map((point, index) => (
@@ -100,7 +93,6 @@ const BlogDetails = () => {
                 </section>
               )}
 
-              {/* End Note */}
               {blog.endNote && (
                 <section className="blog-section">
                   <h4 className="section-heading">Final Thoughts</h4>
@@ -108,7 +100,6 @@ const BlogDetails = () => {
                 </section>
               )}
 
-              {/* Back Button */}
               <button
                 className="read-more-btn"
                 onClick={() => history.push('/blog')}
@@ -118,7 +109,6 @@ const BlogDetails = () => {
             </div>
           </div>
 
-          {/* Related Posts */}
           <div className="related-posts">
             <h2 className="sidebar-title">Related Posts</h2>
             <div className="related-posts-grid">
@@ -150,7 +140,6 @@ const BlogDetails = () => {
           </div>
         </div>
 
-        {/* Sidebar */}
         <aside className="blog-sidebar">
           <form className="search-box" onSubmit={handleSearch}>
             <input
